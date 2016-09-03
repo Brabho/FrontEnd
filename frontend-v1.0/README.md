@@ -16,11 +16,10 @@ Quite basic but useful.
 under GNU General Public License Version 2.
 
 ## Example
-```
-
+```html
 	<link rel="stylesheet" type="text/css" href="FrontEnd/css/btn.css"  />
 	<button>Button</button>
-	<button class="btn_cbu">Button</button>
+	<button class="btn_cbu">Blue Button</button>
 
 	<link rel="stylesheet" type="text/css" href="FrontEnd/css/icon/home.css"  />
 	<div class="home"></div>
