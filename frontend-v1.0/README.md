@@ -5,11 +5,7 @@
 Initial, Alpha
 
 ## Description
-This is for frontend development.
-
-Its a mini library for developer.
-
-Quite basic but useful.
+View in Repository
 
 ## License
 (C) 2015
