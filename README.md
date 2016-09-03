@@ -3,9 +3,13 @@
 ## Description
 This is for frontend development.
 
-Its a mini library for developer.
+Its a mini & basic library for developer.
 
-Quite basic but useful.
+Pure Css and JavaScript. 
+
+No other library or framework.
+
+Useful, Powerful, LightWeight & Fast
 
 ## License
 (C) 2015
