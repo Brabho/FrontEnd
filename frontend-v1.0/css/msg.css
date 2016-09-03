@@ -1,0 +1,145 @@
+.msg{
+    padding: 6px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #aaa;
+    border-left-width: 4px;
+    background: #f9f9f9;
+}
+
+/*
+ * General Message
+ */
+.msg_general{
+    border: 1px solid #aaa;
+    padding-left: 30px;
+}
+
+.msg_general::before{    
+    content: 'i';
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.0em;
+    font-weight: bold;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    background: #999;
+    position: absolute;
+    top: 20%;
+    left: 6px;
+    font-family: Tahoma;
+}
+
+/*
+ * Help Message
+ */
+.msg_help{
+    color: #5179DF;
+    background: #F0F3FB;
+    border: 1px solid #86A6F9;
+    padding-left: 30px;
+}
+
+.msg_help::before{
+    content: '?';
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3em;
+    font-weight: bold;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    background: #5179DF;
+    position: absolute;
+    top: 19%;
+    left: 6px;
+    font-family: Tahoma;
+}
+
+/*
+ * Success Message
+ */
+.msg_success{
+    color: #376C38;
+    background: #EFFCEC;
+    border: 1px solid #219A0C;
+    padding-left: 30px;
+}
+
+.msg_success::before{    
+    position: absolute;
+    content:  "\2713 ";
+    font-weight: bold; 
+    color: #fff;
+    top: 20%;
+    left: 6px;
+    font-family: Tahoma;
+    background: #62B64F;
+    border-radius: 1.1em;
+    padding: 0 4px;
+    font-size: 14px;
+}
+
+/*
+ * Alert Message
+ */
+.msg_alert{
+    color: #C0070B;
+    background: #FCE9E9;
+    border: 1px solid #FF9FA1;
+    padding-left: 30px;
+}
+
+.msg_alert::before{
+    content: '\2716';
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.3em;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 1.1em;
+    background: #D05F5D;
+    position: absolute;
+    top: 20%;
+    left: 6px;
+    font-family: Tahoma;
+}
+
+/*
+ * Warning Message
+ */
+.msg_warn{
+    color: #6C542C;
+    background: #FDFBF4;
+    border: 1px solid #EAC26D;
+    padding-left: 40px;
+}
+
+.msg_warn::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 16px solid #CCCF02;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    position: absolute;
+    top: 20%;
+    left: 6px;
+}
+
+.msg_warn::after{
+    font-family: Tahoma;
+    position: absolute;
+    content: '!';
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    top: 18%;
+    left: 1.1em;
+    font-family: Tahoma;
+}

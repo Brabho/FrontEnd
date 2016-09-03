@@ -1,0 +1,91 @@
+.loading{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000;    
+    border-left-color: transparent;
+    border-radius: 100%;
+    box-shadow: 0 0 15px 1px #eee;	    
+}
+
+.loading_spin{
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    -ms-animation: spin 1s linear infinite;
+    -o-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.loading_cb{
+    border-color: #3498db;
+    border-right-color: transparent;
+}
+
+.loading_cr{    
+    border-color: #C10707;
+    border-right-color: transparent;
+}
+
+.loading_cg{    
+    border-color: #0BB407;
+    border-right-color: transparent;
+}
+
+.loading_cy{    
+    border-color: #FEF238;
+    border-right-color: transparent;
+}
+
+.loading_2{
+    border-right-color: transparent;
+}
+
+.loading_3{
+    border-bottom-color: transparent;
+}
+
+.loading_ss{
+    width: 15px;
+    height: 15px;
+    border-width: 4px;
+}
+
+.loading_sm{
+    width: 30px;
+    height: 30px;
+    border-width: 8px;
+}
+
+.loading_sb{
+    width: 60px;
+    height: 60px;
+    border-width: 16px;
+}
+
+@-moz-keyframes spin{
+    from { -moz-transform: rotate(0deg); opacity: 0.4; }
+    50%  { -moz-transform: rotate(180deg); opacity: 1; }
+    to   { -moz-transform: rotate(360deg); opacity: 0.4; }
+}
+@-webkit-keyframes spin{
+    from { -webkit-transform: rotate(0deg); opacity: 0.4; }
+    50%  { -webkit-transform: rotate(180deg); opacity: 1; }
+    to   { -webkit-transform: rotate(360deg); opacity: 0.4; }
+}
+@-ms-keyframes spin{
+    from { -ms-transform: rotate(0deg); opacity: 0.4; }
+    50%  { -ms-transform: rotate(180deg); opacity: 1; }
+    to   { -ms-transform: rotate(360deg); opacity: 0.4; }
+}
+@-o-keyframes spin{
+    from { -o-transform: rotate(0deg); opacity: 0.4; }
+    50%  { -o-transform: rotate(180deg); opacity: 1; }
+    to   { -o-transform: rotate(360deg); opacity: 0.4; }
+}
+@keyframes spin{
+    from { transform: rotate(0deg);   opacity: 0.2; }
+    50%  { transform: rotate(180deg); opacity: 1.0; }
+    to   { transform: rotate(360deg); opacity: 0.2; }
+}

@@ -1,0 +1,21 @@
+.success{
+	color: #376C38;
+	display: inline;
+	position: relative;
+	text-decoration: none;
+	padding: 2px 4px 2px 24px;
+}
+
+.success::before{
+	position: absolute;
+    content:  "\2713 ";
+    font-weight: bold; 
+    color: #fff;
+    top: 0;
+    left: 0;
+    font-family: Tahoma;
+    background: #62B64F;
+    border-radius: 1.1em;
+    padding: 0 4px;
+    font-size: 14px;
+}

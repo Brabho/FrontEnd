@@ -1,0 +1,23 @@
+.more{
+	display: inline;
+	position: relative;
+	text-decoration: none;
+	padding-right: 4px;
+}
+
+.more_d::after{
+	content: '';
+	left: 100%;
+	top: 0.2em;
+	position: absolute;
+	box-shadow: 0 0.4em 0 0 #666, 0 0.8em 0 0 #666;
+	background: #666;
+	width: 3px;
+  	height: 3px;
+}
+
+.more_v::after{
+	content: '\25BC';
+	left: 100%;
+	padding-left: 2px;
+}

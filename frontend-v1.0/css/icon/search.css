@@ -1,0 +1,32 @@
+.search{
+	display: inline;
+	position: relative;
+	text-decoration: none;
+	padding: 0 4px 2px 22px;
+}
+
+.search::before{
+	border-radius: 100%;
+	border: 2px solid #666;
+	content: '';
+	width: 6px;
+	height: 6px;
+	left: 0;
+	top: 0.1em;
+	position: absolute;
+}
+
+.search::after{
+	border-top: 2px solid #666;
+	width: 8px;
+	height: 1px;
+	content: '';
+	left: 0.7em;
+	top: 0.75em;
+	position: absolute;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	-o-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+}

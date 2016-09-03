@@ -1,0 +1,15 @@
+a,
+.link{
+    background: none;
+    border: 0;
+    color: #116AFF;
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+}
+
+a:hover,
+.link:hover{
+    color: #024FCF;
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+.badge,
+.label{
+    display: inline;
+    background: #666;
+    color: #fff;
+    font-weight: bold;
+}
+
+.badge{
+    border-radius: 1.1em;
+    padding: 1px 5px;
+}
+
+.label{
+    border-radius: 4px;
+    padding: 1px 3px;
+}
