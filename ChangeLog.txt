@@ -1,4 +1,4 @@
-* FrontEnd *
+* FrontEnd ChangeLog *
 
 -03-09-2016-
 	Initial released
