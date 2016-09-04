@@ -11,6 +11,13 @@ No other library or framework.
 
 Useful, Powerful, LightWeight & Fast
 
+    Let us know:
+        your review.
+        if you found any bug/error.
+        if you want to contribute. 
+
+ThankYou
+
 ## License
 (C) 2015
 View in App Version
