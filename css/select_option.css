@@ -1,0 +1,39 @@
+/*
+ * Select Option Drop Down
+ * Require JS
+ * Optional: drop_down_box.css & btn.css (More Style & Effect) 
+ */
+.drop_down_box {
+    margin-top: 8px;
+    padding: 0;
+    display: none;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+.select_option{
+    display: none;
+    float: left;
+}
+
+.select_option .set{
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+
+.set::after{
+    content: ' \25BC';
+}
+
+.select_option .option{
+    display: block;
+    clear: both;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.select_option .option:hover{
+    background: #eee;
+}

@@ -1,0 +1,32 @@
+/*
+ * Share Icon
+ */
+.share{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+    padding: 0 4px 2px 26px;
+}
+
+.share::before{
+    border-radius: 20px 0 0 0;
+    border-top: 5px solid #aaa;
+    width: 12px;
+    height: 8px;
+    position: absolute;	
+    content: '';
+    top: 0.3em;
+    left: 0;
+}
+
+.share::after{
+    width: 0;
+    height: 0;
+    position: absolute;	
+    content: '';
+    top: 0.1em;
+    left: 12px;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #aaa;
+    border-top: 6px solid transparent;
+}

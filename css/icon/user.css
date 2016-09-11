@@ -1,0 +1,32 @@
+/*
+ * User Icon
+ */
+.user{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+    padding: 1px 4px 2px 23px;
+}
+
+.user::before{
+    border-radius: 10px 10px 4px 4px;
+    background: #bbb;
+    width: 17px;
+    height: 14px;
+    position: absolute;	
+    content: '';
+    top: 5px;
+    left: 0;
+}
+
+.user::after{
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background: #aaa;
+    position: absolute;	
+    content: '';
+    top: -1px;
+    left: 4px;
+    border-bottom: 2px solid #fff;
+}

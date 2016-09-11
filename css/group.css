@@ -1,0 +1,58 @@
+/*
+ * Group Vertical 
+ */
+.group{
+    display: inline-block;
+    list-style: none;
+    margin: 8px 2px;
+    vertical-align:top;
+    text-align: center;
+    font-size: 0;
+    margin: 0;
+}
+
+.group li{
+    font-size: 12px;
+    padding: 3px 6px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+}
+
+.group li:first-child{
+    border-radius: 3px 3px 0 0;
+}
+
+.group li:last-child{
+    border-radius: 0 0 3px 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.group li.active,
+.group li:hover{
+    background: #f1f1f1;
+}
+
+/*
+ * Group Horizontal 
+ */
+.group_h li{
+    display: inline-block;
+    border: 1px solid #ccc; 
+    border-right: 0;
+}
+
+.group_h li:first-child{
+    border-radius: 3px 0 0 3px;
+}
+
+.group_h li:last-child{
+    border-radius: 0 3px 3px 0;
+    border-right: 1px solid #ccc;
+}
+
+/*
+ * Active Group
+ */
+.group li.active{
+    font-weight: bold;
+}

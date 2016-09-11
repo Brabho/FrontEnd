@@ -1,6 +1,6 @@
 # FrontEnd
 
-## Description
+### Description
 This is for frontend development.
 
 Its a mini & basic library for developer.
@@ -16,11 +16,43 @@ Useful, Powerful, LightWeight & Fast
         if you found any bug/error.
         if you want to contribute. 
 
-ThankYou
+Thank You
 
-## License
-(C) 2015
-View in App Version
+### Version 
+Alpha Version 1.0.1
 
-## Example
-View in App Version
+### License
+(C) 2015 - 2016
+under GNU General Public License Version 2.
+
+### Example
+```html
+	<link rel="stylesheet" type="text/css" href="FrontEnd/css/btn.css"  />
+	<button>Button</button>
+	<button class="btn_cbu">Blue Button</button>
+
+	<link rel="stylesheet" type="text/css" href="FrontEnd/css/icon/home.css"  />
+	<div class="home"></div>
+
+	<script type="text/javascript" src="FrontEnd/js/ajax.js"></script>
+	<script type="text/javascript">
+		ajax({
+			url: 'http://example.com',
+			data: {
+				username: document.getElementById('username'),
+				password: document.getElementById('password')
+			},
+			meth: 'POST',
+			
+			/*
+			 * Others
+			 * type: ,
+			 * file: 'true'/'false',
+			 * x_req_wid: 'show'/'hide'
+			 */
+
+		}, function(data) {
+			alert(data);
+		});
+	</script>
+```

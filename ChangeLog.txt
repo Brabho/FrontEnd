@@ -1,8 +1,25 @@
 * FrontEnd ChangeLog *
 
--03-09-2016-
-	Initial released
-	Alpha Version 1.0
+--11-09-2016--
+	Alpha Version
+	Added:
+		select_option.css
+		select_option.js,
+		notify in label_badge.css
+	
+	Improved:
+		btn.css,
+		drop_down_box.css
+		valid.js,
+		visitor.js,
 
--2015-
+	Bug Fixed:
+		ajax.js,
+		cf.js
+
+--03-09-2016--
+	Alpha Version
+	Initial released	
+
+--2015--
 	First made
