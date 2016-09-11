@@ -47,8 +47,8 @@ under GNU General Public License Version 2.
 			/*
 			 * Others
 			 * type: ,
-			 * file: 'true'/'false',
-			 * x_req_wid: 'show'/'hide'
+			 * file: true/false,
+			 * x_req_wid: true/false
 			 */
 
 		}, function(data) {
