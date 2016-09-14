@@ -2,20 +2,22 @@
 
 #### 14-09-2016
 	Stable Version 1.0.2
+	
 	Improved:
-	drop_nav.css
-	check_radio.css 
+		drop_nav.css
+		check_radio.css 
 
 	Added:
-	check.css
-	radio.css
-	`drop_nav_act` in icon/drop_nav.css (Cross Mark)
+		check.css
+		radio.css
+		`drop_nav_act` in icon/drop_nav.css (Cross Mark)
 
 	Removed:
 	check_radio.css
 
 #### 11-09-2016
 	Alpha Version 1.0.1
+	
 	Added:
 		select_option.css
 		select_option.js,
