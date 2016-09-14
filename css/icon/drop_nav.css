@@ -1,6 +1,7 @@
 /*
  * Drop Down Nav Icon
  * Responsive Nav Icon
+ * Active and Cross Mark
  */
 .drop_nav{
     display: inline;
@@ -9,15 +10,21 @@
     padding: 1px 4px 2px 25px;
 }
 
-.drop_nav::before{
+.drop_nav::before,
+.drop_nav::after,
+.drop_nav_d::after,
+.drop_nav_act::after{
     content: '';
     left: 0;
     top: 0.2em;
     position: absolute;
-    box-shadow: 0 0.4em 0 0 #666, 0 0.8em 0 0 #666;
     background: #666;
-    width: 20px;
-    height: 3px;  	
+    height: 3px; 
+}
+
+.drop_nav::before{    
+    box-shadow: 0 0.4em 0 0 #666, 0 0.8em 0 0 #666;
+    width: 20px;     	
 }
 
 .drop_nav_d::before {
@@ -26,12 +33,30 @@
 }
 
 .drop_nav_d::after{
-    content: '';
-    left: 0;
-    top: 0.2em;
-    position: absolute;
     box-shadow: 0 0.4em 0 0 #666, 0 0.8em 0 0 #666;
-    background: #666;
     width: 3px;
-    height: 3px;  
+}
+
+.drop_nav_d:active::before,
+.drop_nav:active::before,
+.drop_nav_act::before,
+.drop_nav_d:active::after,
+.drop_nav:active::after,
+.drop_nav_act::after{
+    width: 20px;
+    left: 0;
+    top: 0.6em;
+    box-shadow: 0 0 #fff;
+}
+
+.drop_nav_d:active::before,
+.drop_nav:active::before,
+.drop_nav_act::before{
+    transform: rotate(45deg);
+}
+
+.drop_nav_d:active::after,
+.drop_nav:active::after,
+.drop_nav_act::after{
+    transform: rotate(-45deg);
 }

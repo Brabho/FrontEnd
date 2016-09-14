@@ -1,0 +1,40 @@
+/*
+ * Styled Checkbox
+ */
+.check{
+    display: inline-block;
+}
+
+.check input[type='checkbox']{
+    display: none;
+}
+
+.check label{
+    position: relative;
+    padding: 0 5px 0 19px;
+}
+
+.check label::before{
+    position: absolute;
+    content: '';
+    border-radius: 4px;
+    left: 0;
+    border: 1px solid #3399FF;
+    background: #fff;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 2px;
+    line-height: 1em;
+    box-sizing: border-box;
+}
+
+.check label:hover::before{
+    box-shadow: 0 2px 2px #ddd;
+}
+
+.check input[type='checkbox']:checked + label::before{
+    background: #3399FF;
+    content:  "\2713 ";
+}

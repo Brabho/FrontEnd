@@ -1,0 +1,29 @@
+/*
+ * Content Separator 
+ */
+.con_sep{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.con_sep .con_sep_head{
+    padding: 3px;
+    clear: both;
+    display: block;
+    background: #ddd;
+    text-shadow: 1px 1px #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.con_sep .con_sep_head .con_sep_option{
+    font-size: 12px;
+    text-shadow: none;
+    color: #444;
+    float: right;
+    font-weight: normal;
+}
+
+.con_sep .con_sep_body{
+    padding: 5px;
+}

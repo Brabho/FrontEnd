@@ -7,9 +7,7 @@ Its a mini & basic library for developer.
 
 Pure Css and JavaScript. 
 
-No other library or framework.
-
-Useful, Powerful, LightWeight & Fast
+Powerful & LightWeight
 
     Let us know:
         your review.
@@ -19,7 +17,7 @@ Useful, Powerful, LightWeight & Fast
 Thank You
 
 ### Version 
-Alpha Version 1.0.1
+Stable Version 1.0.2
 
 ### License
 (C) 2015 - 2016
