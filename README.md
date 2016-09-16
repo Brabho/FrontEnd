@@ -9,7 +9,7 @@ Pure Css and JavaScript.
 
 Powerful & LightWeight
 
-    Let us know:
+    Let me know:
         your review.
         if you found any bug/error.
 
