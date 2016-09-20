@@ -31,7 +31,7 @@ var cf = {
     /*
      * Random Number
      */
-    rannum: function (length) {
+    ranNum: function (length) {
         if (typeof (length) === 'undefined') {
             length = '40';
         }
@@ -44,7 +44,7 @@ var cf = {
     /*
      * Random String
      */
-    ranstr: function (length) {
+    ranStr: function (length) {
         if (typeof (length) === 'undefined') {
             length = '40';
         }

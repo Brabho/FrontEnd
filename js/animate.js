@@ -49,35 +49,39 @@ var animate = {
      */
     slide: function (elem, updown, time) {
         if (typeof (time) === 'undefined') {
-            time = '5';
+            time = '20';
         }
         if (typeof (updown) === 'undefined') {
-            updown = 'down';
+            updown = 'up';
         }
         elem.style.overflow = 'hidden';
+
         switch (updown) {
-            case 'up':
-                var hei = elem.clientHeight;
+            case 'down':
+                var height = window.getComputedStyle(elem).getPropertyValue('height');
+                height = height.toString().replace(/px/i, "");
+                var hei = 0;
+                elem.style.height = '0px';
+                elem.style.display = 'block';
                 var setInt = setInterval(function () {
-                    hei--;
-                    if (hei <= 0) {
-                        elem.style.display = 'none';
-                        clearInterval('setInt');
+                    hei++;
+                    if (hei > height) {
+                        clearInterval(setInt);
+                        elem.setAttribute('style', 'display: block');
                     } else {
                         elem.style.height = hei + 'px';
                     }
                 }, time);
                 break;
 
-            case 'down':
-                var hei = '0';
-                elem.style.display = 'block';
-                var ele_hei = elem.clientHeight;
+            case 'up':
+                var height = elem.clientHeight;
+                var hei = elem.clientHeight;
                 var setInt = setInterval(function () {
-                    hei++;
-                    if (hei >= ele_hei) {
-                        hei = elem.clientHeight;
+                    hei--;
+                    if (hei < 0) {
                         clearInterval(setInt);
+                        elem.setAttribute('style', 'display: none');
                     } else {
                         elem.style.height = hei + 'px';
                     }

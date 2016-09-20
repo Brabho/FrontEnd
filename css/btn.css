@@ -23,10 +23,6 @@ input[type="reset"],
     cursor: pointer;
     text-decoration: none;
     border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
-    -ms-border-radius:3px;
     border: 1px solid #bbb;
     background: #ddd;
     background-image: linear-gradient(top, #F3F3F3, #EBEBEB);
@@ -64,10 +60,6 @@ input[type="reset"]:active,
 
 .btn_circle{
     border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -o-border-radius: 1em;
-    -ms-border-radius:1em;
     padding: 0 2px;
     font-weight: bold;
     padding: 1px 4px;

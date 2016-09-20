@@ -1,8 +1,34 @@
 # Change Log & History
 
+#### 20-09-2016
+	Stable Version 1.3
+	Review All Files
+
+	Improved:
+		Stability
+		btn.css
+		check.css
+		pagination.css
+		radio.css
+		help.css (icon)
+		user.css (icon)
+		warn.css (icon)
+
+	Changed:
+		`.active` to `.group_act` in group.css
+		`.active` to `.pagi_act` in pagination.css
+
+	Bug Fixed:
+		highlight.css
+		msg.css
+		general.css (icon)
+		search.css (icon)
+		animate.js
+		visitor.js
+
 #### 14-09-2016
 	Stable Version 1.0.2
-	
+
 	Improved:
 		drop_nav.css
 		check_radio.css 

@@ -35,7 +35,7 @@ table td,
 }
 
 /*
- * No border at all
+ * No borders
  */
 .table_noborder th:nth-child(odd),
 .table_noborder th:nth-child(even),

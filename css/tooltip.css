@@ -1,14 +1,15 @@
 /*
  * Tooltip 
- * Use: <a class="tooltip" data-tooltip="Title Here"></a>
+ * Use: <a class="tooltip" data-tooltip="Title Here">Tooltip</a>
  */
 .tooltip{
     position: relative;
+    display: inline-block;
 }
 
 .tooltip::before{
     top: 1.6em;
-    left: 0;
+    left: 0;    
     content: attr(data-tooltip);
     color: #fff;
     padding: 2px 4px;

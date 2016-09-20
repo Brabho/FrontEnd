@@ -1,5 +1,5 @@
 /*
- * Get Element(s) By 
+ * Document Get Element(s) By 
  */
 function getEB(attr_deti, callback) {
     var attr_deti1 = Object.keys(attr_deti);

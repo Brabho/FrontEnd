@@ -17,6 +17,7 @@
     border: 1px solid #ddd;
     border-radius: 3px;
     background: #F8F8F8;
+    cursor: pointer;
 }
 
 .pagination li:first-child{
@@ -28,9 +29,11 @@
     background: #eee;
 }
 
-.pagination .active,
+.pagination .pagi_act,
 .pagination li:active{
     border: 1px solid #e1e1e1;
     background: #FCFCFC;
     color: #A99999;
+    cursor: default;
+    pointer-events: none;
 }

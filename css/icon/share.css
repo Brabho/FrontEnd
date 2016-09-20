@@ -24,9 +24,9 @@
     height: 0;
     position: absolute;	
     content: '';
-    top: 0.1em;
+    top: 0;
     left: 12px;
-    border-bottom: 6px solid transparent;
+    border-bottom: 7px solid transparent;
     border-left: 10px solid #aaa;
     border-top: 6px solid transparent;
 }

@@ -2,7 +2,7 @@
  * Lightbox
  * Require JS for Close
  */
-.lightbox_bgb{background: rgba(0,0,0,0.7);}
+.lightbox_bgb{background: rgba(0,0,0,0.6);}
 .lightbox_bgw{background: rgba(255,255,255,0.7);}
 
 /*
@@ -22,14 +22,6 @@
 }
 
 /*
- * Lightbox Close Button
- */
-.lightbox_close{
-    float: right;
-    cursor: pointer;
-}
-
-/*
  * Lightbox Container 
  */
 .lightbox_con{
@@ -40,4 +32,14 @@
     margin: 5% auto;
     border: 1px solid #888;
     background: #fff;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+/*
+ * Lightbox Close Button
+ */
+.lightbox_close{
+    float: right;
+    cursor: pointer;
 }

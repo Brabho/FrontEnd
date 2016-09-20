@@ -16,7 +16,7 @@ Powerful & LightWeight
 Thank You
 
 ### Version 
-Stable Version 1.0.2
+Stable Version 1.3
 
 ### License
 (C) 2015 - 2016
@@ -24,12 +24,18 @@ under GNU General Public License Version 2.
 
 ### Example
 ```html
-	<link rel="stylesheet" type="text/css" href="FrontEnd/css/btn.css"  />
+	<link rel="stylesheet" type="text/css" href="css/btn.css"  />
 	<button>Button</button>
 	<button class="btn_cbu">Blue Button</button>
 
-	<link rel="stylesheet" type="text/css" href="FrontEnd/css/icon/home.css"  />
+	<link rel="stylesheet" type="text/css" href="css/icon/home.css"  />
 	<div class="home"></div>
+    
+    <link rel="stylesheet" type="text/css" href="css/check.css"  />
+	<div class="check">
+        <input type="checkbox" id="check"/>
+        <label for="check">Check Box</label>
+    </div>
 
 	<script type="text/javascript" src="FrontEnd/js/ajax.js"></script>
 	<script type="text/javascript">
@@ -40,7 +46,7 @@ under GNU General Public License Version 2.
 				password: document.getElementById('password')
 			},
 			meth: 'POST',
-			
+
 			/*
 			 * Others
 			 * type: ,
@@ -52,4 +58,13 @@ under GNU General Public License Version 2.
 			alert(data);
 		});
 	</script>
+    
+    <script type="text/javascript" src="FrontEnd/js/geteb.js"></script>
+    <script type="text/javascript">
+    getEB({
+        class: 'elem'
+    }, function (elm) {
+        alert(elm.innerHTML);
+    });
+    </script>
 ```

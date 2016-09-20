@@ -14,7 +14,7 @@
 }
 
 /*
- * Start Loading Ainmation / Spin
+ * Start Spin Loading Animation
  */
 .loading_spin{
     -webkit-animation: spin 1s linear infinite;

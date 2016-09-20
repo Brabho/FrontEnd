@@ -27,11 +27,6 @@
     border-bottom: 1px solid #ccc;
 }
 
-.group li.active,
-.group li:hover{
-    background: #f1f1f1;
-}
-
 /*
  * Group Horizontal 
  */
@@ -51,8 +46,13 @@
 }
 
 /*
- * Active Group
+ * Hover & Active Group
  */
-.group li.active{
+.group li.group_act,
+.group li:hover{
+    background: #f1f1f1;
+}
+
+.group li.group_act{
     font-weight: bold;
 }

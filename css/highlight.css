@@ -11,6 +11,9 @@ code,
     display: inline-block;
 }
 
+/*
+ * Red Colour
+ */
 .code_r{
     border: 1px solid #F6D3D5;
     color: #C24147;
@@ -19,9 +22,7 @@ code,
 code,
 code *,
 .code,
-.code *,
-.code_r,
-.code_r *{
+.code *{
     font-family: monospace;
 }
 
@@ -38,25 +39,25 @@ blockquote,
     position: relative;
 }
 
-blockquote:before,
-.bquote:before,
-blockquote:after,
-.bquote:after{
+blockquote::before,
+.bquote::before,
+blockquote::after,
+.bquote::after{
     text-indent: 0;
     color: #888;
     font-size: 4em;
     position: absolute;
 }
 
-blockquote:before,
-.bquote:before{    
+blockquote::before,
+.bquote::before{    
     content: open-quote;
     line-height: 0.15em;
     left: 0;
 }
 
-blockquote:after,
-.bquote:after{
+blockquote::after,
+.bquote::after{
     content: close-quote;
     margin-top: -2px;
     margin: -2px 5px 0 0;

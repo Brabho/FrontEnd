@@ -5,21 +5,21 @@ var valid = {
     /*
      * Alphabet 
      */
-    alpha: function (param) {
-        if (typeof (param['let']) === 'undefined') {
-            param['let'] = 'all';
+    alpha: function (alpha, check) {
+        if (typeof (check) === 'undefined') {
+            check = 'all';
         }
-        switch (param['let']) {
+        switch (check) {
             case 'all':
-                return ((/^[a-zA-Z\ ]+$/).test(param['alpha']));
+                return ((/^[a-zA-Z]+$/).test(alpha));
                 break;
 
             case 'low':
-                return ((/^[a-z\ ]+$/).test(param['alpha']));
+                return ((/^[a-z]+$/).test(alpha));
                 break;
 
             case 'up':
-                return ((/^[A-Z\ ]+$/).test(param['alpha']));
+                return ((/^[A-Z]+$/).test(alpha));
                 break;
         }
     },

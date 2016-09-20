@@ -3,7 +3,7 @@
  */
 var visitor = {
     /*
-     * HTML5 property (No Call)
+     * HTML5 property (Dont Call)
      */
     htmCheckOne: function () {
         var element = document.createElement('input');
@@ -35,7 +35,7 @@ var visitor = {
      * Check HTML 5
      */
     html5: function () {
-        return (this.chtmCheckOne() || this.chtmCheckTwo() || this.chtmCheckThree());
+        return (this.htmCheckOne() || this.htmCheckTwo() || this.htmCheckThree());
     },
     /*
      * Check CSS 3
