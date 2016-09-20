@@ -37,7 +37,7 @@ under GNU General Public License Version 2.
         <label for="check">Check Box</label>
     </div>
 
-	<script type="text/javascript" src="FrontEnd/js/ajax.js"></script>
+	<script type="text/javascript" src="js/ajax.js"></script>
 	<script type="text/javascript">
 		ajax({
 			url: 'http://example.com',
@@ -59,7 +59,7 @@ under GNU General Public License Version 2.
 		});
 	</script>
     
-    <script type="text/javascript" src="FrontEnd/js/geteb.js"></script>
+    <script type="text/javascript" src="js/geteb.js"></script>
     <script type="text/javascript">
     getEB({
         class: 'elem'
