@@ -6,10 +6,10 @@ var cookie = {
      * Set Cookie
      */
     set: function (param) {
-        if (typeof (param['extime']) === 'undefined') {
-            param['extime'] = '86400';
+        if (typeof (param['extime']) === undefined) {
+            param['extime'] = 86400;
         }
-        if (typeof (param['path']) === 'undefined') {
+        if (typeof (param['path']) === undefined) {
             param['path'] = '/';
         }
         var date = new Date();
@@ -21,7 +21,7 @@ var cookie = {
      * Get Cookie
      */
     get: function (name) {
-        var result = 'cookie_false';
+        var result = false;
         var s_cookie = document.cookie.trim().split(';');
         for (var i = 0; i < s_cookie.length; i++) {
             var ss_cookie = s_cookie[i].split('=');
@@ -34,5 +34,30 @@ var cookie = {
             }
         }
         return result;
+    },
+    /*
+     * Remove Cookie
+     */
+    remove: function (name, path) {
+        if (typeof (path) === undefined) {
+            path = '/';
+        }
+        var date = new Date();
+        date.setTime(date.getTime() - (86400 * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + date.toUTCString();
+        document.cookie = name + '=' + '' + '; ' + expires + '; ' + path;
+    },
+    /*
+     * Remove All Cookies
+     */
+    removeAll: function (path) {
+        if (typeof (path) === undefined) {
+            path = '/';
+        }
+        var s_cookie = document.cookie.trim().split(';');
+        for (var i = 0; i < s_cookie.length; i++) {
+            var ss_cookie = s_cookie[i].split('=');
+            this.remove(ss_cookie[0], path);
+        }
     }
 };

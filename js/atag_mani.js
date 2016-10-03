@@ -1,5 +1,5 @@
 /*
- * A tag Manipulate 
+ * A tag Manipulate
  * 1. Open Outbound Link in New Tag
  * 2. Return False if link end with '#'
  */

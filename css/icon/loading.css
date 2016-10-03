@@ -4,13 +4,13 @@
 .loading{
     width: 10px;
     height: 10px;
-    display: inline-block;
+    display: inline-block;    
+    box-shadow: 0 0 15px 1px #eee;
     border-width: 2px;
     border-style: solid;
     border-color: #000;    
     border-left-color: transparent;
     border-radius: 100%;
-    box-shadow: 0 0 15px 1px #eee;	    
 }
 
 /*

@@ -1,5 +1,25 @@
 # Change Log & History
 
+#### 03-10-2016
+        Stable Version 1.4
+        Review All Files
+        Minor Bug Fixed
+
+        Improved:
+            animate.js
+            check.css
+            radio.css
+            msg.css
+            alert.css    (icon)
+            comment.css  (icon)
+            drop_nav.css (icon)
+            general.css  (icon)
+            home.css     (icon)
+            more.css     (icon)
+
+        Added:
+            Remove Cookie (Single or All)
+
 #### 20-09-2016
 	Stable Version 1.3
 	Review All Files

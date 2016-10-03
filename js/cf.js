@@ -32,7 +32,7 @@ var cf = {
      * Random Number
      */
     ranNum: function (length) {
-        if (typeof (length) === 'undefined') {
+        if (typeof (length) === undefined) {
             length = '40';
         }
         var value = '';
@@ -45,7 +45,7 @@ var cf = {
      * Random String
      */
     ranStr: function (length) {
-        if (typeof (length) === 'undefined') {
+        if (typeof (length) === undefined) {
             length = '40';
         }
         var value = '';

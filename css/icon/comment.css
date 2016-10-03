@@ -10,7 +10,7 @@
 
 .comment::before{
     border-radius: 3px;
-    background: #ccc;
+    background: #bbb;
     width: 16px;
     height: 12px;
     position: absolute;	
@@ -28,5 +28,5 @@
     left: 0.4em;
     border-left: 0 solid transparent;
     border-right: 8px solid transparent;
-    border-top: 7px solid #ccc;
+    border-top: 7px solid #bbb;
 }

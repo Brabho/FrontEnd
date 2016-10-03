@@ -6,7 +6,7 @@ var valid = {
      * Alphabet 
      */
     alpha: function (alpha, check) {
-        if (typeof (check) === 'undefined') {
+        if (typeof (check) === undefined) {
             check = 'all';
         }
         switch (check) {

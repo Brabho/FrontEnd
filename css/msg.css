@@ -22,9 +22,7 @@
     content: 'i';
     color: #fff;
     text-align: center;
-    font-size: 18px;
     line-height: 1.0em;
-    font-weight: bold;
     width: 19px;
     height: 19px;
     border-radius: 100%;
@@ -32,6 +30,8 @@
     position: absolute;
     top: 20%;
     left: 6px;
+    font-size: 17px;
+    font-weight: bold;
     font-family: Tahoma;
 }
 
@@ -74,7 +74,7 @@
 
 .msg_success::before{    
     position: absolute;
-    content:  "\2713 ";
+    content: '\2713';
     font-weight: bold; 
     color: #fff;
     top: 20%;

@@ -11,14 +11,14 @@
 
 .success::before{
     position: absolute;
-    content:  "\2713 ";
-    font-weight: bold; 
+    content: '\2713';
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Tahoma;
     color: #fff;
     top: 0;
-    left: 0;
-    font-family: Tahoma;
+    left: 0;    
     background: #62B64F;
     border-radius: 1.1em;
     padding: 0 4px;
-    font-size: 14px;
 }

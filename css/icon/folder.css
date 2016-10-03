@@ -13,7 +13,7 @@
 .folder::before{
     width: 16px;
     height: 12px;
-    background: #bbb;
+    background: #c4c4c4;
     top: 4px;
     left: 0;
     content: '';

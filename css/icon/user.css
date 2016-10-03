@@ -22,7 +22,7 @@
 .user::after{
     width: 9px;
     height: 9px;
-    border-radius: 100%;
+    border-radius: 1.1em;
     background: #aaa;
     position: absolute;	
     content: '';

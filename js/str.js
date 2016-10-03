@@ -18,7 +18,7 @@ var str = {
         return str.charAt(0).toUpperCase() + str.slice(1);
     },
     /*
-     * Mod Trim 
+     * Mod Trim Function
      */
     trims: function (str, charlist) {
         str = str.trim();

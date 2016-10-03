@@ -20,6 +20,7 @@
     position: absolute;
     content: '';
     border-radius: 100%;
+    transition: all 0.3s;
 }
 
 .radio label::before{
@@ -36,7 +37,7 @@
     left: 0.25em;
     top: 0.2em;
     background: #3399FF;
-    display: none;
+    opacity: 0;
 }
 
 .radio label:hover::before{
@@ -44,5 +45,5 @@
 }
 
 .radio input[type='radio']:checked + label::after{
-    display: block;
+    opacity: 1;
 }

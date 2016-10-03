@@ -29,6 +29,7 @@
     padding-left: 2px;
     line-height: 1em;
     box-sizing: border-box;
+    transition: all 0.3s;
 }
 
 .check label:hover::before{

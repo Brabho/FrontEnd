@@ -12,11 +12,14 @@
     background: #bbb;
     width: 14px;
     height: 12px;
-    position: absolute;	
-    content: '';
+    position: absolute;
     top: 5px;
     left: 0;
     color: #fff;
+    font-size: 10px;
+    content: '\220E';
+    padding: 0.2em 0 0 0.35em;
+    box-sizing: border-box
 }
 
 .home::after{
@@ -26,7 +29,7 @@
     content: '';
     top: -2px;
     left: -4px;
-    border-bottom: 10px solid #aaa;
+    border-bottom: 10px solid #b5b5b5;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
 }
