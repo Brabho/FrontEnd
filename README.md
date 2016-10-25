@@ -10,7 +10,7 @@ Pure Css and JavaScript.
 Powerful & LightWeight
 
 ### Version 
-Stable Version 1.4
+Stable Version 1.5
 
 ### License
 (C) 2015 - 2016
@@ -46,7 +46,7 @@ under GNU General Public License Version 2.
 			meth: 'POST',
 
 			/*
-			 * Others
+			 * -- Others --
 			 * type: ,
 			 * file: true/false,
 			 * x_req_wid: true/false

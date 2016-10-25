@@ -2,7 +2,7 @@
  * Styled Checkbox
  */
 .check{
-    display: inline-block;    
+    display: inline-block;
 }
 
 .check input[type='checkbox']{
@@ -26,6 +26,7 @@
     height: 15px;
     color: #fff;
     font-weight: bold;
+    font-size: 12px;
     padding-left: 2px;
     line-height: 1em;
     box-sizing: border-box;

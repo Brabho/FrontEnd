@@ -25,38 +25,6 @@
 }
 
 /*
- * Blue Colour
- */
-.loading_cb{
-    border-color: #3498db;
-    border-right-color: transparent;
-}
-
-/*
- * Red Colour
- */
-.loading_cr{    
-    border-color: #C10707;
-    border-right-color: transparent;
-}
-
-/*
- * Green Colour
- */
-.loading_cg{    
-    border-color: #0BB407;
-    border-right-color: transparent;
-}
-
-/*
- * Yellow Colour
- */
-.loading_cy{    
-    border-color: #FEF238;
-    border-right-color: transparent;
-}
-
-/*
  * Style 2
  */
 .loading_2{

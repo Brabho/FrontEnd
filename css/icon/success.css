@@ -13,11 +13,11 @@
     position: absolute;
     content: '\2713';
     font-weight: bold;
-    font-size: 13px;
-    font-family: Tahoma;
+    font-size: 12px;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
     color: #fff;
     top: 0;
-    left: 0;    
+    left: 0;
     background: #62B64F;
     border-radius: 1.1em;
     padding: 0 4px;

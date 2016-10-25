@@ -12,7 +12,8 @@
 .more_h::after{
     right: 0;
     padding-left: 3px;
-    font-weight: bold;    
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* 
@@ -20,7 +21,6 @@
  */
 .more_v::after{    
     content: '\205D';
-    font-size: 18px;
 }
 
 /* 
@@ -28,7 +28,6 @@
  */
 .more_h::after{
     content: '\2026';
-    font-size: 14px;
 }
 
 /*

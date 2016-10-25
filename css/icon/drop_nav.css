@@ -14,6 +14,7 @@
 .drop_nav::after,
 .drop_nav_d::after,
 .drop_nav_act::after{
+    font-size: 15px;
     content: '';
     left: 0;
     top: 0.2em;

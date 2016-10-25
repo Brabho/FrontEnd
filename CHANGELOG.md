@@ -1,24 +1,44 @@
 # Change Log & History
 
+#### 25-10-2016
+    Stable Version 1.5
+    Review All Files
+    Major Bugs Fixed
+
+    Bugs Fixed:
+        All Icons
+        msg.css
+
+    Improved:
+        msg.css
+        check.css
+        radio.css
+
+    Added:
+        New Colour Added in highlight.css > `code`
+
+    Removed:
+        Colour Removed in loading.css
+
 #### 03-10-2016
-        Stable Version 1.4
-        Review All Files
-        Minor Bug Fixed
+    Stable Version 1.4
+    Review All Files
+    Minor Bug Fixed
 
-        Improved:
-            animate.js
-            check.css
-            radio.css
-            msg.css
-            alert.css    (icon)
-            comment.css  (icon)
-            drop_nav.css (icon)
-            general.css  (icon)
-            home.css     (icon)
-            more.css     (icon)
+    Improved:
+        animate.js
+        check.css
+        radio.css
+        msg.css
+        alert.css    (icon)
+        comment.css  (icon)
+        drop_nav.css (icon)
+        general.css  (icon)
+        home.css     (icon)
+        more.css     (icon)
 
-        Added:
-            Remove Cookie (Single or All)
+    Added:
+        Remove Cookie (Single or All)
 
 #### 20-09-2016
 	Stable Version 1.3

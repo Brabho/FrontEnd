@@ -32,7 +32,7 @@
     left: 6px;
     font-size: 17px;
     font-weight: bold;
-    font-family: Tahoma;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -49,17 +49,17 @@
     content: '?';
     color: #fff;
     text-align: center;
-    font-size: 14px;
     line-height: 1.3em;
-    font-weight: bold;
     width: 19px;
     height: 19px;
     border-radius: 100%;
     background: #5179DF;
     position: absolute;
-    top: 19%;
+    top: 18%;
     left: 6px;
-    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -75,15 +75,15 @@
 .msg_success::before{    
     position: absolute;
     content: '\2713';
-    font-weight: bold; 
     color: #fff;
     top: 20%;
     left: 6px;
-    font-family: Tahoma;
     background: #62B64F;
     border-radius: 1.1em;
     padding: 0 4px;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -100,8 +100,6 @@
     content: 'X';
     color: #fff;
     text-align: center;
-    font-size: 14px;
-    font-weight: bold;
     width: 20px;
     height: 20px;
     border-radius: 1.1em;
@@ -109,7 +107,9 @@
     position: absolute;
     top: 20%;
     left: 6px;
-    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -123,6 +123,7 @@
 }
 
 .msg_warn::before{
+    font-size: 12px;
     content: '';
     width: 0;
     height: 0;
@@ -135,13 +136,12 @@
 }
 
 .msg_warn::after{
-    font-family: Tahoma;
     position: absolute;
     content: '!';
     color: #fff;
+    top: 18%;
+    left: 1.1em;
     font-size: 14px;
     font-weight: bold;
-    top: 0.4em;
-    left: 1.1em;
-    font-family: Tahoma;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }

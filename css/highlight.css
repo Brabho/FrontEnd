@@ -11,6 +11,13 @@ code,
     display: inline-block;
 }
 
+code,
+code *,
+.code,
+.code *{
+    font-family: monospace;
+}
+
 /*
  * Red Colour
  */
@@ -19,15 +26,25 @@ code,
     color: #C24147;
 }
 
-code,
-code *,
-.code,
-.code *{
-    font-family: monospace;
+/*
+ * Blue Colour
+ */
+.code_b{
+    border: 1px solid #9FD2F3;
+    color: #3278A6;
+}
+
+/*
+ * Green Colour
+ */
+.code_g{
+    border: 1px solid #91F48F;
+    color: #319D2E;
 }
 
 blockquote,
 .bquote{
+    clear: both;
     text-indent: 25px;
     border: 1px solid #ddd;
     border-left: 3px solid #bbb;
@@ -45,21 +62,21 @@ blockquote::after,
 .bquote::after{
     text-indent: 0;
     color: #888;
-    font-size: 4em;
+    font-size: 45px;
     position: absolute;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 blockquote::before,
-.bquote::before{    
+.bquote::before{
     content: open-quote;
-    line-height: 0.15em;
+    line-height: 0.05em;
     left: 0;
 }
 
 blockquote::after,
 .bquote::after{
     content: close-quote;
-    margin-top: -2px;
-    margin: -2px 5px 0 0;
-    right: 0;
+    bottom: -0.5em;
+    right: 15px;
 }

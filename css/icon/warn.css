@@ -18,7 +18,8 @@
     border-right: 12px solid transparent;
     position: absolute;
     top: 0.2em;
-    left: 0;	
+    left: 0;
+    font-size: 13px;
 }
 
 .warn::after{
@@ -29,5 +30,5 @@
     font-weight: bold;
     top: 0.2em;
     left: 0.7em;
-    font-family: Tahoma;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }

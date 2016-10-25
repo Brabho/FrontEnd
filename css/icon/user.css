@@ -16,10 +16,12 @@
     position: absolute;	
     content: '';
     top: 5px;
+    font-size: 12px;
     left: 0;
 }
 
 .user::after{
+    font-size: 12px;
     width: 9px;
     height: 9px;
     border-radius: 1.1em;

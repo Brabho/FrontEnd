@@ -8,6 +8,8 @@
     border: 1px solid #bbb;
     padding: 2px 4px;
     border-radius: 4px;
+    display: inline-block;
+    min-width: 10px;
 }
 
 .drop_down_box::before{
@@ -16,7 +18,7 @@
     position: absolute;
     content: '';
     top: -9px;
-    left: 45%;
+    left: 10%;
     border-bottom: 9px solid #999;
     border-left: 8px solid transparent;
     border-right: 9px solid transparent;
@@ -28,7 +30,7 @@
     position: absolute;
     content: '';
     top: -8px;
-    left: 45%;
+    left: 10%;
     border-bottom: 9px solid #fff;
     border-left: 8px solid transparent;
     border-right: 9px solid transparent;

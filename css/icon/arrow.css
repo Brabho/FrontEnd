@@ -14,7 +14,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: '';	
+    content: '';
+    font-size: 12px;
 }
 
 .arrow::before{background: #aaa;}

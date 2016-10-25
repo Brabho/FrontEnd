@@ -17,9 +17,11 @@
     content: '';
     top: 0.1em;
     left: 0;
+    font-size: 12px;
 }
 
 .comment::after{
+    font-size: 12px;
     width: 0;
     height: 0;
     position: absolute;	

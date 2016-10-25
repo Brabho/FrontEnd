@@ -16,15 +16,17 @@
     content: '';
     top: 0.3em;
     left: 0;
+    font-size: 12px;
 }
 
 .mail::after{
+    font-size: 12px;
     width: 0;
     height: 0;
     position: absolute;	
     content: '';
     top: 0.5em;
-    left: 0.05em;
+    left: 0.1em;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 6px solid #fff;
