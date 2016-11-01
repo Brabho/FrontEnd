@@ -3,17 +3,18 @@
  * Require JS
  * Optional: btn.css & drop_down_box.css (More Style & Effect) 
  */
-.drop_down_box {
+
+.select_option{
+    display: none;
+    float: left;
+}
+
+.select_option_box {
     margin-top: 8px;
     padding: 0;
     display: none;
     border: 1px solid #aaa;
     border-radius: 3px;
-}
-
-.select_option{
-    display: none;
-    float: left;
 }
 
 .select_option .set{

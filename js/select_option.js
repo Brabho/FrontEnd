@@ -26,7 +26,7 @@ window.addEventListener('load', function () {
         } else {
             set = '<div class="set btn">' + option_vals[option_vals.length - 1] + '</div>';
         }
-        inr_htm = '<div class="drop_down_box">';
+        inr_htm = '<div class="drop_down_box select_option_box">';
         for (var k = option_vals.length - 1; k > 0; k--) {
             inr_htm += '<div class="option">' + option_vals[k] + '</div>';
         }

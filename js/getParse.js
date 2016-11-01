@@ -1,5 +1,5 @@
 /*
- * Some Parse
+ * Get Parse
  */
 var getParse = {
     /*
@@ -13,7 +13,7 @@ var getParse = {
      * Get CSS Value
      */
     cssProp: function (param) {
-        return  window.getComputedStyle(param['elem']).getPropertyValue(param['prop']);
+        return window.getComputedStyle(param['elem']).getPropertyValue(param['prop']);
     },
     /*
      * Get Format Number Length

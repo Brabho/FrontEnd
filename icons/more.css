@@ -6,6 +6,10 @@
     position: relative;
     text-decoration: none;
     padding-right: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .more_v::after,

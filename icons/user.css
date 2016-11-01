@@ -6,6 +6,10 @@
     position: relative;
     text-decoration: none;
     padding: 1px 4px 2px 23px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .user::before{

@@ -1,5 +1,10 @@
 # Change Log & History
 
+#### 01-11-2016
+    Stable Version 1.6
+    Few Major Bugs Fixed
+    Minify Version Added
+
 #### 25-10-2016
     Stable Version 1.5
     Review All Files

@@ -8,6 +8,10 @@
     line-height: 20px;
     padding: 2px 4px 2px 22px;
     text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .folder::before{

@@ -8,6 +8,10 @@
     position: relative;
     text-decoration: none;
     padding: 1px 4px 2px 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .drop_nav::before,

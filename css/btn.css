@@ -1,18 +1,6 @@
 /*
  * Gradient Buttons Style, Colour 
  */
-button *,
-input[type="button"] *,
-input[type="submit"] *,
-input[type="reset"] *,
-.btn *{
-    display: inline-block;
-}
-
-button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
 .btn{
     font-weight: bold;
     color: #222;
@@ -31,10 +19,10 @@ input[type="reset"],
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F3F3F3), to(#EBEBEB));
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
+.btn *{
+    display: inline-block;
+}
+
 .btn:hover,
 .btn_hover{
     border: 1px solid #999;
@@ -42,10 +30,6 @@ input[type="reset"]:hover,
     text-decoration: none;
 }
 
-button:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
 .btn:active,
 .btn_active{
     box-shadow: inset 0 0 2px #aaa;
