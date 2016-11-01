@@ -24,7 +24,7 @@ under GNU General Public License Version 2.
 <button class="btn_cbu">Blue Button</button>
 
 <!-- Icon -->
-<link rel="stylesheet" type="text/css" href="css/icon/home.css"  />
+<link rel="stylesheet" type="text/css" href="icons/home.css"  />
 <div class="home"></div>
 
 <!-- Checkbox or Radio -->
