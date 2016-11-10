@@ -9,6 +9,8 @@ code,
     border-radius: 3px;
     background: #f7f7f7;
     display: inline-block;
+    font-size: 12px;
+    line-height: 13px;
 }
 
 code,
@@ -49,6 +51,8 @@ blockquote,
     border: 1px solid #ddd;
     border-left: 3px solid #bbb;
     font-style: italic;
+    font-size: 18px;
+    line-height: 26px;
     background-color: #f9f9f9;
     margin: 10px;
     padding: 10px 20px;

@@ -44,3 +44,10 @@ header,
 footer{
     clear: both;
 }
+
+hr{
+    background: none;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+    height: 0;
+}

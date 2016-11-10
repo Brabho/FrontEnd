@@ -1,5 +1,15 @@
 # Change Log & History
 
+#### 10-11-2016
+    Stable Version 1.6.2
+    Checked All Files
+
+    Improved:
+        highlight.css
+
+    Added:
+        Styled `hr` tag
+
 #### 01-11-2016
     Stable Version 1.6
     Few Major Bugs Fixed
