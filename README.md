@@ -16,8 +16,7 @@ Stable Version 1.7
 (C) 2015 - 2016
 under GNU General Public License Version 2.
 
-### Develop By 
-Use [Club Coding] (http://clubcoding.com/)
+### Develop By [Club Coding] (http://clubcoding.com/)
 
 ### Example
 ```html
