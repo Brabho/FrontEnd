@@ -1,3 +1,6 @@
+/*
+ * Require select_option.css
+ */
 window.addEventListener('load', function () {
     var select_option_elms = document.getElementsByClassName('select_option');
     for (var i = 0; i < select_option_elms.length; i++) {

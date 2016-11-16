@@ -1,15 +1,16 @@
 /*
  * Animation Object
+ * Require: getParse.js
  */
 var animate = {
     /*
      * Fade (In, Out)
      */
     fade: function (elem, inout, time) {
-        if (typeof (time) === undefined) {
+        if (typeof time === 'undefined') {
             time = '5';
         }
-        if (typeof (inout) === undefined) {
+        if (typeof inout === 'undefined') {
             inout = 'out';
         }
         switch (inout) {
@@ -50,18 +51,18 @@ var animate = {
      * Slide (Up, Down)
      */
     slide: function (elem, updown, time) {
-        if (typeof (time) === undefined) {
+        if (typeof time === 'undefined') {
             time = '5';
         }
-        if (typeof (updown) === undefined) {
+        if (typeof updown === 'undefined') {
             updown = 'up';
         }
         elem.style.overflow = 'hidden';
 
         switch (updown) {
             case 'down':
-                var height = window.getComputedStyle(elem).getPropertyValue('height');
-                height = height.toString().replace(/px/i, "");
+                var height = getParse.cssProp(elem, 'height');
+                height = height.toString().replace(/px/i, '');
                 var hei = 0;
                 elem.style.height = '0px';
                 elem.style.display = 'block';
@@ -77,13 +78,14 @@ var animate = {
                 break;
 
             case 'up':
+                elem.style.display = 'block';
                 var height = elem.clientHeight;
                 var hei = elem.clientHeight;
                 var setInt = setInterval(function () {
                     hei -= 2;
                     if (hei < 0) {
                         clearInterval(setInt);
-                        elem.setAttribute('style', 'display: none');
+                        elem.setAttribute('style', 'display: none; height: ' + height + 'px');
                     } else {
                         elem.style.height = hei + 'px';
                     }

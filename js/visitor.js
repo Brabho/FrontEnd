@@ -3,7 +3,7 @@
  */
 var visitor = {
     /*
-     * HTML5 property (Dont Call)
+     * HTML5 property (Dont Call) *
      */
     htmCheckOne: function () {
         var element = document.createElement('input');

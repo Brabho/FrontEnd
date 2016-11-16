@@ -1,10 +1,10 @@
 /*
- * Badge
  * Label
+ * Badge
  * Notify
  */
-.badge,
 .label,
+.badge,
 .notify{
     display: inline;
     background: #666;
@@ -12,14 +12,14 @@
     font-weight: bold;    
 }
 
-.badge{
-    border-radius: 1.1em;
-    padding: 1px 5px;
-}
-
 .label{
     border-radius: 4px;
     padding: 1px 3px;
+}
+
+.badge{
+    border-radius: 1.1em;
+    padding: 1px 5px;
 }
 
 .notify{
@@ -27,4 +27,36 @@
     border-radius: 1.1em;
     padding: 0.05em 0.35em;
     font-size: 9px;
+}
+
+/*
+ * Red Colour
+ */
+.label_badge_r{
+    background: #f51645;
+    color: #f9f9f9;
+}
+
+/*
+ * Blue Colour
+ */
+.label_badge_b{
+    background: #3498db;
+    color: #fefefe;
+}
+
+/*
+ * Yellow Colour
+ */
+.label_badge_y{
+    background: #9E9506;
+    color: #fff;
+}
+
+/*
+ * Green Colour
+ */
+.label_badge_g{
+    background: #20ca1c;
+    color: #fff;
 }

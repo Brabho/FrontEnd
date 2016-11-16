@@ -4,10 +4,11 @@
 .con_sep{
     border: 1px solid #ccc;
     border-radius: 4px;
+    margin: 5px 0;
 }
 
 .con_sep .con_sep_head{
-    padding: 3px;
+    padding: 0 3px;
     clear: both;
     display: block;
     background: #ddd;

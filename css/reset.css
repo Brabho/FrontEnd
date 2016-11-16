@@ -1,11 +1,12 @@
 /*
  * Some Css Reset
  */
-*,html,head,
-body,a,b,p,
+*,html,head,body,
+a,b,i,u,p,s,
 hr,br,
-s,del,strike,
+del,strike,
 noscript,
+marquee,
 blockquote,
 select,option,
 ul,ol,li,
@@ -50,4 +51,8 @@ hr{
     border-top: 1px solid #ccc;
     margin: 5px 0;
     height: 0;
+}
+
+li{
+    list-style-position: inside;
 }

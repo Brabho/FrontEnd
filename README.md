@@ -10,11 +10,14 @@ Pure Css and JavaScript.
 Powerful & LightWeight
 
 ### Version 
-Stable Version 1.6.2
+Stable Version 1.7
 
 ### License
 (C) 2015 - 2016
 under GNU General Public License Version 2.
+
+### Develop By 
+Use [Club Coding] (http://clubcoding.com/)
 
 ### Example
 ```html

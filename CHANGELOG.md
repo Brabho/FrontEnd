@@ -1,5 +1,26 @@
 # Change Log & History
 
+#### 16-11-2016
+    Stable Version 1.7
+
+    Added:
+        Lazy Load Image(s)                  // Work on any Screen Size
+        Get Scroll Position                 > `getParse.js`
+        Get Visible/Showing Elements        > `getParse.js`
+        Element has Scrollbar               > `getParse.js`
+        Close Button                        > `btn.css`
+        Colour                              > `label_badge.css`
+
+    Improved:
+        reset.css
+        con_sep.css
+        animate.js
+        cf.js
+        btn_curve > btn.css
+
+    Changed:
+        cssProp // (elem, prop) 2 params
+
 #### 10-11-2016
     Stable Version 1.6.2
     Checked All Files
@@ -14,6 +35,9 @@
     Stable Version 1.6
     Few Major Bugs Fixed
     Minify Version Added
+
+    Changed:
+        css/icon > icons
 
 #### 25-10-2016
     Stable Version 1.5

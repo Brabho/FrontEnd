@@ -12,8 +12,42 @@ var getParse = {
     /*
      * Get CSS Value
      */
-    cssProp: function (param) {
-        return window.getComputedStyle(param['elem']).getPropertyValue(param['prop']);
+    cssProp: function (elem, prop) {
+        return window.getComputedStyle(elem).getPropertyValue(prop);
+    },
+    /*
+     * Get Scroll Position 
+     */
+    scrollPosi: function () {
+        var coordinate = [];
+        coordinate['x'] = window.pageXOffset || document.documentElement.scrollLeft;
+        coordinate['y'] = window.pageYOffset || document.documentElement.scrollTop;
+        return coordinate;
+    },
+    /*
+     * Is Element has Scroll Bar (Bool)
+     */
+    hasScroll: function (elem) {
+        if (typeof elem === 'undefined' || elem === null) {
+            return (document.body.scrollHeight > window.innerHeight) ? true : false;
+        } else {
+            return (elem.scrollHeight > elem.clientHeight) ? true : false;
+        }
+    },
+    /*
+     * Get If Element(s) Visible/Showing or Not (Bool)
+     */
+    isVisible: function (elem) {
+        if (this.hasScroll(null)) {
+            if (elem.offsetTop < window.innerHeight) {
+                return true;
+            } else if ((parseInt(elem.offsetTop) - parseInt(window.innerHeight)) <= this.scrollPosi()['y']) {
+                return true;
+            }
+            return false;
+        } else {
+            return true;
+        }
     },
     /*
      * Get Format Number Length

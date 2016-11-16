@@ -6,10 +6,10 @@ var cookie = {
      * Set Cookie
      */
     set: function (param) {
-        if (typeof (param['extime']) === undefined) {
+        if (typeof param['extime'] === 'undefined') {
             param['extime'] = 86400;
         }
-        if (typeof (param['path']) === undefined) {
+        if (typeof param['path'] === 'undefined') {
             param['path'] = '/';
         }
         var date = new Date();
@@ -39,7 +39,7 @@ var cookie = {
      * Remove Cookie
      */
     remove: function (name, path) {
-        if (typeof (path) === undefined) {
+        if (typeof path === 'undefined') {
             path = '/';
         }
         var date = new Date();
@@ -51,7 +51,7 @@ var cookie = {
      * Remove All Cookies
      */
     removeAll: function (path) {
-        if (typeof (path) === undefined) {
+        if (typeof path === 'undefined') {
             path = '/';
         }
         var s_cookie = document.cookie.trim().split(';');
