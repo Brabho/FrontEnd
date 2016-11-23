@@ -1,5 +1,13 @@
 # Change Log & History
 
+#### 23-11-2016
+    Stable Version 1.7.4
+    Fixed Lazy Load Image Bug
+    Checked All Files
+
+    Added:
+        Check Button > `btn.css`
+
 #### 16-11-2016
     Stable Version 1.7
 

@@ -9,8 +9,8 @@ Pure Css and JavaScript.
 
 Powerful & LightWeight
 
-### Version 
-Stable Version 1.7
+### Version
+Stable Version 1.7.4
 
 ### License
 (C) 2015 - 2016
