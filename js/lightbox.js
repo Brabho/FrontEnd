@@ -1,6 +1,6 @@
 /*
  * Light Box Close 
- * Require lightbox.css
+ * Require: `lightbox.css`
  */
 window.addEventListener('load', function () {
     var lightbox_close = document.getElementsByClassName('lightbox_close');

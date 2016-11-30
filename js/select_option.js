@@ -1,5 +1,7 @@
 /*
- * Require select_option.css
+ * Select Option Drop Down
+ * Require: `select_option.css`
+ * Optional: btn.css & drop_down_box.css (More Style & Effect) 
  */
 window.addEventListener('load', function () {
     var select_option_elms = document.getElementsByClassName('select_option');

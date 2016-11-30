@@ -1,9 +1,8 @@
 /*
  * Select Option Drop Down
- * Require JS
+ * Require: `select_option.js`
  * Optional: btn.css & drop_down_box.css (More Style & Effect) 
  */
-
 .select_option{
     display: none;
     float: left;

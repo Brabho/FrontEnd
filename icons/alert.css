@@ -11,6 +11,7 @@
 
 .alert::before{
     content: 'X';
+    line-height: 1.4em;
     color: #fff;
     text-align: center;
     font-size: 13px;

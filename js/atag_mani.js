@@ -1,7 +1,7 @@
 /*
- * A tag Manipulate
- * 1. Open Outbound Link in New Tag
- * 2. Return False if link end with '#'
+ * A Tag Manipulate
+ * 1. Open External Link(s) in New Tag
+ * 2. prevent Default Behaviour if Link end with '#'
  */
 window.addEventListener('load', function () {
     var all_atag = document.getElementsByTagName('a');

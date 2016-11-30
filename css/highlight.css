@@ -1,7 +1,6 @@
 /*
  * Highlight Class 
  */
-code,
 .code{
     padding: 1px;
     margin: 1px;
@@ -13,8 +12,6 @@ code,
     line-height: 16px;
 }
 
-code,
-code *,
 .code,
 .code *{
     font-family: monospace;
@@ -44,7 +41,6 @@ code *,
     color: #319D2E;
 }
 
-blockquote,
 .bquote{
     clear: both;
     text-indent: 25px;
@@ -60,9 +56,7 @@ blockquote,
     position: relative;
 }
 
-blockquote::before,
 .bquote::before,
-blockquote::after,
 .bquote::after{
     text-indent: 0;
     color: #888;
@@ -71,14 +65,12 @@ blockquote::after,
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
-blockquote::before,
 .bquote::before{
     content: open-quote;
     line-height: 0.05em;
     left: 0;
 }
 
-blockquote::after,
 .bquote::after{
     content: close-quote;
     bottom: -0.5em;

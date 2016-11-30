@@ -2,7 +2,7 @@
  * General Icon
  */
 .general{
-    color: #5179DF;
+    color: #999;
     display: inline;
     position: relative;
     text-decoration: none;
@@ -14,7 +14,7 @@
     color: #fff;
     text-align: center;
     font-size: 17px;
-    line-height: 1em;
+    line-height: 1.35em;
     font-weight: bold;
     width: 19px;
     height: 19px;

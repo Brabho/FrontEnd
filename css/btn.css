@@ -11,6 +11,7 @@
     text-decoration: none;
     border-radius: 3px;
     border: 1px solid #bbb;
+    box-sizing: border-box;
     background: #ddd;
     background-image: linear-gradient(top, #F3F3F3, #EBEBEB);
     background-image: -moz-linear-gradient(top, #F3F3F3, #EBEBEB);

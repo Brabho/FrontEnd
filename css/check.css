@@ -39,5 +39,5 @@
 
 .check input[type='checkbox']:checked + label::before{
     background: #3399FF;
-    content:  "\2713 ";
+    content:  '\2713';
 }

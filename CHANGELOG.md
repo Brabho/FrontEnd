@@ -1,5 +1,27 @@
 # Change Log & History
 
+#### 30-11-2016
+    Stable Version 1.8
+
+    Improved:
+        field.css
+        highlight.css
+        link.css
+        msg.css
+        reset.css
+        table.css
+
+        ICONS:
+        alert.css
+        general.css
+        help.css
+        home.css
+        success.css
+        warn.css
+
+    Added:
+        setDisable.js    // Set `disabled` Attribute if class name is `btnDisable` or `fieldDisable`
+
 #### 23-11-2016
     Stable Version 1.7.4
     Fixed Lazy Load Image Bug
@@ -12,12 +34,12 @@
     Stable Version 1.7
 
     Added:
-        Lazy Load Image(s)                  // Work on any Screen Size
-        Get Scroll Position                 > `getParse.js`
-        Get Visible/Showing Elements        > `getParse.js`
-        Element has Scrollbar               > `getParse.js`
-        Close Button                        > `btn.css`
-        Colour                              > `label_badge.css`
+        Lazy Load Image(s)              // Work on any Screen Size
+        Get Scroll Position             > `getParse.js`
+        Get Visible/Showing Elements    > `getParse.js`
+        Element has Scrollbar           > `getParse.js`
+        Close Button                    > `btn.css`
+        Color                           > `label_badge.css`
 
     Improved:
         reset.css
@@ -77,12 +99,14 @@
         check.css
         radio.css
         msg.css
-        alert.css    (icon)
-        comment.css  (icon)
-        drop_nav.css (icon)
-        general.css  (icon)
-        home.css     (icon)
-        more.css     (icon)
+
+        ICONS:
+        alert.css
+        comment.css
+        drop_nav.css
+        general.css
+        home.css
+        more.css
 
     Added:
         Remove Cookie (Single or All)
@@ -97,9 +121,11 @@
 		check.css
 		pagination.css
 		radio.css
-		help.css (icon)
-		user.css (icon)
-		warn.css (icon)
+
+        ICONS:
+		help.css
+		user.css
+		warn.css
 
 	Changed:
 		`.active` to `.group_act` in group.css
@@ -108,8 +134,11 @@
 	Bug Fixed:
 		highlight.css
 		msg.css
-		general.css (icon)
-		search.css (icon)
+
+        ICONS:
+        general.css
+		search.css
+
 		animate.js
 		visitor.js
 

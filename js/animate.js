@@ -1,6 +1,6 @@
 /*
  * Animation Object
- * Require: getParse.js
+ * Require: `getParse.js`
  */
 var animate = {
     /*

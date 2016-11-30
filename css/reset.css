@@ -1,27 +1,18 @@
 /*
- * Some Css Reset
+ * Some CSS Reset
  */
 *,html,head,body,
-a,b,i,u,p,s,
-hr,br,
-del,strike,
-noscript,
-marquee,
-blockquote,
-select,option,
-ul,ol,li,
-header,
-footer,
-button,
-input,
-div,
-form,
-link,
-style,
-script,
-textarea,
-pre,code,
-h1,h2,h3,h4,h5,h6{
+header,footer,canvas,center,
+h1,h2,h3,h4,h5,h6,
+a,b,i,u,p,s,pre,code,
+blockquote,ul,ol,li,
+hr,br,del,strike,
+noscript,marquee,
+select,option,optgroup,
+button,input,textarea,
+div,form,link,style,script,
+audio,video,embed,source,track,
+template,article,main,nav,progress,section,svg{
     margin: 0;
     padding: 0;
     outline: 0;
@@ -31,7 +22,7 @@ body{
     background: #fff;
     color: #000;
     word-wrap: break-word;
-    cursor: default;    
+    cursor: default;
 }
 
 body,
@@ -55,4 +46,9 @@ hr{
 
 li{
     list-style-position: inside;
+}
+
+[disabled="disabled"]{
+    cursor: not-allowed;
+    pointer-events: none;
 }

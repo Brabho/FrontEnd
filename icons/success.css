@@ -12,8 +12,9 @@
 .success::before{
     position: absolute;
     content: '\2713';
+    line-height: 1.4em;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     font-family: Tahoma, Helvetica, Arial, sans-serif;
     color: #fff;
     top: 0;

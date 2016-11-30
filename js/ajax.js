@@ -72,7 +72,7 @@ function ajax(param, callback) {
             if (this.status >= 200 && this.status < 400) {
                 callback(this.responseText.trim());
             } else {
-                callback('HEADER_ERROR');
+                callback('HEADER_ERROR: ' + this.status);
             }
         }, false);
 

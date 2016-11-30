@@ -5,7 +5,7 @@ a,
 .link{
     background: none;
     border: 0;
-    color: #116AFF;
+    color: #2B78F9;
     text-decoration: none;
     display: inline;
     cursor: pointer;
@@ -13,6 +13,12 @@ a,
 
 a:hover,
 .link:hover{
-    color: #024FCF;
+    color: #0C5BDD;
     text-decoration: underline;
+}
+
+a:active,
+.link:active{
+    color: #0A50C3;
+    text-decoration: overline underline;
 }
