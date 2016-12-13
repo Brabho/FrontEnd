@@ -10,10 +10,19 @@ var getParse = {
         return content;
     },
     /*
-     * Get CSS Value
+     * Get CSS Property Value
      */
     cssProp: function (elem, prop) {
         return window.getComputedStyle(elem).getPropertyValue(prop);
+    },
+    /*
+     * Get Element Index
+     */
+    elmIndex: function (elm) {
+        if (elm.parentElement !== null) {
+            return Array.prototype.indexOf.call(elm.parentElement.children, elm);
+        }
+        return 'document';
     },
     /*
      * Get Scroll Position 

@@ -1,5 +1,5 @@
 /*
- * Document Get Element(s) By 
+ * Document Get Element(s) By
  */
 function getEB(attr_deti, callback) {
     var attr_deti1 = Object.keys(attr_deti);
@@ -30,4 +30,18 @@ function getEB(attr_deti, callback) {
             }
         }
     }
+}
+
+/*
+ * Document Query Selector(s)
+ */
+function dqs(elms, callback) {
+    var gElms = document.querySelectorAll(elms);
+    for (var i = 0; i < gElms.length; i++) {
+        callback(gElms[i]);
+    }
+}
+
+function _(elms) {
+    return document.querySelectorAll(elms);
 }

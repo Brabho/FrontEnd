@@ -1,23 +1,41 @@
 /*
  * Select Option Drop Down
  * Require: `select_option.css`
- * Optional: btn.css & drop_down_box.css (More Style & Effect) 
+ * Optional: btn.css & drop_down_box.css (More Style & Effect)
  */
 window.addEventListener('load', function () {
     var select_option_elms = document.getElementsByClassName('select_option');
     for (var i = 0; i < select_option_elms.length; i++) {
-        var option_vals = [], option_selected = false, set, inr_htm, options_vl;
+        var option_selected = false, optlabel = '', option_vals = [], set, inr_htm, options_vl;
 
         /*
          * Get Values
          */
         var option_elms = select_option_elms[i].getElementsByTagName('option');
         for (var j = option_elms.length; j > 0; j--) {
-            if (option_elms[0].getAttribute('selected') !== null) {
+
+            /*
+             * Option Selected
+             */
+            if (option_elms[0].hasAttribute('selected')) {
                 option_selected = option_elms[0].textContent;
             }
-            option_vals[j] = option_elms[0].textContent;
+
+            /*
+             * Option Label(s)
+             */
+            if (option_elms[0].hasAttribute('data-optlabel')) {
+                option_vals[j] = '<div class="option optlabel" disabled>' + option_elms[0].textContent + '</div>';
+            } else {
+
+                /*
+                 * Rest Options
+                 */
+                option_vals[j] = '<div class="option">' + option_elms[0].textContent + '</div>';
+            }
+
             option_elms[0].remove();
+
             if (option_elms.length <= 0) {
                 select_option_elms[i].innerHTML = '';
             }
@@ -31,11 +49,13 @@ window.addEventListener('load', function () {
         } else {
             set = '<div class="set btn">' + option_vals[option_vals.length - 1] + '</div>';
         }
+
         inr_htm = '<div class="drop_down_box select_option_box">';
         for (var k = option_vals.length - 1; k > 0; k--) {
-            inr_htm += '<div class="option">' + option_vals[k] + '</div>';
+            inr_htm += option_vals[k];
         }
         inr_htm += '</div>';
+
         select_option_elms[i].innerHTML = set + inr_htm;
         select_option_elms[i].style.display = 'inline';
 
@@ -73,8 +93,7 @@ window.addEventListener('load', function () {
      * Outside Click
      */
     document.addEventListener('click', function (e) {
-        var clsNam = e.target.className;
-        if (!clsNam.match(/select_option|set|option/)) {
+        if (!e.target.className.match(/select_option|set|option/)) {
             select_option_reset();
         }
     }, false);

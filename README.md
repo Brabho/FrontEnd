@@ -1,22 +1,27 @@
 # FrontEnd
 
+### Develop By [Club Coding] (http://clubcoding.com/)
+
 ### Description
 This is for frontend development.
 
 Its a mini & basic library for developer.
 
-Pure Css and JavaScript. 
+Pure CSS and JavaScript.
 
 Powerful & LightWeight
 
+### Note
+Do not use with Bootstrap, Jquery or any another Framework/Library.
+
+Some codes may not work in old browsers, so please double check for Production.
+
 ### Version
-Stable Version 1.8
+Stable Version 1.9
 
 ### License
 (C) 2015 - 2016
 under GNU General Public License Version 2.
-
-### Develop By [Club Coding] (http://clubcoding.com/)
 
 ### Example
 ```html

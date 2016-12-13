@@ -1,5 +1,5 @@
 /*
- * Highlight Class 
+ * Code/Syntex Highlight
  */
 .code{
     padding: 1px;
@@ -10,6 +10,7 @@
     display: inline-block;
     font-size: 12px;
     line-height: 16px;
+    text-shadow: 1px 1px #fff;
 }
 
 .code,
@@ -18,7 +19,7 @@
 }
 
 /*
- * Red Colour
+ * Code Red Color
  */
 .code_r{
     border: 1px solid #F6D3D5;
@@ -26,7 +27,7 @@
 }
 
 /*
- * Blue Colour
+ * Code Blue Color
  */
 .code_b{
     border: 1px solid #9FD2F3;
@@ -34,13 +35,58 @@
 }
 
 /*
- * Green Colour
+ * Code Green Color
  */
 .code_g{
     border: 1px solid #91F48F;
     color: #319D2E;
 }
 
+/*
+ * Syntax Highlight
+ */
+.syntax{
+    background: #2D313A;
+    color: #96CBFE;
+    padding: 20px;
+    border: 2px solid #57AD68;
+    border-left: 5px solid #57AD68;
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    clear: both;
+    overflow-wrap: normal;
+    white-space: pre;
+}
+
+.syntax,
+.syntax *{
+    font-family: monospace;
+}
+
+.syntax::before{
+    content: '{/}';
+    position: absolute;
+    left: -22px;
+    top: -22px;
+    background: #57AD68;
+    color: #fff;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*
+ * Blockquote Highlight
+ */
 .bquote{
     clear: both;
     text-indent: 25px;

@@ -12,6 +12,8 @@
 }
 
 .group li{
+    display: block;
+    clear: both;
     background: #fff;
     font-size: 12px;
     padding: 3px 6px;

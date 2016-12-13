@@ -1,5 +1,41 @@
 # Change Log & History
 
+#### 13-12-2016
+    Stable Version 1.9
+
+    Added:
+        Blink Elements      > animate.css
+        Shake Elements      > animate.css
+        Swing Elements      > animate.css
+        Flip Elements       > animate.css
+        `btn_block`         > btn.css
+        `fieldRequire`      > field.css
+        `syntax`            > highlight.css
+        `img_respo`         > reset.css
+        `data-optlabel`     > select_option
+        `dqs`               > geteb.js
+        `elmIndex`          > getparse.js
+        onEvt.js
+
+    Improved:
+        btn.css
+        field.css
+        group.css
+        highlight.css
+        link.css
+        msg.css
+        pagination.css
+        reset.css
+        select_option.css
+        select_option.js
+
+    Changed:
+        tag.css             > badge_tag.css
+        atag_mani.js        > sets_basic.js
+        setDisable.js       > sets_basic.js
+
+    CSS Minify Version is now UTF-8
+
 #### 30-11-2016
     Stable Version 1.8
 

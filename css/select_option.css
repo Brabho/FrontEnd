@@ -6,6 +6,7 @@
 .select_option{
     display: none;
     float: left;
+    margin: 2px;
 }
 
 .select_option_box {
@@ -21,6 +22,7 @@
     border: 1px solid #aaa;
     border-radius: 3px;
     padding: 2px 3px;
+    cursor: pointer;
 }
 
 .set::after{
@@ -36,4 +38,13 @@
 
 .select_option .option:hover{
     background: #eee;
+}
+
+.select_option .optlabel{
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #888;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
 }

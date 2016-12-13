@@ -6,7 +6,7 @@
     color: #222;
     margin: 0;
     padding: 2px 3px;
-    display: inline-block; 	
+    display: inline-block;
     cursor: pointer;
     text-decoration: none;
     border-radius: 3px;
@@ -25,6 +25,7 @@
 }
 
 .btn:hover,
+.btn:focus,
 .btn_hover{
     color: #222;
     border: 1px solid #999;
@@ -34,6 +35,7 @@
 
 .btn:active,
 .btn_active{
+    text-decoration: none;
     color: #222;
     box-shadow: inset 0 0 2px #aaa;
     background: #eee;
@@ -49,6 +51,15 @@
  */
 .btn_curve{
     border-radius: 1.1em;
+}
+
+/*
+ * Block Button
+ */
+.btn_block{
+    display: block;
+    clear: both;
+    width: 100%;
 }
 
 /*
@@ -264,7 +275,8 @@
  */
 .btnDisable,
 .btnDisable:hover,
-.btnDisable:active{
+.btnDisable:active,
+.btnDisable:disabled{
     pointer-events: none;
     cursor: not-allowed;
     text-shadow: 1px 1px #fff;

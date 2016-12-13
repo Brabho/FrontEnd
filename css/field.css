@@ -15,11 +15,18 @@
     box-shadow: 0 0 15px #ccc;
 }
 
+.fieldRequire{
+    border: 1px solid #CE1A1A;
+    box-shadow: 0 0 10px #FDAAAA;
+}
+
 /*
  * Disable Field
  */
 .fieldDisable,
-.fieldDisable:focus{
+.fieldDisable:hover,
+.fieldDisable:active,
+.fieldDisable:disabled{
     background: #f5f5f5;
     box-shadow: inset 0 0 2px #ccc;
     pointer-events: none;
