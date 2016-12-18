@@ -1,5 +1,19 @@
 # Change Log & History
 
+#### 18-12-2016
+    Stable Version 1.10
+
+    Improved:
+        btn.css
+        field.css
+        link.css
+        reset.css
+
+    Added:
+        `check_toggle`      > check.css
+        img.css
+        progressbar.css
+
 #### 13-12-2016
     Stable Version 1.9
 

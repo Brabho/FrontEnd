@@ -1,5 +1,5 @@
 /*
- * FrontEnd Version 1.9
+ * FrontEnd Version 1.10
  * License: (C) 2015 - 2016 under GNU General Public License Version 2.
  * Develop By Club Coding: http://clubcoding.com/
  * Download/Clone: https://github.com/krishnaTORQUE/FrontEnd

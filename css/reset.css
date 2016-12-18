@@ -26,9 +26,17 @@ body{
     cursor: default;
 }
 
-body,textarea{
+body,textarea,
+code, pre{
     font-size: 12px;
+}
+
+body,textarea{
     font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+
+code, pre{
+    font-family: monospace;
 }
 
 header,
@@ -52,14 +60,6 @@ hr{
 
 li{
     list-style-position: inside;
-}
-
-.img_respo{
-    width: 100%;
-    height: auto;
-    border-style: none;
-    vertical-align: middle;
-    cursor: zoom-in;
 }
 
 [disabled="disabled"]{

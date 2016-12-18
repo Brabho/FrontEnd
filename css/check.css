@@ -1,25 +1,43 @@
 /*
  * Styled Checkbox
  */
+.check_toggle,
 .check{
     display: inline-block;
 }
 
+.check_toggle input[type='checkbox'],
 .check input[type='checkbox']{
     display: none;
 }
 
+.check_toggle label,
 .check label{
     cursor: pointer;
     position: relative;
+}
+
+.check label{
     padding: 0 5px 0 19px;
 }
 
-.check label::before{
+.check_toggle label{
+    padding-left: 30px;
+    margin: 5px 10px;
+}
+
+.check label::before,
+.check_toggle label::before,
+.check_toggle label::after{
     position: absolute;
     content: '';
-    border-radius: 4px;
     left: 0;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.check label::before{
+    border-radius: 4px;
     border: 1px solid #3399FF;
     background: #fff;
     width: 15px;
@@ -29,8 +47,23 @@
     font-size: 12px;
     padding-left: 2px;
     line-height: 1em;
-    box-sizing: border-box;
-    transition: all 0.3s;
+}
+
+.check_toggle label::before{
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    height: 12px;
+    width: 17px;
+}
+
+.check_toggle label::after{
+    margin: -2px 0 0 -10px;
+    background: #ccc;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    border: 1px solid #bbb;
 }
 
 .check label:hover::before{
@@ -40,4 +73,15 @@
 .check input[type='checkbox']:checked + label::before{
     background: #3399FF;
     content:  '\2713';
+}
+
+.check_toggle input[type='checkbox']:checked + label::before{
+    background: #C6E7FB;
+    border: 1px solid #a0cfec;
+}
+
+.check_toggle input[type='checkbox']:checked + label::after{
+    background: #93D1F7;
+    border: 1px solid #92c6e5;
+    left: 20px;
 }

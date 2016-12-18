@@ -15,12 +15,6 @@ a:hover,
 a:focus,
 .link:hover,
 .link:focus{
-    color: #0C5BDD;
-    text-decoration: underline;
-}
-
-a:active,
-.link:active{
     color: #0A50C3;
-    text-decoration: overline underline;
+    text-decoration: underline;
 }

@@ -17,7 +17,7 @@ Do not use with Bootstrap, Jquery or any another Framework/Library.
 Some codes may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.9
+Stable Version 1.10
 
 ### License
 (C) 2015 - 2016
@@ -71,6 +71,28 @@ getEB({
     class: 'elem'
 }, function (elm) {
     alert(elm.innerHTML);
+});
+
+/* Document Query Selector */
+dqs('.elem', function(elem) {
+    alert(elem.innerHTML);
+});
+</script>
+
+<!-- Document On Event (click, mouseover etc) -->
+<script type="text/javascript" src="js/onevt.js"></script>
+<script type="text/javascript">
+onEvt('click', function(elem) {
+
+    // for class
+    if(elem.classList.contains('classname')) {
+        // do stuff
+    }
+
+    // for attribute
+    if(elem.hasAttribute('target')) {
+        // do stuff
+    }
 });
 </script>
 ```

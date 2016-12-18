@@ -48,7 +48,8 @@
 .syntax{
     background: #2D313A;
     color: #96CBFE;
-    padding: 20px;
+    padding: 10px;
+    margin: 30px 5px 5px 5px;
     border: 2px solid #57AD68;
     border-left: 5px solid #57AD68;
     position: relative;
