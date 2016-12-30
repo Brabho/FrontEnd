@@ -1,5 +1,24 @@
 # Change Log & History
 
+#### 30-12-2016
+    Stable Version 1.11
+
+    Improved:
+        animate.css
+        btn.css
+        field.css
+        img.css
+        lightbox.css
+        reset.css
+        sets_basic.js
+
+    Added:
+        ibtn.css            > icons
+
+    Removed:
+        `lightbox_close`    > lightbox.css
+        lightbox.js
+
 #### 18-12-2016
     Stable Version 1.10
 

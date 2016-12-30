@@ -6,7 +6,6 @@
     height: auto;
     border-style: none;
     vertical-align: middle;
-    cursor: zoom-in;
 }
 
 .img_circle{
@@ -21,4 +20,12 @@
     padding: 5px;
     background: #fff;
     border: 1px solid #ddd;
+}
+
+.img_click{
+    cursor: zoom-in;
+}
+
+.img_click:hover{
+    box-shadow: 0 0 15px #777;
 }

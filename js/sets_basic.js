@@ -48,11 +48,11 @@ window.addEventListener('load', function () {
     }
 
     /*
-     * Open IMG (img_respo) in New Tab
+     * Open IMG (img_click) in New Tab
      */
-    var img_respo = document.getElementsByClassName('img_respo');
-    for (var l = 0; l < img_respo.length; l++) {
-        img_respo[l].addEventListener('click', function () {
+    var img_click = document.getElementsByClassName('img_click');
+    for (var l = 0; l < img_click.length; l++) {
+        img_click[l].addEventListener('click', function () {
             window.open(this.getAttribute('src'), '_blank');
         }, false);
     }

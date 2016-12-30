@@ -17,7 +17,7 @@ Do not use with Bootstrap, Jquery or any another Framework/Library.
 Some codes may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.10
+Stable Version 1.11
 
 ### License
 (C) 2015 - 2016

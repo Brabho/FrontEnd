@@ -59,38 +59,11 @@
 .btn_block{
     clear: both;
     width: 100%;
+    text-align: center;
 }
 
 /*
- * Check Button
- */
-.btn_check{
-    padding: 4px 5px;
-}
-
-.btn_check::before{
-    content: '\2714';
-    font-size: 16px;
-    line-height: 14px;
-    padding: 5px 2px;
-}
-
-/*
- * Close Button
- */
-.btn_close{
-    padding: 4px 5px;
-}
-
-.btn_close::before{
-    content: '\2716';
-    font-size: 16px;
-    line-height: 14px;
-    padding: 5px 2px;
-}
-
-/*
- * Blue Colour 
+ * Blue Color 
  */
 .btn_cbu{
     border: 1px solid #2980b9;
@@ -130,7 +103,7 @@
 }
 
 /*
- * Black Colour 
+ * Black Color 
  */
 .btn_cbk{
     color: #fefefe;
@@ -163,7 +136,7 @@
 }
 
 /*
- * Red Colour 
+ * Red Color 
  */
 .btn_cr{
     color: #f9f9f9;
@@ -197,7 +170,7 @@
 }
 
 /*
- * Yellow Colour 
+ * Yellow Color 
  */
 .btn_cy{
     border: 1px solid #C4BD4F;
@@ -229,7 +202,7 @@
 }
 
 /*
- * Green Colour 
+ * Green Color 
  */
 .btn_cg{
     border: 1px solid #4AC447;
@@ -278,6 +251,7 @@
 .btnDisable:disabled{
     pointer-events: none;
     cursor: not-allowed;
+    opacity: 0.9;
     text-shadow: 1px 1px #fff;
     color: #9E9E9E;
     border: 1px solid #ccc;

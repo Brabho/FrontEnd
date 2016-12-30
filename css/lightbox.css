@@ -1,11 +1,7 @@
 /*
  * Lightbox
  * Require JS for Close
- */
-.lightbox_bgb{background: rgba(0,0,0,0.6);}
-.lightbox_bgw{background: rgba(255,255,255,0.7);}
-
-/*
+ *
  * Lightbox Background
  */
 .lightbox_bgb,
@@ -15,17 +11,20 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 9999999 !important;
+    z-index: 99999;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
+.lightbox_bgb{background: rgba(0,0,0,0.5);}
+.lightbox_bgw{background: rgba(238,238,238,0.8);}
+
 /*
- * Lightbox Container 
+ * Lightbox Container
  */
-.lightbox_con{
-    box-shadow: 0 0 30px #999;
+.lightbox_content{
+    box-shadow: 0 0 40px #555;
     position: relative;
     width: 500px;
     height: 300px;
@@ -34,12 +33,4 @@
     background: #fff;
     border: 1px solid #666;
     border-radius: 4px;
-}
-
-/*
- * Lightbox Close Button
- */
-.lightbox_close{
-    float: right;
-    cursor: pointer;
 }

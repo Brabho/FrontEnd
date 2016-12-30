@@ -1,16 +1,20 @@
+.ani_all{
+    transition: all 0.5s;
+}
+
 /*
- * Blink Elements Animate
+ * Blink Elements
  */
 .blink{
     animation: blink 1s infinite;
 }
 
 @keyframes blink{
-    50%{opacity: 0;}
+    50%{opacity: 0.1;}
 }
 
 /*
- * Shake Elements Animate
+ * Shake Elements
  
  * Shake Horizontal
  */
@@ -38,7 +42,7 @@
 }
 
 /*
- * Swing Elements Animate
+ * Swing Elements
  */
 .swing{
     display: inline-block;
@@ -51,7 +55,7 @@
 }
 
 /*
- * Flip Elements Animate
+ * Flip Elements
  */
 .flip{
     display: inline-block;

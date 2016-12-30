@@ -1,7 +1,7 @@
 /*
  * Lazy Load Image(s) 
  * Require: `getParse.js`
- * Example: <img src="default.png" class="lazy-load-imgs" data-lazy-load-imgs="main/image/file/path.png" />
+ * Example: <img src="default.gif" class="lazy-load-imgs" data-lazy-load-imgs="main/image/file/path.png" />
  */
 function lazy_load_imgs() {
     var lazy_load_imgs = document.getElementsByClassName('lazy-load-imgs');
