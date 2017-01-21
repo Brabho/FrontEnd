@@ -20,8 +20,7 @@ Some Icons may not work in old browsers, so please double check for Production.
 Stable Version 1.12
 
 ### License
-(C) 2015 - 2016
-under GNU General Public License Version 2.
+(C) 2015 - 2017 under GNU General Public License Version 2.
 
 ### Example
 ```html
