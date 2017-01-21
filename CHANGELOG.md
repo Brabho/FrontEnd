@@ -1,5 +1,14 @@
 # Change Log & History
 
+#### 21-01-2017
+    Stable Version 1.12
+
+    Added:
+        load.js
+
+    Removed:
+        icons/arrow.css
+
 #### 30-12-2016
     Stable Version 1.11
 

@@ -12,12 +12,12 @@ Pure CSS and JavaScript.
 Powerful & LightWeight
 
 ### Note
-Do not use with Bootstrap, Jquery or any another Framework/Library.
+Do not use with Bootstrap, Jquery or any another Framework / Library.
 
-Some codes may not work in old browsers, so please double check for Production.
+Some Icons may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.11
+Stable Version 1.12
 
 ### License
 (C) 2015 - 2016
@@ -73,7 +73,7 @@ getEB({
     alert(elm.innerHTML);
 });
 
-/* Document Query Selector */
+/* Document Query Selectors */
 dqs('.elem', function(elem) {
     alert(elem.innerHTML);
 });
