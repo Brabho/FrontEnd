@@ -4,8 +4,7 @@
 .loading{
     width: 10px;
     height: 10px;
-    display: inline-block;    
-    box-shadow: 0 0 15px 1px #eee;
+    display: inline-block;
     border-width: 2px;
     border-style: solid;
     border-color: #000;    

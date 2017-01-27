@@ -1,0 +1,141 @@
+/*
+ * Responsive
+ */
+.row{
+    clear: both;
+    display: table;
+}
+
+[class*="cel_"]{
+    float: left;
+    width: 100%;
+}
+
+/*
+ * Extra Small Screen
+ */
+@media only screen and (min-width: 200px){
+    .cel_es1 {width: 8.33%;}
+    .cel_es2 {width: 16.66%;}
+    .cel_es3 {width: 25%;}
+    .cel_es4 {width: 33.33%;}
+    .cel_es5 {width: 41.66%;}
+    .cel_es6 {width: 50%;}
+    .cel_es7 {width: 58.33%;}
+    .cel_es8 {width: 66.66%;}
+    .cel_es9 {width: 75%;}
+    .cel_es10 {width: 83.33%;}
+    .cel_es11 {width: 91.66%;}
+    .cel_es12 {width: 100%;}
+    .cel_es{display: block;}
+    .cel_s_hide{display: none;}
+    .cel_m_hide{display: none;}
+    .cel_l_hide{display: none;}
+    .cel_hide{display: none;}
+    .cel_el_hide{display: none;}
+}
+
+/*
+ * Small Screen
+ */
+@media only screen and (min-width: 320px){
+    .cel_s1 {width: 8.33%;}
+    .cel_s2 {width: 16.66%;}
+    .cel_s3 {width: 25%;}
+    .cel_s4 {width: 33.33%;}
+    .cel_s5 {width: 41.66%;}
+    .cel_s6 {width: 50%;}
+    .cel_s7 {width: 58.33%;}
+    .cel_s8 {width: 66.66%;}
+    .cel_s9 {width: 75%;}
+    .cel_s10 {width: 83.33%;}
+    .cel_s11 {width: 91.66%;}
+    .cel_s12 {width: 100%;}
+    .cel_s_hide{display: block;}
+    .cel_m_hide{display: none;}
+    .cel_l_hide{display: none;}
+    .cel_hide{display: none;}
+    .cel_el_hide{display: none;}
+}
+
+/*
+ * Medium Screen
+ */
+@media only screen and (min-width: 480px){
+    .cel_m1 {width: 8.33%;}
+    .cel_m2 {width: 16.66%;}
+    .cel_m3 {width: 25%;}
+    .cel_m4 {width: 33.33%;}
+    .cel_m5 {width: 41.66%;}
+    .cel_m6 {width: 50%;}
+    .cel_m7 {width: 58.33%;}
+    .cel_m8 {width: 66.66%;}
+    .cel_m9 {width: 75%;}
+    .cel_m10 {width: 83.33%;}
+    .cel_m11 {width: 91.66%;}
+    .cel_m12 {width: 100%;}
+    .cel_m_hide{display: block;}
+    .cel_l_hide{display: none;}
+    .cel_hide{display: none;}
+    .cel_el_hide{display: none;}
+}
+
+/*
+ * Large Screen
+ */
+@media only screen and (min-width: 600px){
+    .cel_l1 {width: 8.33%;}
+    .cel_l2 {width: 16.66%;}
+    .cel_l3 {width: 25%;}
+    .cel_l4 {width: 33.33%;}
+    .cel_l5 {width: 41.66%;}
+    .cel_l6 {width: 50%;}
+    .cel_l7 {width: 58.33%;}
+    .cel_l8 {width: 66.66%;}
+    .cel_l9 {width: 75%;}
+    .cel_l10 {width: 83.33%;}
+    .cel_l11 {width: 91.66%;}
+    .cel_l12 {width: 100%;}
+    .cel_l_hide{display: block;}
+    .cel_hide{display: none;}
+    .cel_el_hide{display: none;}
+}
+
+/*
+ * Default Screen
+ */
+@media only screen and (min-width: 768px){
+    .cel_1 {width: 8.33%;}
+    .cel_2 {width: 16.66%;}
+    .cel_3 {width: 25%;}
+    .cel_4 {width: 33.33%;}
+    .cel_5 {width: 41.66%;}
+    .cel_6 {width: 50%;}
+    .cel_7 {width: 58.33%;}
+    .cel_8 {width: 66.66%;}
+    .cel_9 {width: 75%;}
+    .cel_10 {width: 83.33%;}
+    .cel_11 {width: 91.66%;}
+    .cel_12 {width: 100%;}
+    .cel_hide{display: block;}
+    .cel_el_hide{display: none;}
+}
+
+/*
+ * Extra Large Screen
+ */
+@media only screen and (min-width: 1200px){
+    .cel_el1 {width: 8.33%;}
+    .cel_el2 {width: 16.66%;}
+    .cel_el3 {width: 25%;}
+    .cel_el4 {width: 33.33%;}
+    .cel_el5 {width: 41.66%;}
+    .cel_el6 {width: 50%;}
+    .cel_el7 {width: 58.33%;}
+    .cel_el8 {width: 66.66%;}
+    .cel_el9 {width: 75%;}
+    .cel_el10 {width: 83.33%;}
+    .cel_el11 {width: 91.66%;}
+    .cel_el12 {width: 100%;}
+    .cel_el_hide{display: block;}
+}

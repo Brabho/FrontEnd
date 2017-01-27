@@ -9,15 +9,15 @@ Its a mini & basic library for developer.
 
 Pure CSS and JavaScript.
 
-Powerful & LightWeight
+Powerful & LightWeight.
 
 ### Note
 Do not use with Bootstrap, Jquery or any another Framework / Library.
 
-Some Icons may not work in old browsers, so please double check for Production.
+Some `icons` may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.12
+Stable Version 1.13
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.

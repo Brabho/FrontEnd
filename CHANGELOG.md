@@ -1,5 +1,15 @@
 # Change Log & History
 
+#### 27-01-2017
+    Stable Version 1.13
+
+    Added:
+        responsive.css
+        requirethis.js
+
+    Improved:
+        icons/loading.css
+
 #### 21-01-2017
     Stable Version 1.12
 
