@@ -26,16 +26,13 @@ body{
     cursor: default;
 }
 
-body,textarea,
-code, pre{
+body,textarea,input{
     font-size: 12px;
-}
-
-body,textarea{
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 code, pre{
+    font-size: 12px;
     font-family: monospace;
 }
 

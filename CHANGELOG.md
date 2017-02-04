@@ -1,5 +1,28 @@
 # Change Log & History
 
+#### 04-02-2017
+    Stable Version 1.14
+
+    Added:
+        Cell Show/Visible   > grid.css
+        fieldFocus          > field.css
+
+    Improved:
+        grid.css
+        highlight.css
+        progressbar.css
+        reset.css
+        animate.js
+
+    Changed:
+        responsive.css      > grid.css
+        icons/loading.css   > css/loading.css
+        icons/ibtn.css      > css/ibtn.css
+
+    Removed:
+        load.js
+        Extra Small         > grid.css
+
 #### 27-01-2017
     Stable Version 1.13
 

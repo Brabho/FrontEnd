@@ -4,6 +4,7 @@
  * Progressbar Container
  */
 .progressbar_con{
+    background: #fff;
     border: 1px solid #aaa;
     box-shadow: inset 0 0 3px #ccc;
     padding: 1px;
@@ -78,6 +79,7 @@
     background: repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
 }
 
+/* Animation */
 .progressbar_animate{
     -webkit-animation: progressbar_animate 1s linear infinite;
     -moz-animation: progressbar_animate 1s linear infinite;

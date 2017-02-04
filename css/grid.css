@@ -1,7 +1,8 @@
 /*
- * Responsive
+ * Grid View
  */
 .row{
+    width: 100%;
     clear: both;
     display: table;
 }
@@ -9,30 +10,7 @@
 [class*="cel_"]{
     float: left;
     width: 100%;
-}
-
-/*
- * Extra Small Screen
- */
-@media only screen and (min-width: 200px){
-    .cel_es1 {width: 8.33%;}
-    .cel_es2 {width: 16.66%;}
-    .cel_es3 {width: 25%;}
-    .cel_es4 {width: 33.33%;}
-    .cel_es5 {width: 41.66%;}
-    .cel_es6 {width: 50%;}
-    .cel_es7 {width: 58.33%;}
-    .cel_es8 {width: 66.66%;}
-    .cel_es9 {width: 75%;}
-    .cel_es10 {width: 83.33%;}
-    .cel_es11 {width: 91.66%;}
-    .cel_es12 {width: 100%;}
-    .cel_es{display: block;}
-    .cel_s_hide{display: none;}
-    .cel_m_hide{display: none;}
-    .cel_l_hide{display: none;}
-    .cel_hide{display: none;}
-    .cel_el_hide{display: none;}
+    padding: 0.5%;
 }
 
 /*
@@ -99,6 +77,11 @@
     .cel_l_hide{display: block;}
     .cel_hide{display: none;}
     .cel_el_hide{display: none;}
+
+    body,textarea,
+    input,code, pre{
+        font-size: 12px;
+    }
 }
 
 /*
@@ -119,6 +102,11 @@
     .cel_12 {width: 100%;}
     .cel_hide{display: block;}
     .cel_el_hide{display: none;}
+
+    body,textarea,
+    input,code, pre{
+        font-size: 14px;
+    }
 }
 
 /*
@@ -139,3 +127,24 @@
     .cel_el12 {width: 100%;}
     .cel_el_hide{display: block;}
 }
+
+@media only screen and (max-width: 319px){
+    .cel_s_show{display: block;}
+}
+
+@media only screen and (max-width: 479px){
+    .cel_m_show{display: block;}
+}
+
+@media only screen and (max-width: 599px){
+    .cel_l_show{display: block;}
+}
+
+@media only screen and (max-width: 767px){
+    .cel_show{display: block;}
+}
+
+@media only screen and (max-width: 1199){
+    .cel_el_show{display: block;}
+}
+

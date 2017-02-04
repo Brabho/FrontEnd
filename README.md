@@ -12,12 +12,12 @@ Pure CSS and JavaScript.
 Powerful & LightWeight.
 
 ### Note
-Do not use with Bootstrap, Jquery or any another Framework / Library.
+Do not use with Angular JS, Bootstrap, Jquery or any another Framework / Library.
 
 Some `icons` may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.13
+Stable Version 1.14
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.

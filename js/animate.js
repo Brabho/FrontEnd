@@ -8,7 +8,7 @@ var animate = {
      */
     fade: function (elem, inout, time) {
         if (typeof time === 'undefined') {
-            time = '5';
+            time = '3';
         }
         if (typeof inout === 'undefined') {
             inout = 'out';
@@ -52,7 +52,7 @@ var animate = {
      */
     slide: function (elem, updown, time) {
         if (typeof time === 'undefined') {
-            time = '5';
+            time = '3';
         }
         if (typeof updown === 'undefined') {
             updown = 'up';
