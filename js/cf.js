@@ -16,7 +16,8 @@ var cf = {
         }
     },
     /*
-     * Isset Query String (Return Bool)
+     * Isset Query String
+     * (Return Bool)
      */
     is_qstr: function (field) {
         var url = window.location.search;

@@ -17,7 +17,7 @@ Do not use with Angular JS, Bootstrap, Jquery or any another Framework / Library
 Some `icons` may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.14
+Stable Version 1.15
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.

@@ -47,19 +47,19 @@
 }
 
 /*
- * Curve Button
- */
-.btn_curve{
-    border-radius: 1.1em;
-}
-
-/*
  * Block Button
  */
 .btn_block{
     clear: both;
     width: 100%;
     text-align: center;
+}
+
+/*
+ * Curve Button
+ */
+.btn_curve{
+    border-radius: 1.1em;
 }
 
 /*

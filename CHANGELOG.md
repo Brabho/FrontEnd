@@ -1,5 +1,18 @@
 # Change Log & History
 
+#### 12-02-2017
+    Stable Version 1.15
+
+    Added:
+    `img_zoom`               > img.css
+
+    Changed:
+        tag.css             > badge_tag.css
+        ibtn.css            > btni.css
+
+    Removed:
+        tag.css
+
 #### 04-02-2017
     Stable Version 1.14
 

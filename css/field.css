@@ -17,14 +17,27 @@
     box-shadow: 0 0 15px #ccc;
 }
 
+/*
+ * Highlight 
+ */
 .fieldRequire{
     border: 1px solid #CE1A1A;
     box-shadow: 0 0 10px #FDAAAA;
 }
 
+/*
+ * Block Field
+ */
 .field_block{
     clear: both;
     width: 100%;
+}
+
+/*
+ * Curve Field
+ */
+.field_curve{
+    border-radius: 1.1em;
 }
 
 /*
