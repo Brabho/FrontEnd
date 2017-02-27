@@ -49,5 +49,11 @@ var valid = {
     url: function (url) {
         var regex = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
         return (regex.test(url));
+    },
+    /*
+     * Valid Input
+     */
+    input: function (target) {
+        return (target.checkValidity() === true && target.validity.valid === true);
     }
 };

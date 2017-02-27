@@ -43,6 +43,9 @@
 /*
  * Left Button
  */
+.btn_left{
+    text-align: left;
+}
 .btn_left::before{
     content: '\25C4\ ';
 }
@@ -50,6 +53,9 @@
 /*
  * Right Button
  */
+.btn_right{
+    text-align: right;
+}
 .btn_right::after{
     content: ' \25BA';
 }

@@ -1,5 +1,20 @@
 # Change Log & History
 
+#### 27-02-2017
+    Stable Version 1.16
+
+    Improved:
+        curve
+        btni.css
+        msg.css
+        reset.css
+        tooltip.css
+
+    Added:
+        `input`              > valid.js
+        `field_curve`        > field.css
+        breadcrumb.css
+
 #### 12-02-2017
     Stable Version 1.15
 

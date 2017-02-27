@@ -1,64 +1,58 @@
 /*
  * Some CSS Reset & Adject
  */
-*,html,head,body,
-header,footer,canvas,center,
-h1,h2,h3,h4,h5,h6,
-a,b,i,u,p,s,pre,code,
-blockquote,ul,ol,li,
-hr,br,del,strike,strong,
-noscript,marquee,
-select,option,optgroup,
-button,input,textarea,img,
-div,form,link,style,script,
-audio,video,embed,source,track,
-template,article,main,nav,progress,section,svg{
+*, html, head, body, header, footer, canvas, center, h1, h2, h3, h4, h5, h6, a, b, i, u, p, s, pre, code, blockquote, 
+ul, ol, li, hr, br, del, strike, strong, noscript, marquee, select, option, optgroup, button, input, textarea, img, div, 
+form, link, style, script, audio, video, embed, source, track, template, article, main, nav, progress, section, svg{
     margin: 0;
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    vertical-align: baseline;
+    background: transparent;
 }
-
 body{
     background: #fff;
     color: #000;
     word-wrap: break-word;
     cursor: default;
 }
-
-body,textarea,input{
+body, textarea, input, button{
     font-size: 12px;
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
-
 code, pre{
     font-size: 12px;
     font-family: monospace;
 }
-
-header,
-footer,
-article,main,
-nav,section{
+header, footer, article, main, nav, section, aside{
     clear: both;
     display: block;
 }
-
-hr,br{
+nav ul, nav ul li{
+    list-style: none;
+}
+hr, br{
     clear: both;
 }
-
 hr{
+    display: block;
     background: none;
-    border-top: 1px solid #ccc;
-    margin: 5px 0;
     height: 0;
+    padding: 0;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid #ccc;
 }
-
 li{
     list-style-position: inside;
 }
-
+input, select, button{
+    vertical-align: middle;
+}
+del{
+    text-decoration: line-through;
+}
 [disabled="disabled"]{
     cursor: not-allowed;
     pointer-events: none;

@@ -1,0 +1,44 @@
+/*
+ * Breadcrumbs Styling
+ */
+.breadcrumb{
+    display: block;
+    list-style: none;
+    vertical-align:top;
+    overflow: hidden;
+    clear: both;
+    background: #f1f1f1;
+    border-radius: 1.2em;
+    padding: 0 5px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.breadcrumb::before{
+    content: attr(data-breadcrumb-msg);
+}
+
+.breadcrumb li{
+    padding: 3px;
+    margin: 2px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.breadcrumb li::after{
+    content: '/';
+    padding-left: 6px;
+}
+
+.breadcrumb::before,
+.breadcrumb li::after{
+    color: #333;
+    text-shadow: 1px 1px #fff;
+    font-weight: normal;
+}
+
+.breadcrumb li:last-child::after{
+    content: '';
+    padding-left: 0;
+}
