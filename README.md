@@ -1,7 +1,5 @@
 # FrontEnd
 
-### Develop By [Club Coding] (http://clubcoding.com/)
-
 ### Description
 This is for frontend development.
 
@@ -17,7 +15,7 @@ Do not use with Angular JS, Bootstrap, Jquery or any another Framework / Library
 Some `icons` may not work in old browsers, so please double check for Production.
 
 ### Version
-Stable Version 1.16
+Stable Version 1.16.2
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.
