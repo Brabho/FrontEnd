@@ -43,6 +43,12 @@ var cf = {
         return value;
     },
     /*
+     * Random Number Between
+     */
+    rand: function (min, max) {
+        return Math.floor((Math.random() * max) + min);
+    },
+    /*
      * Random String
      */
     ranStr: function (length) {
@@ -55,11 +61,5 @@ var cf = {
             value += letnum.charAt(Math.floor((Math.random() * letnum.length) + 0));
         }
         return value;
-    },
-    /*
-     * Random Number Between
-     */
-    rand: function (min, max) {
-        return Math.floor((Math.random() * max) + min);
     }
 };

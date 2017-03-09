@@ -18,7 +18,7 @@
 }
 
 .badge{
-    border-radius: 1.1em;
+    border-radius: 1.2em;
     padding: 1px 5px;
 }
 
@@ -49,8 +49,8 @@
  * Yellow Color
  */
 .label_badge_y{
-    background: #9E9506;
-    color: #fff;
+    background: #EADF33;
+    color: #555;
 }
 
 /*
@@ -97,4 +97,48 @@
     left: 10px;
     top: 7px;
     position: absolute;
+}
+
+/*
+ * Tag Red
+ */
+.tag_cr{
+    background: #f51645;
+    color: #f9f9f9;
+}
+.tag_cr::before{
+    border-right: 11px solid #f51645;
+}
+
+/*
+ * Tag Blue
+ */
+.tag_cb{
+    background: #3498db;
+    color: #fefefe;
+}
+.tag_cb::before{
+    border-right: 11px solid #3498db;
+}
+
+/*
+ * Tag Yellow
+ */
+.tag_cy{
+    background: #EADF33;
+    color: #555;
+}
+.tag_cy::before{
+    border-right: 11px solid #EADF33;
+}
+
+/*
+ * Tag Green
+ */
+.tag_cg{
+    background: #20ca1c;
+    color: #fff;
+}
+.tag_cg::before{
+    border-right: 11px solid #20ca1c;
 }

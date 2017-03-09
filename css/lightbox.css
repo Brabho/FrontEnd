@@ -1,7 +1,6 @@
 /*
  * Lightbox
- * Require JS for Close
- *
+
  * Lightbox Background
  */
 .lightbox_bgb,
@@ -11,7 +10,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 99999;
+    z-index: 999999;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -29,7 +28,6 @@
     width: 500px;
     height: 300px;
     margin: 5% auto;
-    border: 1px solid #888;
     background: #fff;
     border: 1px solid #666;
     border-radius: 4px;

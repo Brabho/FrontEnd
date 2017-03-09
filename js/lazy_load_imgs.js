@@ -13,7 +13,3 @@ function lazy_load_imgs() {
         }
     }
 }
-window.addEventListener('load', function () {
-    lazy_load_imgs();
-    window.addEventListener('scroll', lazy_load_imgs, false);
-}, false);

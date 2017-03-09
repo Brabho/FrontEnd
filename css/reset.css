@@ -32,6 +32,9 @@ header, footer, article, main, nav, section, aside{
 nav ul, nav ul li{
     list-style: none;
 }
+li{
+    list-style-position: inside;
+}
 hr, br{
     clear: both;
 }
@@ -44,9 +47,6 @@ hr{
     border: 0;
     border-top: 1px solid #ccc;
 }
-li{
-    list-style-position: inside;
-}
 input, select, button{
     vertical-align: middle;
 }
@@ -56,5 +56,5 @@ del{
 [disabled="disabled"]{
     cursor: not-allowed;
     pointer-events: none;
-    opacity: 0.9;
+    opacity: 0.8;
 }

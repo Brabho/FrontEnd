@@ -1,5 +1,37 @@
 # Change Log & History
 
+#### 09-03-2017
+    Stable Version 2.0
+
+    Improved:
+        Minify Version
+        badge_tag.css
+        btn.css
+        field.css
+        img.css
+        lightbox.css
+        loading.css
+        msg.css
+        reset.css
+        tooltip.css
+
+    Added:
+        Tag Color
+        `loading_4`             > loading.css
+        iframe Responsive
+
+    Changed:
+        `ani_all`               > `animate_all`
+        lazy_load_imgs
+        requireThis.js
+
+    Removed:
+        Charset
+        Icons
+        Gradient                > btn.css
+        `img_circle, img_round` > img.css
+        btni.css
+
 #### 02-03-2017
     Stable Version 1.16.2
     Bugs Fixed

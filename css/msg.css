@@ -4,12 +4,14 @@
 .msg{
     margin: 10px 0;
     padding: 2px 6px;
-    border-radius: 4px;
     position: relative;
+    border-radius: 4px;
     border: 1px solid #aaa;
     border-left-width: 4px;
     background: #f9f9f9;
     display: block;
+    line-height: 25px;
+    font-weight: bold;
 }
 
 /*
@@ -121,7 +123,7 @@
  */
 .msg_warn{
     color: #6C542C;
-    background: #FDFBF4;
+    background: #FFFEFB;
     border: 1px solid #EAC26D;
     padding-left: 40px;
 }
@@ -131,7 +133,7 @@
     content: '';
     width: 0;
     height: 0;
-    border-bottom: 16px solid #CCCF02;
+    border-bottom: 16px solid #EADF33;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     position: absolute;

@@ -7,7 +7,7 @@
     display: inline-block;
     border-width: 2px;
     border-style: solid;
-    border-color: #000;    
+    border-color: #000;
     border-left-color: transparent;
     border-radius: 100%;
 }
@@ -16,11 +16,11 @@
  * Start Spin Loading Animation
  */
 .loading_spin{
-    -webkit-animation: spin 1s linear infinite;
-    -moz-animation: spin 1s linear infinite;
-    -ms-animation: spin 1s linear infinite;
-    -o-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
+    -moz-animation: spin 0.5s linear infinite;
+    -webkit-animation: spin 0.5s linear infinite;
+    -ms-animation: spin 0.5s linear infinite;
+    -o-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
 }
 
 /*
@@ -35,6 +35,14 @@
  */
 .loading_3{
     border-bottom-color: transparent;
+}
+
+/*
+ * Style 4
+ */
+.loading_4{
+    border-color: #ddd;
+    border-top-color: #000;
 }
 
 /*
@@ -56,36 +64,36 @@
 }
 
 /*
- * Big Size
+ * Large Size
  */
-.loading_sb{
+.loading_sl{
     width: 60px;
     height: 60px;
     border-width: 16px;
 }
 
 @-moz-keyframes spin{
-    from { -moz-transform: rotate(0deg); opacity: 0.4; }
-    50%  { -moz-transform: rotate(180deg); opacity: 1; }
-    to   { -moz-transform: rotate(360deg); opacity: 0.4; }
+    from { -moz-transform: rotate(0deg);}
+    50%  { -moz-transform: rotate(180deg);}
+    to   { -moz-transform: rotate(360deg);}
 }
 @-webkit-keyframes spin{
-    from { -webkit-transform: rotate(0deg); opacity: 0.4; }
-    50%  { -webkit-transform: rotate(180deg); opacity: 1; }
-    to   { -webkit-transform: rotate(360deg); opacity: 0.4; }
+    from { -webkit-transform: rotate(0deg);}
+    50%  { -webkit-transform: rotate(180deg);}
+    to   { -webkit-transform: rotate(360deg);}
 }
 @-ms-keyframes spin{
-    from { -ms-transform: rotate(0deg); opacity: 0.4; }
-    50%  { -ms-transform: rotate(180deg); opacity: 1; }
-    to   { -ms-transform: rotate(360deg); opacity: 0.4; }
+    from { -ms-transform: rotate(0deg);}
+    50%  { -ms-transform: rotate(180deg);}
+    to   { -ms-transform: rotate(360deg);}
 }
 @-o-keyframes spin{
-    from { -o-transform: rotate(0deg); opacity: 0.4; }
-    50%  { -o-transform: rotate(180deg); opacity: 1; }
-    to   { -o-transform: rotate(360deg); opacity: 0.4; }
+    from { -o-transform: rotate(0deg);}
+    50%  { -o-transform: rotate(180deg);}
+    to   { -o-transform: rotate(360deg);}
 }
 @keyframes spin{
-    from { transform: rotate(0deg);   opacity: 0.2; }
-    50%  { transform: rotate(180deg); opacity: 1.0; }
-    to   { transform: rotate(360deg); opacity: 0.2; }
+    from { transform: rotate(0deg);}
+    50%  { transform: rotate(180deg);}
+    to   { transform: rotate(360deg);}
 }

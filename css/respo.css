@@ -1,0 +1,48 @@
+/*
+ * Resonsive
+ * Image & Iframe
+ */
+.img_respo{
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: middle;
+}
+
+.img_thumb{ 
+    padding: 5px;
+    border: 4px solid #fff;
+    outline: 1px solid #ddd;
+}
+
+.img_click{
+    cursor: zoom-in;
+}
+
+.img_zoom{
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_zoom:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.ifrm_respo{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.ifrm_respo iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

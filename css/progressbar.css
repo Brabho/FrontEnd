@@ -70,7 +70,7 @@
 
 /* Green Color */
 .progressbar_g{
-    color: #fff;
+    color: #000;
     background: #0bb407;
     background: -webkit-repeating-linear-gradient(-45deg, #46fb42, #46fb42 , #0bb407 10px, #0bb407 20px);
     background: -o-repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);

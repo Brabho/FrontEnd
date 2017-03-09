@@ -12,10 +12,8 @@ Powerful & LightWeight.
 ### Note
 Do not use with Angular JS, Bootstrap, Jquery or any another Framework / Library.
 
-Some `icons` may not work in old browsers, so please double check for Production.
-
 ### Version
-Stable Version 1.16.2
+Stable Version 2.0
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.
@@ -26,10 +24,6 @@ Stable Version 1.16.2
 <link rel="stylesheet" type="text/css" href="css/btn.css"  />
 <button>Button</button>
 <button class="btn_cbu">Blue Button</button>
-
-<!-- Icon -->
-<link rel="stylesheet" type="text/css" href="icons/home.css"  />
-<div class="home"></div>
 
 <!-- Checkbox or Radio -->
 <link rel="stylesheet" type="text/css" href="css/check.css"  />
@@ -60,15 +54,6 @@ Stable Version 1.16.2
 		alert(data);
 	});
 </script>
-
-<!-- Get Element(s) By -->
-<script type="text/javascript" src="js/geteb.js"></script>
-<script type="text/javascript">
-getEB({
-    class: 'elem'
-}, function (elm) {
-    alert(elm.innerHTML);
-});
 
 /* Document Query Selectors */
 dqs('.elem', function(elem) {

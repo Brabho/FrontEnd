@@ -1,6 +1,6 @@
 /*
  * Tooltip 
- * Example: <a class="tooltip" data-tooltip="Title Here">Tooltip</a>
+ * Example: <a class="tooltip" data-tooltip="Tooltip">Tooltip</a>
  */
 .tooltip{
     position: relative;
@@ -9,6 +9,7 @@
 
 .tooltip::before,
 .tooltip::after{
+    color: #fff;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
