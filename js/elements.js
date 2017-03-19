@@ -2,7 +2,7 @@
  * Document Query Selector(s)
  */
 function _(elms) {
-    return document.querySelectorAll(elms);
+    return (document.querySelectorAll(elms).length > 0) ? document.querySelectorAll(elms) : false;
 }
 
 function dqs(elms, callback) {
