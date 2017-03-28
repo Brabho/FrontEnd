@@ -1,5 +1,12 @@
 # Change Log & History
 
+#### 29-03-2017
+    Stable Version 2.2
+    Stability Improved
+
+    Bug Fixed:
+        ajax.js
+
 #### 20-03-2017
     Stable Version 2.1
     Stability Improved

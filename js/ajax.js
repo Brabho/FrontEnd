@@ -12,7 +12,7 @@ function ajax(param, callback) {
         param.data = null;
     }
     if (!param.type) {
-        param.type = 'application/x-www-form-urlencoded; charset=utf-8';
+        param.type = false;
     }
     if (!param.x_req_wid) {
         param.x_req_wid = true;
@@ -24,14 +24,17 @@ function ajax(param, callback) {
     if (window.XMLHttpRequest) {
         xmlHttpReq = new XMLHttpRequest();
         create_httpReq = true;
+
     } else if (window.ActiveXObject) {
         try {
             xmlHttpReq = new ActiveXObject("Msxml2.XMLHTTP");
             create_httpReq = true;
+
         } catch (ex) {
             try {
                 xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
                 create_httpReq = true;
+
             } catch (ex) {
                 create_httpReq = false;
             }
@@ -54,37 +57,82 @@ function ajax(param, callback) {
         }
 
         var url = param.url;
-        if (param.meth === 'GET' && param.data !== null) {
-            url += '?' + data;
-            data = null;
+
+        switch (param.meth) {
+            case 'GET':
+
+                if (param.data !== null) {
+                    url += '?' + data;
+                    data = null;
+                }
+
+                xmlHttpReq.open(param.meth, url, true);
+                break;
+
+            case 'POST':
+
+                xmlHttpReq.open(param.meth, url, true);
+
+                if (param.type) {
+                    xmlHttpReq.setRequestHeader('Content-Type', param.type);
+                }
+                break;
         }
 
-        xmlHttpReq.open(param.meth, url, true);
-        if (param.file === false && param.meth === 'POST') {
-            xmlHttpReq.setRequestHeader('Content-Type', param.type);
-            if (param.x_req_wid === true) {
-                xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
-                xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-            }
+        if (param.x_req_wid === true) {
+            xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+            xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         }
+
+        var return_data = [];
 
         xmlHttpReq.addEventListener('load', function () {
             if (this.status >= 200 && this.status < 400) {
-                callback(this.responseText.trim());
+
+                return_data = {
+                    '0': 'success',
+                    'response': this.responseText.trim()
+                };
+
+                callback(return_data);
             } else {
-                callback('HEADER_ERROR: ' + this.status);
+
+                return_data = {
+                    '0': 'error',
+                    'status': 'HEADER',
+                    'code': this.status
+                };
+
+                callback(return_data);
             }
         }, false);
 
         xmlHttpReq.addEventListener('error', function () {
-            callback('SERVER_ERROR');
+
+            return_data = {
+                '0': 'error',
+                'status': 'SERVER'
+            };
+
+            callback(return_data);
         }, false);
 
         xmlHttpReq.addEventListener('abort', function () {
-            callback('USER_ABORT');
+
+            return_data = {
+                '0': 'error',
+                'status': 'ABORT'
+            };
+
+            callback(return_data);
         }, false);
 
-        xmlHttpReq.send(data);
+        if (param.file) {
+            xmlHttpReq.send(param.file);
+        } else {
+            xmlHttpReq.send(data);
+        }
+
         return xmlHttpReq;
 
     } else {

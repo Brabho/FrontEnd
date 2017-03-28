@@ -13,7 +13,7 @@ Powerful & LightWeight.
 Do not use with Angular JS, Bootstrap, Jquery or any another Framework / Library.
 
 ### Version
-Stable Version 2.1
+Stable Version 2.2
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.
@@ -46,7 +46,7 @@ Stable Version 2.1
 		/*
 		 * -- Others --
 		 * type: ,
-		 * file: true/false,
+		 * file: FormData(),
 		 * x_req_wid: true/false
 		 */
 

@@ -17,7 +17,10 @@ body{
     word-wrap: break-word;
     cursor: default;
 }
-body, textarea, input, button{
+*, body,
+input, button,
+textarea,
+[contenteditable="true"]{
     font-size: 12px;
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
@@ -57,4 +60,7 @@ del{
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.8;
+}
+[contenteditable="true"]{
+    cursor: text;
 }

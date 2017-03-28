@@ -30,6 +30,12 @@ var cf = {
         }
     },
     /*
+     * Random Number Between
+     */
+    rand: function (min, max) {
+        return Math.floor((Math.random() * max) + min);
+    },
+    /*
      * Random Number
      */
     ranNum: function (length) {
@@ -41,12 +47,6 @@ var cf = {
             value += Math.floor((Math.random() * 9) + 0);
         }
         return value;
-    },
-    /*
-     * Random Number Between
-     */
-    rand: function (min, max) {
-        return Math.floor((Math.random() * max) + min);
     },
     /*
      * Random String
