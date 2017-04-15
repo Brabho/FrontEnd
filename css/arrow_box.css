@@ -1,0 +1,96 @@
+/*
+ * Style Drop Down Container
+ */
+.arrow_box{
+    position: relative;
+    box-shadow: 0 0 10px #ccc;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 10px;
+}
+
+.arrow_box::before,
+.arrow_box::after{
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+}
+
+/*
+ * Up Arrow
+ */
+.arrow_box_up::before{
+    top: -9px;
+    left: 10%;
+    border-bottom: 9px solid #999;
+    border-left: 8px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+.arrow_box_up::after{
+    top: -8px;
+    left: 10%;
+    border-bottom: 9px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+/*
+ * Down Arrow
+ */
+.arrow_box_down::before{
+    bottom: -10px;
+    left: 10%;
+    border-top: 9px solid #999;
+    border-left: 8px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+.arrow_box_down::after{
+    bottom: -9px;
+    left: 10%;
+    border-top: 9px solid #fff;
+    border-left: 8px solid transparent;
+    border-right: 9px solid transparent;
+}
+
+/*
+ * Left Arrow
+ */
+.arrow_box_left::before{
+    top: 2px;
+    left: -10px;
+    border-right: 9px solid #999;
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+}
+
+.arrow_box_left::after{
+    top: 2px;
+    left: -9px;
+    border-right: 9px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+}
+
+/*
+ * Right Arrow
+ */
+.arrow_box_right::before{
+    top: 2px;
+    right: -10px;
+    border-left: 9px solid #999;
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+}
+
+.arrow_box_right::after{
+    top: 2px;
+    right: -9px;
+    border-left: 9px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 9px solid transparent;
+}

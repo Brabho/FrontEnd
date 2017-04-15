@@ -10,10 +10,10 @@ Pure CSS and JavaScript.
 Powerful & LightWeight.
 
 ### Note
-Do not use with Angular JS, Bootstrap, Jquery or any another Framework / Library.
+Do not use with Angular JS, Bootstrap, Jquery or any another Framework or Library.
 
 ### Version
-Stable Version 2.2
+Stable Version 3.0
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.
@@ -22,10 +22,11 @@ Stable Version 2.2
 ```html
 <!-- button -->
 <link rel="stylesheet" type="text/css" href="css/btn.css"  />
-<button>Button</button>
-<button class="btn_cbu">Blue Button</button>
+<button class="btn">Button</button>
+<button class="btn btn_cbu">Blue Button</button>
+<button class="btn btn_cr">Red Button</button>
 
-<!-- Checkbox or Radio -->
+<!-- Checkbox or CheckToggle or Radio -->
 <link rel="stylesheet" type="text/css" href="css/check.css"  />
 <div class="check">
     <input type="checkbox" id="check"/>
@@ -41,22 +42,24 @@ Stable Version 2.2
 			username: document.getElementById('username'),
 			password: document.getElementById('password')
 		},
-		meth: 'POST',
 
 		/*
-		 * -- Others --
-		 * type: ,
+		 ** Others *
+         * method: POST, GET, HEAD, PUT, DELETE (Default POST)
+		 * type: Content-Type,
 		 * file: FormData(),
-		 * x_req_wid: true/false
+		 * Xreq: true/false (Default true)
 		 */
 
-	}, function(data) {
-		alert(data);
+	}, function(r) {
+		alert(r);
 	});
 </script>
 
+<script type="text/javascript" src="js/elements.js"></script>
+<script type="text/javascript">
 /* Document Query Selectors */
-dqs('.elem', function(elem) {
+$('.elem', function(elem) {
     alert(elem.innerHTML);
 });
 </script>
@@ -72,7 +75,7 @@ onEvt('click', function(elem) {
     }
 
     // for attribute
-    if(elem.hasAttribute('target')) {
+    if(elem.hasAttribute('name')) {
         // do stuff
     }
 });

@@ -1,6 +1,6 @@
 /*
  * Animation Object
- * Require: `getParse.js`
+ * Require: `functions.js`
  */
 var animate = {
     /*
@@ -61,7 +61,7 @@ var animate = {
 
         switch (updown) {
             case 'down':
-                var height = getParse.cssProp(elem, 'height');
+                var height = cssProp(elem, 'height');
                 height = height.toString().replace(/px/i, '');
                 var hei = 0;
                 elem.style.height = '0px';

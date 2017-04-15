@@ -2,8 +2,8 @@
  * Ajax Function
  */
 function ajax(param, callback) {
-    if (!param.meth) {
-        param.meth = 'POST';
+    if (!param.method) {
+        param.method = 'POST';
     }
     if (!param.file) {
         param.file = false;
@@ -12,36 +12,41 @@ function ajax(param, callback) {
         param.data = null;
     }
     if (!param.type) {
-        param.type = false;
+        param.type = 'application/x-www-form-urlencoded; charset=utf-8';
     }
     if (!param.x_req_wid) {
-        param.x_req_wid = true;
+        param.Xreq = true;
     }
 
-    var xmlHttpReq;
-    var create_httpReq = false;
+    var xmlHttpReq = false;
+    var return_data = [];
+
+    /*
+     * Creating HTTP Request Object
+     */
 
     if (window.XMLHttpRequest) {
         xmlHttpReq = new XMLHttpRequest();
-        create_httpReq = true;
 
     } else if (window.ActiveXObject) {
         try {
             xmlHttpReq = new ActiveXObject("Msxml2.XMLHTTP");
-            create_httpReq = true;
 
         } catch (ex) {
             try {
                 xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
-                create_httpReq = true;
 
             } catch (ex) {
-                create_httpReq = false;
+                xmlHttpReq = false;
             }
         }
     }
 
-    if (xmlHttpReq && create_httpReq) {
+    if (xmlHttpReq) {
+
+        /*
+         * Arrange Datas
+         */
 
         var data = '';
         if (param.data !== null) {
@@ -56,86 +61,102 @@ function ajax(param, callback) {
             }
         }
 
-        var url = param.url;
+        /*
+         * Open Reuqest
+         */
 
-        switch (param.meth) {
-            case 'GET':
+        if (param.method === 'GET' || param.method === 'HEAD' || param.method === 'PUT' || param.method === 'DELETE') {
 
-                if (param.data !== null) {
-                    url += '?' + data;
-                    data = null;
-                }
-
-                xmlHttpReq.open(param.meth, url, true);
-                break;
-
-            case 'POST':
-
-                xmlHttpReq.open(param.meth, url, true);
-
-                if (param.type) {
-                    xmlHttpReq.setRequestHeader('Content-Type', param.type);
-                }
-                break;
-        }
-
-        if (param.x_req_wid === true) {
-            xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
-            xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-        }
-
-        var return_data = [];
-
-        xmlHttpReq.addEventListener('load', function () {
-            if (this.status >= 200 && this.status < 400) {
-
-                return_data = {
-                    '0': 'success',
-                    'response': this.responseText.trim()
-                };
-
-                callback(return_data);
-            } else {
-
-                return_data = {
-                    '0': 'error',
-                    'status': 'HEADER',
-                    'code': this.status
-                };
-
-                callback(return_data);
+            if (param.data !== null) {
+                param.url += '?' + data;
+                data = null;
             }
-        }, false);
 
-        xmlHttpReq.addEventListener('error', function () {
+            xmlHttpReq.open(param.method, param.url, true);
 
-            return_data = {
-                '0': 'error',
-                'status': 'SERVER'
-            };
+        } else if (param.method === 'POST') {
 
-            callback(return_data);
-        }, false);
+            xmlHttpReq.open(param.method, param.url, true);
 
-        xmlHttpReq.addEventListener('abort', function () {
+            if (param.type && param.file === false) {
+                xmlHttpReq.setRequestHeader('Content-Type', param.type);
+            }
 
-            return_data = {
-                '0': 'error',
-                'status': 'ABORT'
-            };
+            if (param.x_req_wid === true) {
+                xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+                xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            }
 
-            callback(return_data);
-        }, false);
-
-        if (param.file) {
-            xmlHttpReq.send(param.file);
         } else {
-            xmlHttpReq.send(data);
+            param.method = false;
         }
 
-        return xmlHttpReq;
+        if (param.method) {
+
+            xmlHttpReq.addEventListener('load', function () {
+                if (this.status >= 200 && this.status < 400) {
+
+                    return_data = {
+                        0: 'success',
+                        'response': this.responseText.trim()
+                    };
+
+                    callback(return_data);
+                } else {
+
+                    return_data = {
+                        0: 'error',
+                        'response': 'HEADER',
+                        'code': this.status
+                    };
+
+                    callback(return_data);
+                }
+            }, false);
+
+            xmlHttpReq.addEventListener('error', function () {
+
+                return_data = {
+                    0: 'error',
+                    'response': 'SERVER'
+                };
+
+                callback(return_data);
+            }, false);
+
+            xmlHttpReq.addEventListener('abort', function () {
+
+                return_data = {
+                    0: 'error',
+                    'response': 'ABORT'
+                };
+
+                callback(return_data);
+            }, false);
+
+            if (param.file) {
+                xmlHttpReq.send(param.file);
+            } else {
+                xmlHttpReq.send(data);
+            }
+
+        } else {
+
+            return_data = {
+                0: 'error',
+                'response': 'METHOD'
+            };
+
+            callback(return_data);
+        }
 
     } else {
-        return false;
+
+        return_data = {
+            0: 'error',
+            'response': 'BROWSER'
+        };
+
+        callback(return_data);
     }
 }

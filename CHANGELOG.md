@@ -1,5 +1,35 @@
 # Change Log & History
 
+#### 16-04-2017
+    Stable Version 3.0
+
+    Added:
+        4 sides arrow container box
+
+    Improved:
+        Minified
+        Grid
+        ajax.js
+        sets_basic.js
+
+    Changed:
+        AJAX Response
+        AJAX Error
+        Lazy Load Image(s)
+
+        btnDisable      > btn_disable
+        fieldDisable    > field_disable
+        group_act       > group_active
+        pagination_act  > pagination_active
+
+        drop_down_box.css   > arrow.css
+        cf.js               > function.js
+        str.js              > function.js
+
+    Removed:
+        Content Separator
+        Mention & Hashtag
+
 #### 29-03-2017
     Stable Version 2.2
     Stability Improved

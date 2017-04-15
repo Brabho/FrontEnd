@@ -29,7 +29,7 @@
     background: #eee;
 }
 
-.pagination .pagination_act{
+.pagination .pagination_active{
     border: 1px solid #e1e1e1;
     background: #FCFCFC;
     color: #A99999;

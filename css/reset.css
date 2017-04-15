@@ -11,36 +11,41 @@ form, link, style, script, audio, video, embed, source, track, template, article
     vertical-align: baseline;
     background: transparent;
 }
+
 body{
     background: #fff;
     color: #000;
     word-wrap: break-word;
     cursor: default;
 }
+
 *, body,
 input, button,
-textarea,
-[contenteditable="true"]{
-    font-size: 12px;
+textarea{
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
+
 code, pre{
-    font-size: 12px;
     font-family: monospace;
 }
+
 header, footer, article, main, nav, section, aside{
     clear: both;
     display: block;
 }
+
 nav ul, nav ul li{
     list-style: none;
 }
+
 li{
     list-style-position: inside;
 }
+
 hr, br{
     clear: both;
 }
+
 hr{
     display: block;
     background: none;
@@ -48,19 +53,23 @@ hr{
     padding: 0;
     margin: 1em 0;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #bbb;
 }
+
 input, select, button{
     vertical-align: middle;
 }
+
 del{
     text-decoration: line-through;
 }
+
 [disabled="disabled"]{
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.8;
 }
+
 [contenteditable="true"]{
     cursor: text;
 }

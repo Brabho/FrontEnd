@@ -51,8 +51,8 @@
 }
 
 .check_toggle label::before{
-    background: #eee;
-    border: 1px solid #ddd;
+    background: #ddd;
+    border: 1px solid #bbb;
     border-radius: 7px;
     height: 12px;
     width: 17px;
@@ -60,11 +60,11 @@
 
 .check_toggle label::after{
     margin: -2px 0 0 -10px;
-    background: #ccc;
+    background: #aaa;
     width: 16px;
     height: 16px;
     border-radius: 100%;
-    border: 1px solid #bbb;
+    border: 1px solid #999;
 }
 
 .check label:hover::before{
@@ -77,12 +77,12 @@
 }
 
 .check_toggle input[type='checkbox']:checked + label::before{
-    background: #C6E7FB;
-    border: 1px solid #a0cfec;
+    background: #93D1F7;
+    border: 1px solid #3399FF;
 }
 
 .check_toggle input[type='checkbox']:checked + label::after{
-    background: #93D1F7;
-    border: 1px solid #92c6e5;
+    background: #3399FF;
+    border: 1px solid #339900;
     left: 20px;
 }

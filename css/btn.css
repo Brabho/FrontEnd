@@ -1,11 +1,11 @@
 /*
- * Buttons Style, Colour
+ * Buttons Style & Color
  */
 .btn{
     font-weight: bold;
     color: #222;
     padding: 2px 3px;
-    display: inline-block;
+    display: inline;
     cursor: pointer;
     text-decoration: none;
     border-radius: 3px;
@@ -49,7 +49,7 @@
 }
 
 /*
- * Red Color 
+ * Red Color
  */
 .btn_cr{
     color: #f9f9f9;
@@ -72,7 +72,7 @@
 }
 
 /*
- * Blue Color 
+ * Blue Color
  */
 .btn_cbu{
     border: 1px solid #2980b9;
@@ -95,7 +95,7 @@
 }
 
 /*
- * Yellow Color 
+ * Yellow Color
  */
 .btn_cy{
     border: 1px solid #C4BD4F;
@@ -117,7 +117,7 @@
 }
 
 /*
- * Green Color 
+ * Green Color
  */
 .btn_cg{
     border: 1px solid #4AC447;
@@ -140,13 +140,13 @@
 }
 
 /*
- * Disable Button 
+ * Disable Button
  */
-.btnDisable,
-.btnDisable:hover,
-.btnDisable:focus,
-.btnDisable:active,
-.btnDisable:disabled{
+.btn_disable,
+.btn_disable:hover,
+.btn_disable:focus,
+.btn_disable:active,
+.btn_disable:disabled{
     cursor: not-allowed;
     pointer-events: none;
     opacity: 0.8;

@@ -11,18 +11,18 @@ a,
     cursor: pointer;
 }
 
-.link_block{
-    display: block;
-    clear: both;
-    padding: 5px;
-}
-
 a:hover,
 a:focus,
 .link:hover,
 .link:focus{
     color: #0A50C3;
     text-decoration: underline;
+}
+
+.link_block{
+    display: block;
+    clear: both;
+    padding: 5px;
 }
 
 .link_block:hover{

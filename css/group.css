@@ -51,11 +51,11 @@
 /*
  * Hover & Active Group
  */
-.group li.group_act,
+.group li.group_active,
 .group li:hover{
     background: #f1f1f1;
 }
 
-.group li.group_act{
+.group li.group_active{
     font-weight: bold;
 }

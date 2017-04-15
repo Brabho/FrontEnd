@@ -1,6 +1,6 @@
 /*
  * Tooltip 
- * Example: <a class="tooltip" data-tooltip="Tooltip">Tooltip</a>
+ * Example: <span class="tooltip" data-tooltip="Tooltip">Tooltip</span>
  */
 .tooltip{
     position: relative;

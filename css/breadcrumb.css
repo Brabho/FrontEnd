@@ -1,13 +1,12 @@
 /*
- * Breadcrumbs Styling
+ * Breadcrumb
  */
 .breadcrumb{
     display: block;
     list-style: none;
-    vertical-align:top;
+    vertical-align: top;
     overflow: hidden;
     clear: both;
-    border-radius: 1.2em;
     padding: 0 5px;
     font-size: 12px;
     text-align: center;

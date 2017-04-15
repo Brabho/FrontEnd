@@ -1,17 +1,18 @@
 /*
  * Sets Basic
+ * Require Complete Library
  */
 window.addEventListener('load', function () {
 
     /*
      * A Tag Manipulate
      */
-    for (var i = 0; i < _('a').length; i++) {
+    $('a', function (elm) {
+        elm.addEventListener('click', function (e) {
 
-        /*
-         * Prevent Default Behaviour on hash link, if Link end with (#)
-         */
-        _('a')[i].addEventListener('click', function (e) {
+            /*
+             * Prevent Default Behaviour on hash link, if Link end with (#)
+             */
             var lastChar = this.href.substr(this.href.length - 1);
             if (lastChar === "#") {
                 e.preventDefault();
@@ -26,52 +27,50 @@ window.addEventListener('load', function () {
                 e.stopPropagation();
                 window.open(this.href, '_blank');
             }
-
         }, false);
-    }
+    });
 
     /*
      * Set `disabled` Attribute for `fieldDisable` Class Name
      */
-    for (var j = 0; j < _('.fieldDisable').length; j++) {
-        _('.fieldDisable')[j].setAttribute('disabled', 'disabled');
-    }
+    $('.field_disable', function (elm) {
+        elm.setAttribute('disabled', 'disabled');
+    });
 
     /*
      * Set `disabled` Attribute for `btnDisable` Class Name
      */
-    for (var k = 0; k < _('.btnDisable').length; k++) {
-        _('.btnDisable')[k].setAttribute('disabled', 'disabled');
-    }
+    $('.btn_disable', function (elm) {
+        elm.setAttribute('disabled', 'disabled');
+    });
 
     /*
      * Open IMG (img_click) in New Tab
      */
-    for (var l = 0; l < _('.img_click').length; l++) {
-        _('.img_click')[l].addEventListener('click', function () {
+    $('.img_click', function (elm) {
+        elm.addEventListener('click', function () {
             window.open(this.getAttribute('src'), '_blank');
         }, false);
-    }
+    });
 
     /*
      * Highlight if field is Blank / Empty
      * Optional: animate.css (More Style & Effect)
      */
-    for (var m = 0; m < _('.requirethis').length; m++) {
-        _('.requirethis')[m].addEventListener('blur', function () {
+    $('.require_this', function (elm) {
+        elm.addEventListener('blur', function () {
             var fieldValue = this.value.trim();
             if (fieldValue === '' || fieldValue === ' ') {
-                this.classList.add('fieldRequire', 'blink');
+                this.classList.add('field_require', 'blink');
                 var disElm = this;
                 setTimeout(function () {
                     disElm.classList.remove('blink');
                 }, 2000);
             } else {
-                this.classList.remove('fieldRequire');
-                this.classList.remove('blink');
+                this.classList.remove('field_require', 'blink');
             }
         }, false);
-    }
+    });
 
     /*
      * Lazy Load Function Calling
