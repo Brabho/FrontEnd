@@ -1,5 +1,17 @@
 # Change Log & History
 
+#### 27-04-2017
+    Stable Version 3.1
+
+    Added:
+        Round Edge Group
+        Center Element      > respo.css
+        `is_var`            > functions.js
+
+    Improved:
+        `hr`
+        visitor.js
+
 #### 16-04-2017
     Stable Version 3.0
 

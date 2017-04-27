@@ -52,15 +52,16 @@ var visitor = {
      * Get Browser
      */
     browser: function () {
+
         var browsers_list = [
             'Firefox',
+            'Opr',
+            'Edge',
             'Chrome',
             'Safari',
-            'Opera',
             'Netscape',
             'Maxthon',
             'Konqueror',
-            'Edge',
             'MSIE',
             'Trident',
             'UCBrowser',
@@ -68,7 +69,7 @@ var visitor = {
         ];
 
         for (var j = 0; j < browsers_list.length; j++) {
-            var the_sbrowser = new RegExp(browsers_list[j], 'i');
+            var the_sbrowser = new RegExp(browsers_list[j], 'gi');
             if (navigator.userAgent.match(the_sbrowser)) {
                 var get_brow = browsers_list[j];
                 break;
@@ -79,6 +80,8 @@ var visitor = {
                 return 'Internet Explorer';
             } else if (get_brow === 'UCBrowser' || get_brow === 'UCWEB') {
                 return 'UC Browser';
+            } else if (get_brow === 'Opr') {
+                return 'Opera';
             } else {
                 return get_brow;
             }

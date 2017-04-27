@@ -1,5 +1,5 @@
 /*
- * Group Vertical 
+ * Vertical Group
  */
 .group{
     display: inline-block;
@@ -31,7 +31,17 @@
 }
 
 /*
- * Group Horizontal 
+ * Vertical Group Round Edge
+ */
+.group_re li:first-child{
+    border-radius: 1.2em 1.2em 0 0;
+}
+.group_re li:last-child{
+    border-radius: 0 0 1.2em 1.2em;
+}
+
+/*
+ * Horizontal Group
  */
 .group_h li{
     display: inline-block;
@@ -46,6 +56,16 @@
 .group_h li:last-child{
     border-radius: 0 3px 3px 0;
     border-right: 1px solid #ccc;
+}
+
+/*
+ * Horizontal Group Round Edge
+ */
+.group_h_re li:first-child{
+    border-radius: 1.2em 0 0 1.2em;
+}
+.group_h_re li:last-child{
+    border-radius: 0 1.2em 1.2em 0;
 }
 
 /*

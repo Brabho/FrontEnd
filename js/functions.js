@@ -3,6 +3,13 @@
  */
 
 /*
+ * Isset Variable
+ */
+function is_var(vari) {
+    return (vari !== null && vari !== '' && vari.length > 0);
+}
+
+/*
  * Isset Query String
  * (Return Bool)
  */
@@ -12,9 +19,8 @@ function is_qstr(field) {
         return true;
     } else if (url.indexOf('&' + field + '=') !== -1) {
         return true;
-    } else {
-        return false;
     }
+    return false;
 }
 
 /*
