@@ -35,6 +35,10 @@
     clear: both;
 }
 
+.progressbar_curve{
+    border-radius: 1.2em;
+}
+
 /* Red Color */
 .progressbar_r{
     color: #fff;
@@ -81,10 +85,10 @@
 
 /* Animation */
 .progressbar_animate{
-    -webkit-animation: progressbar_animate 1s linear infinite;
-    -moz-animation: progressbar_animate 1s linear infinite;
-    -ms-animation: progressbar_animate 1s linear infinite;
-    animation: progressbar_animate 1s linear infinite;
+    -webkit-animation: progressbar_animate 0.5s linear infinite;
+    -moz-animation: progressbar_animate 0.5s linear infinite;
+    -ms-animation: progressbar_animate 0.5s linear infinite;
+    animation: progressbar_animate 0.5s linear infinite;
 }
 
 @-webkit-keyframes progressbar_animate{

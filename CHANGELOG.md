@@ -1,5 +1,16 @@
 # Change Log & History
 
+#### 03-05-2017
+    Stable Version 3.2
+
+    Added:
+        Curve Progressbar
+        `animate_inside`        > animate.css
+
+    Changed:
+        group_re                > group_curve
+        Progressbar Speed
+
 #### 27-04-2017
     Stable Version 3.1
 

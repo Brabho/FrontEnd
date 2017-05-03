@@ -31,12 +31,12 @@
 }
 
 /*
- * Vertical Group Round Edge
+ * Vertical Group Curve Edge
  */
-.group_re li:first-child{
+.group_curve li:first-child{
     border-radius: 1.2em 1.2em 0 0;
 }
-.group_re li:last-child{
+.group_curve li:last-child{
     border-radius: 0 0 1.2em 1.2em;
 }
 
@@ -59,12 +59,12 @@
 }
 
 /*
- * Horizontal Group Round Edge
+ * Horizontal Group Curve Edge
  */
-.group_h_re li:first-child{
+.group_h_curve li:first-child{
     border-radius: 1.2em 0 0 1.2em;
 }
-.group_h_re li:last-child{
+.group_h_curve li:last-child{
     border-radius: 0 1.2em 1.2em 0;
 }
 

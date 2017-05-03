@@ -148,9 +148,8 @@ function scrollPosi() {
 function hasScroll(elem) {
     if (typeof elem === 'undefined' || elem === null) {
         return (document.body.scrollHeight > window.innerHeight) ? true : false;
-    } else {
-        return (elem.scrollHeight > elem.clientHeight) ? true : false;
     }
+    return (elem.scrollHeight > elem.clientHeight) ? true : false;
 }
 
 /*

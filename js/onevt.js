@@ -3,7 +3,7 @@
  */
 function onEvt(type, callback) {
     if (document.attachEvent) {
-        document.attachEvent("on" + type, function (e) {
+        document.attachEvent('on' + type, function (e) {
             callback(e.target, e);
         });
     } else {

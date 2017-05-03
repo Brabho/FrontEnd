@@ -141,22 +141,18 @@ function ajax(param, callback) {
             }
 
         } else {
-
             return_data = {
                 0: 'error',
                 'response': 'METHOD'
             };
-
             callback(return_data);
         }
 
     } else {
-
         return_data = {
             0: 'error',
             'response': 'BROWSER'
         };
-
         callback(return_data);
     }
 }

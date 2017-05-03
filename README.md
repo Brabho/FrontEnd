@@ -13,7 +13,7 @@ Powerful & LightWeight.
 Do not use with Angular JS, Bootstrap, Jquery or any another Framework or Library.
 
 ### Version
-Stable Version 3.1
+Stable Version 3.2
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.
@@ -43,13 +43,13 @@ ajax({
 		password: document.getElementById('password')
 	},
 
-	/*
-	 * = Others =
-     * method: POST, GET, HEAD, PUT, DELETE (Default POST)
-	 * type: Content-Type,
-	 * file: FormData(),
-	 * Xreq: true/false (Default true)
-	 */
+/*
+ * Others
+ * method: POST, GET, HEAD, PUT, DELETE (Default POST)
+ * type: Content-Type,
+ * file: FormData(),
+ * Xreq: true/false (Default true)
+ */
 
 }, function(r) {
 	console.log(r);
