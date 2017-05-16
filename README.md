@@ -10,10 +10,10 @@ Pure CSS and JavaScript.
 Powerful & LightWeight.
 
 ### Note
-Do not use with Angular JS, Bootstrap, Jquery or any another Framework or Library.
+Do not use with Jquery & Bootstrap.
 
 ### Version
-Stable Version 3.2
+Stable Version 3.5
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.

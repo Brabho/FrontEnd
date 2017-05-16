@@ -31,17 +31,17 @@ window.addEventListener('load', function () {
     });
 
     /*
-     * Set `disabled` Attribute for `fieldDisable` Class Name
+     * Set `disabled` Attribute for `field_disable` Class Name
      */
     $('.field_disable', function (elm) {
-        elm.setAttribute('disabled', 'disabled');
+        elm.setAttribute('disabled', 'true');
     });
 
     /*
-     * Set `disabled` Attribute for `btnDisable` Class Name
+     * Set `disabled` Attribute for `btn_disable` Class Name
      */
     $('.btn_disable', function (elm) {
-        elm.setAttribute('disabled', 'disabled');
+        elm.setAttribute('disabled', 'true');
     });
 
     /*

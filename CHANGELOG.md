@@ -1,5 +1,17 @@
 # Change Log & History
 
+#### 17-05-2017
+    Stable Version 3.5
+    Bugs Fixed
+    Stability Improved
+
+    Added:
+        Card UI
+
+    Changed:
+        Elements Key `_` with `$`
+        `.bquote`           > `.quote`
+
 #### 03-05-2017
     Stable Version 3.2
 

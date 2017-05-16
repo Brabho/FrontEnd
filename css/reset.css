@@ -19,6 +19,11 @@ body{
     cursor: default;
 }
 
+body, input, button,
+textarea, code, pre{
+    font-size: 12px;
+}
+
 *, body,
 input, button,
 textarea{

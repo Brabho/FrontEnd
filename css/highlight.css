@@ -85,9 +85,9 @@
 }
 
 /*
- * Blockquote Highlight
+ * Quote Highlight
  */
-.bquote{
+.quote{
     clear: both;
     text-indent: 25px;
     border: 1px solid #ddd;
@@ -102,8 +102,8 @@
     position: relative;
 }
 
-.bquote::before,
-.bquote::after{
+.quote::before,
+.quote::after{
     text-indent: 0;
     color: #888;
     font-size: 45px;
@@ -111,13 +111,13 @@
     font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
-.bquote::before{
+.quote::before{
     content: open-quote;
     line-height: 0.05em;
     left: 0;
 }
 
-.bquote::after{
+.quote::after{
     content: close-quote;
     bottom: -0.5em;
     right: 15px;
