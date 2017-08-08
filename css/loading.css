@@ -10,6 +10,7 @@
     border-color: #000;
     border-left-color: transparent;
     border-radius: 100%;
+    font-size: 12px;
 }
 
 /*
@@ -48,7 +49,7 @@
 /*
  * Small Size
  */
-.loading_ss{
+.loading_small{
     width: 15px;
     height: 15px;
     border-width: 4px;
@@ -57,7 +58,7 @@
 /*
  * Medium Size
  */
-.loading_sm{
+.loading_medium{
     width: 30px;
     height: 30px;
     border-width: 8px;
@@ -66,7 +67,7 @@
 /*
  * Large Size
  */
-.loading_sl{
+.loading_large{
     width: 60px;
     height: 60px;
     border-width: 16px;

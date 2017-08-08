@@ -47,6 +47,16 @@
         -webkit-column-count: 6;
     }
 
+    .card_s7{
+        -moz-column-count: 7;
+        -webkit-column-count: 7;
+    }
+
+    .card_s8{
+        -moz-column-count: 8;
+        -webkit-column-count: 8;
+    }
+
 }
 
 /*
@@ -83,6 +93,16 @@
     .card_m6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+    }
+
+    .card_m7{
+        -moz-column-count: 7;
+        -webkit-column-count: 7;
+    }
+
+    .card_m8{
+        -moz-column-count: 8;
+        -webkit-column-count: 8;
     }
 
 }
@@ -123,6 +143,16 @@
         -webkit-column-count: 6;
     }
 
+    .card_l7{
+        -moz-column-count: 7;
+        -webkit-column-count: 7;
+    }
+
+    .card_l8{
+        -moz-column-count: 8;
+        -webkit-column-count: 8;
+    }
+
 }
 
 /*
@@ -161,6 +191,16 @@
         -webkit-column-count: 6;
     }
 
+    .card_7{
+        -moz-column-count: 7;
+        -webkit-column-count: 7;
+    }
+
+    .card_8{
+        -moz-column-count: 8;
+        -webkit-column-count: 8;
+    }
+
 }
 
 /*
@@ -197,6 +237,16 @@
     .card_el6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+    }
+
+    .card_el7{
+        -moz-column-count: 7;
+        -webkit-column-count: 7;
+    }
+
+    .card_el8{
+        -moz-column-count: 8;
+        -webkit-column-count: 8;
     }
 
 }

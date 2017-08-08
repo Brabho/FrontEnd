@@ -1,7 +1,7 @@
 /*
  * Ajax Function
  */
-function ajax(param, callback) {
+function ajax(param, callback, upload_progress) {
     if (!param.method) {
         param.method = 'POST';
     }
@@ -51,7 +51,8 @@ function ajax(param, callback) {
         var data = '';
         if (param.data !== null) {
             var mData = Object.keys(param.data);
-            for (var i = 0; i < mData.length; i++) {
+            var mData_length = mData.length;
+            for (var i = 0; i < mData_length; i++) {
                 var temp_key = mData[i];
                 if (i > 0) {
                     data += '&' + mData[i] + '=' + param.data[temp_key];
@@ -92,6 +93,10 @@ function ajax(param, callback) {
         }
 
         if (param.method) {
+
+            if (typeof upload_progress === 'function') {
+                xmlHttpReq.upload.addEventListener('progress', upload_progress, false);
+            }
 
             xmlHttpReq.addEventListener('load', function () {
                 if (this.status >= 200 && this.status < 400) {

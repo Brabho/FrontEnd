@@ -13,10 +13,6 @@
     padding: 0.5%;
 }
 
-.no_pad{
-    padding: 0;
-}
-
 .cel_s_show{display: none;}
 .cel_m_show{display: none;}
 .cel_l_show{display: none;}
@@ -147,6 +143,11 @@
 
 @media only screen and (max-width: 600px){
     .cel_l_show{display: inline-block;}
+
+    body, input, button,
+    textarea, code, pre, li{
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 768px){

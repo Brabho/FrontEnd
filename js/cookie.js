@@ -23,7 +23,8 @@ var cookie = {
     get: function (name) {
         var result = false;
         var s_cookie = document.cookie.trim().split(';');
-        for (var i = 0; i < s_cookie.length; i++) {
+        var s_cookie_length = s_cookie.length;
+        for (var i = 0; i < s_cookie_length; i++) {
             var ss_cookie = s_cookie[i].split('=');
             if (ss_cookie[0].charAt(0) === ' ') {
                 ss_cookie[0] = ss_cookie[0].substr(1);
@@ -50,12 +51,13 @@ var cookie = {
     /*
      * Remove All Cookies
      */
-    removeAll: function (path) {
+    remove_all: function (path) {
         if (typeof path === 'undefined') {
             path = '/';
         }
         var s_cookie = document.cookie.trim().split(';');
-        for (var i = 0; i < s_cookie.length; i++) {
+        var s_cookie_length = s_cookie.length;
+        for (var i = 0; i < s_cookie_length; i++) {
             var ss_cookie = s_cookie[i].split('=');
             this.remove(ss_cookie[0], path);
         }

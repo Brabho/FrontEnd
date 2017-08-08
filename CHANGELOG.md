@@ -1,5 +1,31 @@
 # Change Log & History
 
+#### 08-08-2017
+    Stable Version 4.0
+
+    Added:
+        Flat Link
+        Flat Buttons
+        Flat Field
+        last_fix.css
+        `usr_os`                > functions.js
+        Ajax Upload Progress
+
+    Improved:
+        btn.css
+        field.css
+        grid.css
+
+        Speed / Performance
+        Text Responsive
+
+    Changed:
+        Colors Name
+        Functions Name
+
+    Card UI                 - Still in beta
+    All Removed Files / Functions are in functions.js or Completely Removed
+
 #### 17-05-2017
     Stable Version 3.5
     Bugs Fixed
@@ -411,12 +437,12 @@
 
 #### 11-09-2016
 	Alpha Version 1.0.1
-	
+
 	Added:
 		select_option.css
 		select_option.js,
 		`notify` in label_badge.css
-	
+
 	Improved:
 		btn.css,
 		drop_down_box.css

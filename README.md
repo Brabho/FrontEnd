@@ -13,7 +13,7 @@ Powerful & LightWeight.
 Do not use with Jquery & Bootstrap.
 
 ### Version
-Stable Version 3.5
+Stable Version 4.0
 
 ### License
 (C) 2015 - 2017 under GNU General Public License Version 2.
@@ -23,8 +23,8 @@ Stable Version 3.5
 <!-- button -->
 <link rel="stylesheet" type="text/css" href="css/btn.css"  />
 <button class="btn">Button</button>
-<button class="btn btn_cbu">Blue Button</button>
-<button class="btn btn_cr">Red Button</button>
+<button class="btn btn_blue">Blue Button</button>
+<button class="btn btn_red_flat">Red Flat Button</button>
 
 <!-- Checkbox or CheckToggle or Radio -->
 <link rel="stylesheet" type="text/css" href="css/check.css"  />
@@ -58,7 +58,7 @@ ajax({
 
 <script type="text/javascript" src="js/elements.js"></script>
 <script type="text/javascript">
-/* Document Query Selectors */
+/* Document Query Selector(s) */
 $('.elem', function(elem) {
     alert(elem.innerHTML);
 });

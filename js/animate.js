@@ -61,7 +61,7 @@ var animate = {
 
         switch (updown) {
             case 'down':
-                var height = cssProp(elem, 'height');
+                var height = css_prop(elem, 'height');
                 height = height.toString().replace(/px/i, '');
                 var hei = 0;
                 elem.style.height = '0px';

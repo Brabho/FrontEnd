@@ -1,0 +1,26 @@
+.no_padding{
+    padding: 0;
+}
+.no_margin{
+    margin: 0;
+}
+
+.circle{
+    border-radius: 100%;
+}
+
+.round{
+    border-radius: 1.2em;
+}
+
+.curve{
+    border-radius: 4px;
+}
+
+.no_curve{
+    border-radius: 0;
+}
+
+.center_text{
+    text-align: center;
+}

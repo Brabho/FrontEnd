@@ -24,7 +24,7 @@
 
 .notify{
     background: #f51645;
-    border-radius: 1.1em;
+    border-radius: 1.2em;
     padding: 0.05em 0.35em;
     font-size: 9px;
 }
@@ -32,7 +32,7 @@
 /*
  * Red Color
  */
-.label_badge_r{
+.badge_red{
     background: #f51645;
     color: #f9f9f9;
 }
@@ -40,7 +40,7 @@
 /*
  * Blue Color
  */
-.label_badge_b{
+.badge_blue{
     background: #3498db;
     color: #fefefe;
 }
@@ -48,7 +48,7 @@
 /*
  * Yellow Color
  */
-.label_badge_y{
+.badge_yellow{
     background: #EADF33;
     color: #555;
 }
@@ -56,7 +56,7 @@
 /*
  * Green Color
  */
-.label_badge_g{
+.badge_green{
     background: #20ca1c;
     color: #fff;
 }
@@ -102,43 +102,43 @@
 /*
  * Tag Red
  */
-.tag_cr{
+.tag_red{
     background: #f51645;
     color: #f9f9f9;
 }
-.tag_cr::before{
+.tag_red::before{
     border-right: 11px solid #f51645;
 }
 
 /*
  * Tag Blue
  */
-.tag_cb{
+.tag_blue{
     background: #3498db;
     color: #fefefe;
 }
-.tag_cb::before{
+.tag_blue::before{
     border-right: 11px solid #3498db;
 }
 
 /*
  * Tag Yellow
  */
-.tag_cy{
+.tag_yellow{
     background: #EADF33;
     color: #555;
 }
-.tag_cy::before{
+.tag_yellow::before{
     border-right: 11px solid #EADF33;
 }
 
 /*
  * Tag Green
  */
-.tag_cg{
+.tag_green{
     background: #20ca1c;
     color: #fff;
 }
-.tag_cg::before{
+.tag_green::before{
     border-right: 11px solid #20ca1c;
 }

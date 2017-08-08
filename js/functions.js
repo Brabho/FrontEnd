@@ -1,8 +1,7 @@
 /*
  * Custom & Mod Functions
- */
-
-/*
+ 
+ *
  * Isset Variable
  */
 function is_var(vari) {
@@ -28,7 +27,8 @@ function is_qstr(field) {
  */
 function qstr(param) {
     var uris = window.location.search.split('&');
-    for (var i = 0; i < uris.length; i++) {
+    var uris_length = uris.length;
+    for (var i = 0; i < uris_length; i++) {
         var part = uris[i].split('=');
         if (part[0] === param) {
             return part[1];
@@ -47,7 +47,7 @@ function rand(min, max) {
 /*
  * Random Number
  */
-function ranNum(length) {
+function rand_num(length) {
     if (typeof length === 'undefined') {
         length = '40';
     }
@@ -61,7 +61,7 @@ function ranNum(length) {
 /*
  * Random String
  */
-function ranStr(length) {
+function rand_str(length) {
     if (typeof length === 'undefined') {
         length = '40';
     }
@@ -110,7 +110,7 @@ function rws(str) {
 /*
  * Parse HTML
  */
-function parseHTML(html) {
+function parse_html(html) {
     var content = new DOMParser().parseFromString(html, 'text/html');
     return content;
 }
@@ -118,14 +118,14 @@ function parseHTML(html) {
 /*
  * Get CSS Property Value
  */
-function cssProp(elem, prop) {
+function css_prop(elem, prop) {
     return window.getComputedStyle(elem).getPropertyValue(prop);
 }
 
 /*
  * Get Element Index
  */
-function elmIndex(elm) {
+function elm_index(elm) {
     if (elm.parentElement !== null) {
         return Array.prototype.indexOf.call(elm.parentElement.children, elm);
     }
@@ -135,7 +135,7 @@ function elmIndex(elm) {
 /*
  * Get Scroll Position 
  */
-function scrollPosi() {
+function scroll_position() {
     var coordinate = [];
     coordinate['x'] = window.pageXOffset || document.documentElement.scrollLeft;
     coordinate['y'] = window.pageYOffset || document.documentElement.scrollTop;
@@ -145,21 +145,21 @@ function scrollPosi() {
 /*
  * Is Element has Scroll Bar (Bool)
  */
-function hasScroll(elem) {
+function has_scroll(elem) {
     if (typeof elem === 'undefined' || elem === null) {
-        return (document.body.scrollHeight > window.innerHeight) ? true : false;
+        return (document.body.scrollHeight > window.innerHeight);
     }
-    return (elem.scrollHeight > elem.clientHeight) ? true : false;
+    return (elem.scrollHeight > elem.clientHeight);
 }
 
 /*
  * Get If Element(s) Visible/Showing or Not (Bool)
  */
-function isVisible(elem) {
-    if (this.hasScroll(null)) {
+function is_visible(elem) {
+    if (has_scroll(null)) {
         if (elem.offsetTop < window.innerHeight) {
             return true;
-        } else if ((parseInt(elem.offsetTop) - parseInt(window.innerHeight)) <= this.scrollPosi()['y']) {
+        } else if ((parseInt(elem.offsetTop) - parseInt(window.innerHeight)) <= scroll_position()['y']) {
             return true;
         }
         return false;
@@ -180,4 +180,150 @@ function length_mk(val) {
         }
     }
     return val;
+}
+
+/*
+ * Valid Alphabet 
+ */
+function valid_alpha(alpha, check) {
+    if (typeof check === 'undefined') {
+        check = 'all';
+    }
+    switch (check) {
+        case 'all':
+            return ((/^[a-zA-Z]+$/).test(alpha));
+            break;
+
+        case 'low':
+            return ((/^[a-z]+$/).test(alpha));
+            break;
+
+        case 'up':
+            return ((/^[A-Z]+$/).test(alpha));
+            break;
+    }
+}
+
+/*
+ * Valid Number
+ */
+function valid_num(num) {
+    return ((/^[0-9]+$/).test(num));
+}
+
+/*
+ * Valid Email
+ */
+function valid_email(email) {
+    var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return (regex.test(email));
+}
+
+/*
+ * Valid IP
+ */
+function valid_ip(ip) {
+    var regex = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
+    return (regex.test(ip));
+}
+
+/*
+ * Valid URL
+ */
+function valid_url(url) {
+    var regex = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+    return (regex.test(url));
+}
+
+/*
+ * Valid Input
+ */
+function valid_input(target) {
+    return (target.checkValidity() === true && target.validity.valid === true);
+}
+
+/*
+ * Get User Browser
+ */
+function usr_browser() {
+    var browsers_list = [
+        'Firefox',
+        'Opr',
+        'Edge',
+        'Chrome',
+        'Safari',
+        'Netscape',
+        'Maxthon',
+        'Konqueror',
+        'MSIE',
+        'Trident',
+        'UCBrowser',
+        'UCWEB'
+    ];
+
+    var browsers_list_length = browsers_list.length;
+    for (var j = 0; j < browsers_list_length; j++) {
+        var the_sbrowser = new RegExp(browsers_list[j], 'gi');
+        if (navigator.userAgent.match(the_sbrowser)) {
+            var get_brow = browsers_list[j];
+            break;
+        }
+    }
+    if (get_brow && get_brow !== 'undefined') {
+        if (get_brow === 'MSIE' || get_brow === 'Trident') {
+            return 'Internet Explorer';
+        } else if (get_brow === 'UCBrowser' || get_brow === 'UCWEB') {
+            return 'UC Browser';
+        } else if (get_brow === 'Opr') {
+            return 'Opera';
+        } else {
+            return get_brow;
+        }
+    } else {
+        return 'Other';
+    }
+}
+
+/*
+ * Get User OS
+ */
+function usr_os() {
+    var os = 'Other';
+    var os_arr = {
+        'windows nt 10': 'Windows 10',
+        'windows nt 6.3': 'Windows 8.1',
+        'windows nt 6.2': 'Windows 8',
+        'windows nt 6.1': 'Windows 7',
+        'windows nt 6.0': 'Windows Vista',
+        'windows nt 5.2': 'Windows Server 2003/XP x64',
+        'windows nt 5.1': 'Windows XP',
+        'windows xp': 'Windows XP',
+        'windows nt 5.0': 'Windows 2000',
+        'windows me': 'Windows ME',
+        'win98': 'Windows 98',
+        'win95': 'Windows 95',
+        'win16': 'Windows 3.11',
+        'macintosh|mac os x': 'Mac OS X',
+        'mac_powerpc': 'Mac OS 9',
+        'ubuntu': 'Ubuntu',
+        'Red Hat': 'Red Hat',
+        'linux': 'Linux',
+        'iphone': 'iPhone',
+        'ipod': 'iPod',
+        'ipad': 'iPad',
+        'android': 'Android',
+        'blackberry': 'BlackBerry',
+        'webos': 'Mobile'
+    };
+
+    var obj_length = Object.keys(os_arr).length;
+    for (var i = 0; i < obj_length; i++) {
+        var regex = new RegExp(Object.keys(os_arr)[i], 'gi');
+        if (navigator.userAgent.match(regex)) {
+            os = os_arr[Object.keys(os_arr)[i]];
+            break;
+        }
+
+    }
+    return os;
 }

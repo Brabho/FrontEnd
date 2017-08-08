@@ -14,7 +14,8 @@ a,
 a:hover,
 a:focus,
 .link:hover,
-.link:focus{
+.link:focus,
+.link_active{
     color: #0A50C3;
     text-decoration: underline;
 }
@@ -25,7 +26,15 @@ a:focus,
     padding: 5px;
 }
 
-.link_block:hover{
+.link_block:hover,
+.link_block_active{
     background: #f1f1f1;
     text-decoration: none;
+}
+
+.link_active_flat,
+.link_flat:active{
+    border-radius: 4px;
+    box-shadow: 0 0 0 3px lightblue;
+    background: none;
 }

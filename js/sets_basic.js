@@ -1,4 +1,18 @@
 /*
+ * Lazy Load Image(s) 
+ * Example: <img src="default.gif" class="lazy-load-imgs" data-lazy-load-imgs="image/path.png" />
+ */
+function lazy_load_imgs() {
+    $('.lazy-load-imgs', function (lazy_img) {
+        if (is_visible(lazy_img) && lazy_img.hasAttribute('data-lazy-load-imgs')) {
+            var lazy_load_attr = lazy_img.getAttribute('data-lazy-load-imgs');
+            lazy_img.setAttribute('src', lazy_load_attr);
+            lazy_img.removeAttribute('data-lazy-load-imgs');
+        }
+    });
+}
+
+/*
  * Sets Basic
  * Require Complete Library
  */
@@ -75,9 +89,7 @@ window.addEventListener('load', function () {
     /*
      * Lazy Load Function Calling
      */
-    if (typeof lazy_load_imgs === 'function') {
-        lazy_load_imgs();
-        window.addEventListener('scroll', lazy_load_imgs, false);
-    }
+    lazy_load_imgs();
+    window.addEventListener('scroll', lazy_load_imgs, false);
 
 }, false);

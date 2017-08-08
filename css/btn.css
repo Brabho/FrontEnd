@@ -8,24 +8,32 @@
     display: inline;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 4px;
     border: 1px solid #bbb;
     background: #eee;
+    opacity: 1;
 }
 
 .btn:hover,
 .btn:focus,
 .btn_hover{
-    color: #222;
-    border: 1px solid #888;
     text-decoration: none;
+    opacity: 0.8;
 }
 
 .btn:active,
 .btn_active{
     text-decoration: none;
-    color: #222;
-    background: #ddd;
+    opacity: 1;
+    box-shadow: 0 0 0 3px #ddd;
+}
+
+/*
+ * Flat Buttons
+ */
+.btn_flat{
+    color: #444;
+    background: none;
 }
 
 .btn *{
@@ -37,6 +45,7 @@
  */
 .btn_block{
     clear: both;
+    display: block;
     width: 100%;
     text-align: center;
 }
@@ -52,92 +61,97 @@
 /*
  * Red Color
  */
-.btn_cr{
+.btn_red_flat,
+.btn_red{
     color: #f9f9f9;
     border: 1px solid #bf052d;
-    background: #f51645;
+    background: #E74C3C;
 }
 
-.btn_cr:hover,
-.btn_cr_hover{
-    color: #f9f9f9;
-    border: 1px solid #980222;
-    background: #F2607F;
+.btn_red_flat:active,
+.btn_red:active,
+.btn_red_active{
+    box-shadow: 0 0 0 3px lightcoral;
 }
 
-.btn_cr:active,
-.btn_cr_active{
-    color: #f9f9f9;
-    border: 1px solid #bf052d;
-    background: #E2103C;
+/*
+ * Flat Buttons
+ */
+.btn_red_flat{
+    color: #bf052d;
+    background: none;
 }
 
 /*
  * Blue Color
  */
-.btn_cbu{
+.btn_blue_flat,
+.btn_blue{
     border: 1px solid #2980b9;
     color: #fefefe;
-    background: #3498db;
+    background: #2A8DCF;
 }
 
-.btn_cbu:hover,
-.btn_cbu_hover{
-    color: #fefefe;
-    border: 1px solid #2980b9;
-    background: #3cb0fd;
+.btn_blue_flat:active,
+.btn_blue:active,
+.btn_blue_active{
+    box-shadow: 0 0 0 3px lightblue;
 }
 
-.btn_cbu:active,
-.btn_cbu_active{
-    color: #fefefe;
-    border: 1px solid #2980b9;
-    background: #2980b9;
+/*
+ * Flat Buttons
+ */
+.btn_blue_flat{
+    color: #2980b9;
+    background: none;
 }
 
 /*
  * Yellow Color
  */
-.btn_cy{
-    border: 1px solid #C4BD4F;
-    background: #EADF33;
-    color: #555;
-}
-
-.btn_cy:hover,
-.btn_cy_hover{
+.btn_yellow_flat,
+.btn_yellow{
+    border: 1px solid #BFB62F;
     background: #F8EE59;
-    color: #433F01;
-    border: 1px solid #948E29;
+    color: #333;
 }
 
-.btn_cy:active,
-.btn_cy_active{
-    color: #433F01;
-    background: #D7CD2C;
+.btn_yellow_flat:active,
+.btn_yellow:active,
+.btn_yellow_active{
+    box-shadow: 0 0 0 3px #EDE562;
+}
+
+/*
+ * Flat Button
+ */
+.btn_yellow_flat{
+    background: none;
+    color: #BFB62F;
 }
 
 /*
  * Green Color
  */
-.btn_cg{
-    border: 1px solid #4AC447;
-    color: #222;
+.btn_green_flat,
+.btn_green{
+    border: 1px solid #2EB12A;
+    color: #333;
     background: #29DF25;
 }
 
-.btn_cg:hover,
-.btn_cg_hover{
-    background: #48F244;
-    color: #222;
-    border: 1px solid #13CD0E;
+.btn_green_flat:active,
+.btn_green:active,
+.btn_green_active{
+    box-shadow: 0 0 0 3px lightgreen;
 }
 
-.btn_cg:active,
-.btn_cg_active{
-    color: #222;
-    border: 1px solid #088905;
-    background: #1CD718;
+/*
+ * Flat Button
+ */
+.btn_green_flat{
+    color: #2EB12A;
+    background: none;
 }
 
 /*
@@ -155,4 +169,5 @@
     color: #868686;
     border: 1px solid #bbb;
     background: #eee;
+    box-shadow: none;
 }

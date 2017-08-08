@@ -3,10 +3,11 @@
  */
 function $(elms, callback) {
     var gElms = document.querySelectorAll(elms);
-    if(gElms.length > 0) {
-        if (gElms.length > 1) {
+    var gElms_length = gElms.length;
+    if (gElms_length > 0) {
+        if (gElms_length > 1) {
             if (typeof callback === 'function') {
-                for (var i = 0; i < gElms.length; i++) {
+                for (var i = 0; i < gElms_length; i++) {
                     callback(gElms[i]);
                 }
             } else {

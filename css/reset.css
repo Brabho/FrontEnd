@@ -21,7 +21,7 @@ body{
 
 body, input, button,
 textarea, code, pre{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 *, body,
@@ -58,7 +58,7 @@ hr, br{
     padding: 0;
     margin: 5px 0;
     border: 0;
-    border-top: 2px solid #aaa;
+    border-top: 1px solid #aaa;
 }
 
 .hr_dash{
