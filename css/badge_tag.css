@@ -3,30 +3,38 @@
  * Badge
  * Notify
  */
-.label,
-.badge,
-.notify{
-    display: inline;
+.badge{
     background: #666;
     color: #fff;
     font-weight: bold;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+
 }
 
-.label{
-    border-radius: 4px;
-    padding: 1px 3px;
+.badge *{
+    display: inline-block;
+    text-align: center;
 }
 
 .badge{
     border-radius: 1.2em;
-    padding: 1px 5px;
+    padding: 1px 4px;
 }
 
-.notify{
+.badge_tiny{
     background: #f51645;
     border-radius: 1.2em;
     padding: 0.05em 0.35em;
     font-size: 9px;
+}
+
+.badge_block{
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 /*
@@ -62,6 +70,14 @@
 }
 
 /*
+ * White Color
+ */
+.badge_white{
+    background: #eee;
+    color: #444;
+}
+
+/*
  * Tagging Style
  */
 .tag{
@@ -72,6 +88,7 @@
     height: 20px;
     line-height: 20px;
     padding: 0 5px 0 20px;
+    margin: 4px;
     position: relative;
     text-decoration: none;
 }
@@ -141,4 +158,16 @@
 }
 .tag_green::before{
     border-right: 11px solid #20ca1c;
+}
+
+/*
+ * Tag Black
+ */
+.tag_black{
+    color: #000;
+    background: #a3a3a3;
+}
+
+.tag_black::before{
+    border-right: 11px solid #a3a3a3;
 }

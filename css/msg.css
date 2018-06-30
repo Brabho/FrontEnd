@@ -2,7 +2,7 @@
  * Display or Show Message
  */
 .msg{
-    padding: 2px 6px;
+    padding: 2px 8px;
     position: relative;
     border-radius: 4px;
     border: 1px solid #aaa;
@@ -13,29 +13,40 @@
     font-weight: bold;
 }
 
+.msg::before,
+.msg::after{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0.35em;
+    left: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+}
+
+.msg_general,
+.msg_help,
+.msg_success,
+.msg_alert,
+.msg_warn{
+    padding-left: 40px;
+}
+
 /*
  * General Message
  */
 .msg_general{
     border: 1px solid #aaa;
-    padding-left: 30px;
 }
 
 .msg_general::before{
     content: 'i';
     color: #fff;
     text-align: center;
-    line-height: 1.0em;
-    width: 19px;
-    height: 19px;
+    line-height: 1.2em;
     border-radius: 100%;
     background: #999;
-    position: absolute;
-    top: 20%;
-    left: 6px;
-    font-size: 17px;
-    font-weight: bold;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -43,9 +54,8 @@
  */
 .msg_help{
     color: #5179DF;
-    background: #F0F3FB;
-    border: 1px solid #86A6F9;
-    padding-left: 30px;
+    background: #F3F4F8;
+    border: 1px solid #5179DF;
 }
 
 .msg_help::before{
@@ -53,41 +63,27 @@
     color: #fff;
     text-align: center;
     line-height: 1.3em;
-    width: 19px;
-    height: 19px;
     border-radius: 100%;
     background: #5179DF;
-    position: absolute;
-    top: 18%;
-    left: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
  * Success Message
  */
 .msg_success{
-    color: #376C38;
-    background: #EFFCEC;
+    color: #219A0C;
+    background: #F3F6F2;
     border: 1px solid #219A0C;
-    padding-left: 30px;
 }
 
-.msg_success::before{    
-    position: absolute;
-    content: '\2713';
-    line-height: 1.35em;
+.msg_success::before{
+    content: '\2714';
+    line-height: 1.3em;
+    text-align: center; 
     color: #fff;
     top: 20%;
-    left: 6px;
-    background: #62B64F;
+    background: #219A0C;
     border-radius: 1.1em;
-    padding: 0 4px;
-    font-weight: bold;
-    font-size: 14px;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -95,36 +91,26 @@
  */
 .msg_alert{
     color: #C0070B;
-    background: #FCE9E9;
-    border: 1px solid #FF9FA1;
-    padding-left: 30px;
+    background: #F8EDED;
+    border: 1px solid #C0070B;
 }
 
 .msg_alert::before{
-    content: 'X';
-    line-height: 1.4em;
+    content: '\2716';
+    line-height: 1.3em;
     color: #fff;
     text-align: center;
-    width: 20px;
-    height: 20px;
     border-radius: 1.1em;
-    background: #D05F5D;
-    position: absolute;
-    top: 20%;
-    left: 6px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    background: #C0070B;
 }
 
 /*
  * Warning Message
  */
 .msg_warn{
-    color: #6C542C;
-    background: #FFFEFB;
-    border: 1px solid #EAC26D;
-    padding-left: 40px;
+    color: #786B4F;
+    background: #FFFBF0;
+    border: 1px solid #786B4F;
 }
 
 .msg_warn::before{
@@ -132,22 +118,14 @@
     content: '';
     width: 0;
     height: 0;
-    border-bottom: 16px solid #EADF33;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    position: absolute;
-    top: 20%;
-    left: 6px;
+    border-bottom: 18px solid #786B4F;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
 }
 
 .msg_warn::after{
-    position: absolute;
-    content: '!';
+    content: '\0021';
     color: #fff;
-    top: 18%;
-    left: 1.1em;
-    line-height: 1.4em;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    left: 1.0em;
+    line-height: 1.3em;
 }

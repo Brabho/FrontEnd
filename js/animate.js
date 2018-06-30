@@ -6,7 +6,7 @@ var animate = {
     /*
      * Fade (In, Out)
      */
-    fade: function (elem, inout, time) {
+    fade: function (el, inout, time) {
         if (typeof time === 'undefined') {
             time = '3';
         }
@@ -16,32 +16,32 @@ var animate = {
         switch (inout) {
             case 'in':
                 var opa = '0';
-                elem.style.opacity = opa;
-                elem.style.display = 'block';
+                el.style.opacity = opa;
+                el.style.display = 'block';
                 var setInt = setInterval(function () {
                     opa = Number(opa) + Number('0.01');
                     if (opa > 1) {
                         opa = 1;
-                        elem.setAttribute('style', 'display: block');
+                        el.setAttribute('style', 'display: block');
                         clearInterval(setInt);
                     } else {
-                        elem.style.opacity = opa;
+                        el.style.opacity = opa;
                     }
                 }, time);
                 break;
 
             case 'out':
                 var opa = '1.0';
-                elem.style.opacity = opa;
+                el.style.opacity = opa;
                 var setInt = setInterval(function () {
                     opa = Number(opa) - Number(0.01);
                     if (opa < 0) {
                         opa = 0;
-                        elem.setAttribute('style', 'display: none');
+                        el.setAttribute('style', 'display: none');
                         clearInterval(setInt);
-                        elem.style.display = 'none';
+                        el.style.display = 'none';
                     } else {
-                        elem.style.opacity = opa;
+                        el.style.opacity = opa;
                     }
                 }, time);
                 break;
@@ -50,44 +50,44 @@ var animate = {
     /*
      * Slide (Up, Down)
      */
-    slide: function (elem, updown, time) {
+    slide: function (el, updown, time) {
         if (typeof time === 'undefined') {
             time = '3';
         }
         if (typeof updown === 'undefined') {
             updown = 'up';
         }
-        elem.style.overflow = 'hidden';
+        el.style.overflow = 'hidden';
 
         switch (updown) {
             case 'down':
-                var height = css_prop(elem, 'height');
+                var height = css_prop(el, 'height');
                 height = height.toString().replace(/px/i, '');
                 var hei = 0;
-                elem.style.height = '0px';
-                elem.style.display = 'block';
+                el.style.height = '0px';
+                el.style.display = 'block';
                 var setInt = setInterval(function () {
                     hei += 2;
                     if (hei > height) {
                         clearInterval(setInt);
-                        elem.setAttribute('style', 'display: block');
+                        el.setAttribute('style', 'display: block');
                     } else {
-                        elem.style.height = hei + 'px';
+                        el.style.height = hei + 'px';
                     }
                 }, time);
                 break;
 
             case 'up':
-                elem.style.display = 'block';
-                var height = elem.clientHeight;
-                var hei = elem.clientHeight;
+                el.style.display = 'block';
+                var height = el.clientHeight;
+                var hei = el.clientHeight;
                 var setInt = setInterval(function () {
                     hei -= 2;
                     if (hei < 0) {
                         clearInterval(setInt);
-                        elem.setAttribute('style', 'display: none; height: ' + height + 'px');
+                        el.setAttribute('style', 'display: none; height: ' + height + 'px');
                     } else {
-                        elem.style.height = hei + 'px';
+                        el.style.height = hei + 'px';
                     }
                 }, time);
                 break;

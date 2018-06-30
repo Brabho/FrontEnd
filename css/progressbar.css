@@ -15,11 +15,11 @@
  */
 .progressbar{
     text-align: center;
+    display: inline-block;
     color: #666;
     font-weight: bold;
     font-size: 12px;
-    line-height: 14px;    
-    height: 15px;
+    line-height: 14px;
     background: #3498db;
     background: -webkit-repeating-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
     background: -o-repeating-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
@@ -31,12 +31,24 @@
 .progressbar_cover,
 .progressbar{
     border-radius: 3px;
-    width: 100%;
     clear: both;
+    width: 100%;
+    min-height: 6px;
 }
 
 .progressbar_curve{
     border-radius: 1.2em;
+}
+
+/* Black Color */
+.progressbar_black{
+    color: #fff;
+    background: #3498db;
+    background: -webkit-repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
+    background: -o-repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
+    background: -moz-repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
+    background: -ms-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
+    background: repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
 }
 
 /* Red Color */

@@ -67,13 +67,20 @@
     border: 1px solid #999;
 }
 
-.check label:hover::before{
-    box-shadow: 0 2px 2px #ddd;
-}
-
 .check input[type='checkbox']:checked + label::before{
     background: #3399FF;
     content:  '\2713';
+}
+
+.check_toggle input[type='checkbox']:checked + label,
+.check_toggle input[type='checkbox']:checked + label::before,
+.check_toggle input[type='checkbox']:checked + label::after{
+    content: '';
+}
+
+.check_toggle input[type='checkbox']:checked + label{
+    padding-left: 30px;
+    margin: 5px 10px;
 }
 
 .check_toggle input[type='checkbox']:checked + label::before{
@@ -85,4 +92,35 @@
     background: #3399FF;
     border: 1px solid #339900;
     left: 20px;
+    margin: -2px 0 0 -10px;
+}
+
+.check_toggle_red input[type='checkbox']:checked + label::before{
+    background: #f26b5e;
+    border: 1px solid #bf052d;
+}
+
+.check_toggle_red input[type='checkbox']:checked + label::after{
+    background: #E74C3C;
+    border: 1px solid #bf052d;
+}
+
+.check_toggle_yellow input[type='checkbox']:checked + label::before{
+    background: #F8EE59;
+    border: 1px solid #b7ae24;
+}
+
+.check_toggle_yellow input[type='checkbox']:checked + label::after{
+    background: #F8EE59;
+    border: 1px solid #b7ae24;
+}
+
+.check_toggle_green input[type='checkbox']:checked + label::before{
+    background: #29DF25;
+    border: 1px solid #2EB12A;
+}
+
+.check_toggle_green input[type='checkbox']:checked + label::after{
+    background: #179913;
+    border: 1px solid #179913;
 }

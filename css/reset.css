@@ -51,38 +51,29 @@ hr, br{
     clear: both;
 }
 
-.hr{
-    display: block;
-    background: none;
-    height: 0;
-    padding: 0;
-    margin: 5px 0;
-    border: 0;
-    border-top: 1px solid #aaa;
-}
-
-.hr_dash{
-    border-top: 2px dashed #aaa;
-}
-
-.hr_dot{
-    border-top: 2px dotted #aaa;
-}
-
 input, select, button{
     vertical-align: middle;
 }
 
 del{
     text-decoration: line-through;
+    color: #666;
 }
 
+.disabled,
 [disabled="disabled"]{
     cursor: not-allowed;
     pointer-events: none;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 [contenteditable="true"]{
     cursor: text;
+}
+
+@media only screen and (max-width: 600px){
+    body, input, button,
+    textarea, code, pre, li{
+        font-size: 12px;
+    }
 }

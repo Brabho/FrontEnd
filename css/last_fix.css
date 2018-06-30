@@ -1,26 +1,23 @@
-.no_padding{
-    padding: 0;
-}
-.no_margin{
-    margin: 0;
+.no_padding_imp{
+    padding: 0 !important;
 }
 
-.circle{
-    border-radius: 100%;
+.no_margin_imp{
+    margin: 0 !important;
 }
 
-.round{
-    border-radius: 1.2em;
+.left_text_imp{
+    text-align: left !important;
 }
 
-.curve{
-    border-radius: 4px;
+.center_text_imp{
+    text-align: center !important;
 }
 
-.no_curve{
-    border-radius: 0;
+.right_text_imp{
+    text-align: right !important;
 }
 
-.center_text{
-    text-align: center;
+.justify_text_imp{
+    text-align: justify !important;
 }

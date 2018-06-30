@@ -123,7 +123,8 @@ function ajax(param, callback, upload_progress) {
 
                 return_data = {
                     0: 'error',
-                    'response': 'SERVER'
+                    'response': 'SERVER',
+                    'code': this.status
                 };
 
                 callback(return_data);

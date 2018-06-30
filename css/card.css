@@ -3,10 +3,18 @@
  */
 
 [class*="card_"]{
+    width: 100%;
     -moz-column-gap: 0;
     -webkit-column-gap: 0;
     column-gap: 0;
-    width: 100%;
+    -webkit-column-rule: none;
+    -moz-column-rule: none;
+    column-rule: none;
+}
+
+.inner_card{
+    break-inside: avoid-column;
+    display: block;
 }
 
 /*
@@ -20,41 +28,49 @@
     .card_s1{
         -moz-column-count: 1;
         -webkit-column-count: 1;
+        column-count: 1;
     }
 
     .card_s2{
         -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
     }
 
     .card_s3{
         -moz-column-count: 3;
         -webkit-column-count: 3;
+        column-count: 3;
     }
 
     .card_s4{
         -moz-column-count: 4;
         -webkit-column-count: 4;
+        column-count: 4;
     }
 
     .card_s5{
         -moz-column-count: 5;
         -webkit-column-count: 5;
+        column-count: 5;
     }
 
     .card_s6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+        column-count: 6;
     }
 
     .card_s7{
         -moz-column-count: 7;
         -webkit-column-count: 7;
+        column-count: 7;
     }
 
     .card_s8{
         -moz-column-count: 8;
         -webkit-column-count: 8;
+        column-count: 8;
     }
 
 }
@@ -68,41 +84,49 @@
     .card_m1{
         -moz-column-count: 1;
         -webkit-column-count: 1;
+        column-count: 1;
     }
 
     .card_m2{
         -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
     }
 
     .card_m3{
         -moz-column-count: 3;
         -webkit-column-count: 3;
+        column-count: 3;
     }
 
     .card_m4{
         -moz-column-count: 4;
         -webkit-column-count: 4;
+        column-count: 4;
     }
 
     .card_m5{
         -moz-column-count: 5;
         -webkit-column-count: 5;
+        column-count: 5;
     }
 
     .card_m6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+        column-count: 6;
     }
 
     .card_m7{
         -moz-column-count: 7;
         -webkit-column-count: 7;
+        column-count: 7;
     }
 
     .card_m8{
         -moz-column-count: 8;
         -webkit-column-count: 8;
+        column-count: 8;
     }
 
 }
@@ -116,41 +140,49 @@
     .card_l1{
         -moz-column-count: 1;
         -webkit-column-count: 1;
+        column-count: 1;
     }
 
     .card_l2{
         -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
     }
 
     .card_l3{
         -moz-column-count: 3;
         -webkit-column-count: 3;
+        column-count: 3;
     }
 
     .card_l4{
         -moz-column-count: 4;
         -webkit-column-count: 4;
+        column-count: 4;
     }
 
     .card_l5{
         -moz-column-count: 5;
         -webkit-column-count: 5;
+        column-count: 5;
     }
 
     .card_l6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+        column-count: 6;
     }
 
     .card_l7{
         -moz-column-count: 7;
         -webkit-column-count: 7;
+        column-count: 7;
     }
 
     .card_l8{
         -moz-column-count: 8;
         -webkit-column-count: 8;
+        column-count: 8;
     }
 
 }
@@ -164,41 +196,49 @@
     .card_1{
         -moz-column-count: 1;
         -webkit-column-count: 1;
+        column-count: 1;
     }
 
     .card_2{
         -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
     }
 
     .card_3{
         -moz-column-count: 3;
         -webkit-column-count: 3;
+        column-count: 3;
     }
 
     .card_4{
         -moz-column-count: 4;
         -webkit-column-count: 4;
+        column-count: 4;
     }
 
     .card_5{
         -moz-column-count: 5;
         -webkit-column-count: 5;
+        column-count: 5;
     }
 
     .card_6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+        column-count: 6;
     }
 
     .card_7{
         -moz-column-count: 7;
         -webkit-column-count: 7;
+        column-count: 7;
     }
 
     .card_8{
         -moz-column-count: 8;
         -webkit-column-count: 8;
+        column-count: 8;
     }
 
 }
@@ -212,41 +252,49 @@
     .card_el1{
         -moz-column-count: 1;
         -webkit-column-count: 1;
+        column-count: 1;
     }
 
     .card_el2{
         -moz-column-count: 2;
         -webkit-column-count: 2;
+        column-count: 2;
     }
 
     .card_el3{
         -moz-column-count: 3;
         -webkit-column-count: 3;
+        column-count: 3;
     }
 
     .card_el4{
         -moz-column-count: 4;
         -webkit-column-count: 4;
+        column-count: 4;
     }
 
     .card_el5{
         -moz-column-count: 5;
         -webkit-column-count: 5;
+        column-count: 5;
     }
 
     .card_el6{
         -moz-column-count: 6;
         -webkit-column-count: 6;
+        column-count: 6;
     }
 
     .card_el7{
         -moz-column-count: 7;
         -webkit-column-count: 7;
+        column-count: 7;
     }
 
     .card_el8{
         -moz-column-count: 8;
         -webkit-column-count: 8;
+        column-count: 8;
     }
 
 }

@@ -1,8 +1,8 @@
 /*
- * A tag or link style
+ * Link styling
  */
-a,
-.link{
+.link,
+.link:visited{
     background: none;
     border: 0;
     color: #2B78F9;
@@ -11,30 +11,57 @@ a,
     cursor: pointer;
 }
 
-a:hover,
-a:focus,
 .link:hover,
-.link:focus,
+.link:active,
 .link_active{
     color: #0A50C3;
     text-decoration: underline;
 }
 
-.link_block{
+.link_block,
+.link_block:visited{
     display: block;
     clear: both;
-    padding: 5px;
+    padding: 4px;
+    text-align: center;
 }
 
 .link_block:hover,
+.link_block:active
 .link_block_active{
     background: #f1f1f1;
     text-decoration: none;
 }
 
-.link_active_flat,
-.link_flat:active{
+.link_red,
+.link_red:visited{
+    color: #ef1a48;
+}
+
+.link_red:hover,
+.link_red:active{
+    color: #bf052d;
+}
+
+.link_gold,
+.link_gold:visited{
+    color: #D27651;
+}
+
+.link_gold:hover,
+.link_gold:active{
+    color: #f37a00;
+}
+
+.link_flat:active,
+.link_flat:visited,
+.link_flat_active{
     border-radius: 4px;
     box-shadow: 0 0 0 3px lightblue;
     background: none;
+}
+
+.anchor_tag,
+.anchor_elem{
+    cursor: pointer;
 }

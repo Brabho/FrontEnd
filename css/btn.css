@@ -4,7 +4,7 @@
 .btn{
     font-weight: bold;
     color: #222;
-    padding: 2px 3px;
+    padding: 4px;
     display: inline;
     cursor: pointer;
     text-decoration: none;
@@ -12,6 +12,7 @@
     border: 1px solid #bbb;
     background: #eee;
     opacity: 1;
+    display: inline-block;
 }
 
 .btn:hover,
@@ -31,9 +32,14 @@
 /*
  * Flat Buttons
  */
-.btn_flat{
+.btn_flat,
+.btn_flat_white{
     color: #444;
     background: none;
+}
+
+.btn_flat_white{
+    color: #fff;
 }
 
 .btn *{
@@ -50,12 +56,17 @@
     text-align: center;
 }
 
+.btn_wide{
+    padding: 1% 10%;
+    text-align: center;
+}
+
 /*
  * Curve Button
  */
 .btn_curve{
     border-radius: 1.2em;
-    padding: 3px 6px;
+    padding: 4px 6px;
 }
 
 /*

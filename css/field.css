@@ -33,6 +33,73 @@
 }
 
 /*
+ * Curve Field
+ */
+.field_curve{
+    border-radius: 1.2em;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+/*
+ * Styled Placeholder 
+ */
+.placeholder_group{
+    position: relative;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+
+.placeholder_group .placeholder_field,
+.placeholder_group .placeholder_field:focus{
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    background: none;
+}
+
+.placeholder_group .placeholder{
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #777;
+    pointer-events: none;
+    font-style: italic;
+}
+
+.placeholder_group .placeholder_field,
+.placeholder_group .placeholder_field:focus{
+    border-bottom: 2px solid #777;
+}
+
+.placeholder_group .placeholder_up{
+    top: -60%;
+    color: #2980b9;
+}
+
+.placeholder_group .placeholder_field_str,
+.placeholder_group .placeholder_field_str:focus{
+    border-bottom: 2px solid #2980b9;
+}
+
+/*
+ * White Placeholder
+ */
+.placeholder_group_white .placeholder_up{
+    color: #aaa;
+}
+
+.placeholder_group_white .placeholder_field,
+.placeholder_group_white .placeholder_field:focus{
+    color: #fff;
+}
+
+.placeholder_group_white .placeholder_field_str,
+.placeholder_group_white .placeholder_field_str:focus{
+    border-bottom: 2px solid #aaa;
+}
+
+/*
  * Block Field
  */
 .field_block{
@@ -43,14 +110,6 @@
 
 textarea.field_block{
     resize: vertical;
-}
-
-/*
- * Curve Field
- */
-.field_curve{
-    border-radius: 1.2em;
-    padding: 4px 10px;
 }
 
 /*

@@ -1,5 +1,28 @@
 # Change Log & History
 
+#### 30-06-2018
+    Stable Version 5.0
+	Many more things are added & removed & changed
+	Minor Bugs Fixed
+
+    Added:
+        Material Placeholder
+		Auto Resize Textarea Height
+        Scroll To Bookmark/Anchor
+        Delay CSS Load
+		Tab Nav & Contents
+
+    Improved:
+		Grid
+        Card UI				> Stable
+        Lightbox
+        Progressbar
+		Lazy Load Images
+		Minify
+
+    Removed:
+        Open External Link in New Tab
+
 #### 08-08-2017
     Stable Version 4.0
 
