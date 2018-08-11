@@ -1,108 +1,117 @@
 /*
  * Loading Icon & Ainmation / Spin
  */
-.loading{
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #000;
-    border-left-color: transparent;
-    border-radius: 100%;
-    font-size: 12px;
+.loading {
+    width         : 10px;
+    height        : 10px;
+    display       : inline-block;
+    border-width  : 2px;
+    border-style  : solid;
+    border-radius : 100%;
+    font-size     : 12px;
+    border-color  : #000;
 }
 
 /*
  * Start Spin Loading Animation
  */
-.loading_spin{
-    -moz-animation: spin 0.5s linear infinite;
-    -webkit-animation: spin 0.5s linear infinite;
-    -ms-animation: spin 0.5s linear infinite;
-    -o-animation: spin 0.5s linear infinite;
-    animation: spin 0.5s linear infinite;
+.loading_spin {
+    -moz-animation    : spin 0.5s linear infinite;
+    -webkit-animation : spin 0.5s linear infinite;
+    -ms-animation     : spin 0.5s linear infinite;
+    -o-animation      : spin 0.5s linear infinite;
+    animation         : spin 0.5s linear infinite;
+}
+
+/*
+ * Style Color White
+ */
+.loading_white {
+    border-color : #fff;
+}
+
+/*
+ * Style 1
+ */
+.loading_1 {
+    border-left-color : transparent;
 }
 
 /*
  * Style 2
  */
-.loading_2{
-    border-right-color: transparent;
+.loading_2 {
+    border-right-color : transparent;
 }
 
 /*
  * Style 3
  */
-.loading_3{
-    border-bottom-color: transparent;
-}
-
-/*
- * Style 4
- */
-.loading_4{
-    border-color: #bbb;
-    border-top-color: #000;
+.loading_3 {
+    border-bottom-color : transparent;
 }
 
 /*
  * Small Size
  */
-.loading_small{
-    width: 15px;
-    height: 15px;
-    border-width: 4px;
+.loading_small {
+    width        : 15px;
+    height       : 15px;
+    border-width : 4px;
 }
 
 /*
  * Medium Size
  */
-.loading_medium{
-    width: 30px;
-    height: 30px;
-    border-width: 8px;
+.loading_medium {
+    width        : 30px;
+    height       : 30px;
+    border-width : 8px;
 }
 
 /*
  * Large Size
  */
-.loading_large{
-    width: 60px;
-    height: 60px;
-    border-width: 16px;
+.loading_large {
+    width        : 60px;
+    height       : 60px;
+    border-width : 16px;
 }
 
 /*
  * Pacman Style
  */
-.loading_pacman{
-    width: 0;
-    height: 0;
+.loading_pacman {
+    width  : 0;
+    height : 0;
 }
 
-@-moz-keyframes spin{
-    from { -moz-transform: rotate(0deg);}
-    50%  { -moz-transform: rotate(180deg);}
-    to   { -moz-transform: rotate(360deg);}
+@-moz-keyframes spin {
+    from { -moz-transform : rotate(0deg);}
+    50% { -moz-transform : rotate(180deg);}
+    to { -moz-transform : rotate(360deg);}
 }
-@-webkit-keyframes spin{
-    from { -webkit-transform: rotate(0deg);}
-    50%  { -webkit-transform: rotate(180deg);}
-    to   { -webkit-transform: rotate(360deg);}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform : rotate(0deg);}
+    50% { -webkit-transform : rotate(180deg);}
+    to { -webkit-transform : rotate(360deg);}
 }
-@-ms-keyframes spin{
-    from { -ms-transform: rotate(0deg);}
-    50%  { -ms-transform: rotate(180deg);}
-    to   { -ms-transform: rotate(360deg);}
+
+@-ms-keyframes spin {
+    from { -ms-transform : rotate(0deg);}
+    50% { -ms-transform : rotate(180deg);}
+    to { -ms-transform : rotate(360deg);}
 }
-@-o-keyframes spin{
-    from { -o-transform: rotate(0deg);}
-    50%  { -o-transform: rotate(180deg);}
-    to   { -o-transform: rotate(360deg);}
+
+@-o-keyframes spin {
+    from { -o-transform : rotate(0deg);}
+    50% { -o-transform : rotate(180deg);}
+    to { -o-transform : rotate(360deg);}
 }
-@keyframes spin{
-    from { transform: rotate(0deg);}
-    50%  { transform: rotate(180deg);}
-    to   { transform: rotate(360deg);}
+
+@keyframes spin {
+    from { transform : rotate(0deg);}
+    50% { transform : rotate(180deg);}
+    to { transform : rotate(360deg);}
 }

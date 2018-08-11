@@ -1,30 +1,23 @@
 /*
  * Ajax Function
  */
-function ajax(param, callback, upload_progress) {
-    if (!param.method) {
-        param.method = 'POST';
+function ajax(arr) {
+
+    if (!arr.method) {
+        arr.method = 'POST';
     }
-    if (!param.file) {
-        param.file = false;
+    if (!arr.type) {
+        arr.type = 'application/x-www-form-urlencoded; charset=utf-8';
     }
-    if (!param.data) {
-        param.data = null;
-    }
-    if (!param.type) {
-        param.type = 'application/x-www-form-urlencoded; charset=utf-8';
-    }
-    if (!param.x_req_wid) {
-        param.Xreq = true;
+    if (!arr.Xreq) {
+        arr.Xreq = true;
     }
 
     var xmlHttpReq = false;
-    var return_data = [];
 
     /*
      * Creating HTTP Request Object
      */
-
     if (window.XMLHttpRequest) {
         xmlHttpReq = new XMLHttpRequest();
 
@@ -37,128 +30,148 @@ function ajax(param, callback, upload_progress) {
                 xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
 
             } catch (ex) {
-                xmlHttpReq = false;
             }
         }
     }
 
-    if (xmlHttpReq) {
+    /*
+     * Error If Browser does not support
+     */
+    if (!xmlHttpReq) {
+        if (arr.error) {
+            arr.error({
+                'response': 'BROWSER'
+            });
+        }
+        return;
+    }
 
-        /*
-         * Arrange Datas
-         */
+    /*
+     * Arrangement Data(s)
+     */
+    var data = '';
+    if (arr.data) {
 
-        var data = '';
-        if (param.data !== null) {
-            var mData = Object.keys(param.data);
-            var mData_length = mData.length;
-            for (var i = 0; i < mData_length; i++) {
-                var temp_key = mData[i];
-                if (i > 0) {
-                    data += '&' + mData[i] + '=' + param.data[temp_key];
+        if (arr.formData) {
+
+            /*
+             * Direct access to Form Data
+             */
+            data = arr.data;
+
+        } else {
+
+            /*
+             * Arrange for GET, POST etc. Methods
+             */
+            var data_keys = Object.keys(arr.data);
+            for (var i = 0; i < data_keys.length; i++) {
+                if (i < 1) {
+                    data += data_keys[i] + '=' + arr.data[data_keys[i]];
                 } else {
-                    data += mData[i] + '=' + param.data[temp_key];
+                    data += '&' + data_keys[i] + '=' + arr.data[data_keys[i]];
                 }
             }
         }
+    }
 
-        /*
-         * Open Reuqest
-         */
+    /*
+     * Open Request
+     */
+    if (arr.method === 'GET' || arr.method === 'HEAD' || arr.method === 'PUT' || arr.method === 'DELETE') {
 
-        if (param.method === 'GET' || param.method === 'HEAD' || param.method === 'PUT' || param.method === 'DELETE') {
-
-            if (param.data !== null) {
-                param.url += '?' + data;
-                data = null;
-            }
-
-            xmlHttpReq.open(param.method, param.url, true);
-
-        } else if (param.method === 'POST') {
-
-            xmlHttpReq.open(param.method, param.url, true);
-
-            if (param.type && param.file === false) {
-                xmlHttpReq.setRequestHeader('Content-Type', param.type);
-            }
-
-            if (param.x_req_wid === true) {
-                xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
-                xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
-            }
-
-        } else {
-            param.method = false;
+        if (data !== '') {
+            arr.url += '?' + data;
+            data = null;
         }
 
-        if (param.method) {
+        xmlHttpReq.open(arr.method, arr.url, true);
 
-            if (typeof upload_progress === 'function') {
-                xmlHttpReq.upload.addEventListener('progress', upload_progress, false);
-            }
+    } else if (arr.method === 'POST') {
 
-            xmlHttpReq.addEventListener('load', function () {
-                if (this.status >= 200 && this.status < 400) {
+        xmlHttpReq.open(arr.method, arr.url, true);
 
-                    return_data = {
-                        0: 'success',
-                        'response': this.responseText.trim()
-                    };
+        if (arr.type && !arr.formData) {
+            xmlHttpReq.setRequestHeader('Content-Type', arr.type);
+        }
 
-                    callback(return_data);
-                } else {
-
-                    return_data = {
-                        0: 'error',
-                        'response': 'HEADER',
-                        'code': this.status
-                    };
-
-                    callback(return_data);
-                }
-            }, false);
-
-            xmlHttpReq.addEventListener('error', function () {
-
-                return_data = {
-                    0: 'error',
-                    'response': 'SERVER',
-                    'code': this.status
-                };
-
-                callback(return_data);
-            }, false);
-
-            xmlHttpReq.addEventListener('abort', function () {
-
-                return_data = {
-                    0: 'error',
-                    'response': 'ABORT'
-                };
-
-                callback(return_data);
-            }, false);
-
-            if (param.file) {
-                xmlHttpReq.send(param.file);
-            } else {
-                xmlHttpReq.send(data);
-            }
-
-        } else {
-            return_data = {
-                0: 'error',
-                'response': 'METHOD'
-            };
-            callback(return_data);
+        if (arr.Xreq === true) {
+            xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
+            xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         }
 
     } else {
-        return_data = {
-            0: 'error',
-            'response': 'BROWSER'
-        };
-        callback(return_data);
+        if (arr.error) {
+            arr.error({
+                'response': 'METHOD'
+            });
+        }
+        return;
     }
+
+    /*
+     * Send Progress Data
+     */
+    if (typeof arr.progress === 'function') {
+        xmlHttpReq.upload.addEventListener('progress', arr.progress, false);
+    }
+
+    /*
+     * On Load Event
+     */
+    xmlHttpReq.addEventListener('load', function () {
+        if (this.status >= 200 && this.status < 400) {
+
+            /*
+             * Success Respond
+             */
+            if (typeof arr.success === 'function') {
+                arr.success(this.responseText.trim());
+            }
+
+        } else {
+
+            /*
+             * Error in Header
+             */
+            if (arr.error) {
+                arr.error({
+                    'response': 'HEADER',
+                    'code': this.status
+                });
+            }
+        }
+    }, false);
+
+    /*
+     * Error in Server
+     */
+    xmlHttpReq.addEventListener('error', function () {
+
+        if (arr.error) {
+            arr.error({
+                'response': 'SERVER',
+                'code': this.status
+            });
+        }
+
+    }, false);
+
+    /*
+     * Request Abort
+     */
+    xmlHttpReq.addEventListener('abort', function () {
+
+        if (arr.error) {
+            arr.error({
+                'response': 'ABORT'
+            });
+        }
+
+    }, false);
+
+    /*
+     * Sending Request & Data(s)
+     */
+    xmlHttpReq.send(data);
 }

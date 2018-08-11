@@ -105,9 +105,9 @@ function rand_str(length) {
  */
 function uc_words(str) {
     return (str + '').replace(/^([a-z\u00E0-\u00FC])|\s+([a-z\u00E0-\u00FC])/g
-            , function ($1) {
-                return $1.toUpperCase();
-            });
+        , function ($1) {
+            return $1.toUpperCase();
+        });
 }
 
 /*
@@ -120,19 +120,22 @@ function uc_first(str) {
 /*
  * Mod Trim Function
  */
-function trims(str, charlist) {
-    str = str.trim();
-    charlist = !charlist ? ' \\s\u00A0' : (charlist + '').replace(/([\[\]\(\)\.\?\/\*\{\}\+\$\^\:])/g, '\\$1');
-    var re = new RegExp('[' + charlist + ']+$', 'img');
-    str = (str + '').replace(re, '');
-    return str.trim();
-}
+function trims(str, space, delmi) {
 
-/*
- * Remove White Space
- */
-function rws(str) {
-    return str.replace(/^\s+|\s+$/g, '');
+    str = str.trim();
+    if (typeof delmi === 'undefined') {
+        delmi = '[\t|\n|\r|\0\x0B]';
+    } else {
+        delmi = '[' + delmi + ']';
+    }
+
+    str = str.replace(new RegExp(delmi, 'img'), '');
+    str = str.replace(/\s+/g, ' ');
+
+    if (typeof space !== 'undefined') {
+        str = str.replace(/\s+/g, space);
+    }
+    return str.trim();
 }
 
 /*

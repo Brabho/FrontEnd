@@ -70,7 +70,7 @@ function resize_textarea() {
 
         if (el.hasAttribute('data-max-height') && el_height > el.getAttribute('data-max-height')) {
             el_height = el.getAttribute('data-max-height');
-            el.style.overflow = 'scroll';
+            el.style.overflowY = 'scroll';
         } else {
             el.style.overflow = 'hidden';
         }
@@ -206,19 +206,10 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
     /*
-     * Set `disabled` Attribute for `field_disable` Class Name
+     * Set `disabled` Attribute for `disable` Class Name
      */
-    $('.field_disable', null, function (el) {
+    $('.disabled', null, function (el) {
         el.setAttribute('disabled', 'true');
-        el.classList.add('disabled');
-    });
-
-    /*
-     * Set `disabled` Attribute for `btn_disable` Class Name
-     */
-    $('.btn_disable', null, function (el) {
-        el.setAttribute('disabled', 'true');
-        el.classList.add('disabled');
     });
 
     /*
@@ -230,10 +221,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
     /*
      * Number Pattern
+     * Number Field Only
      */
     on('keyup', '.number_field', function (el) {
-        var get_val = el.value;
-        var replace_val = get_val.replace(/[^0-9]/img, '');
+        var replace_val = el.value.replace(/[^0-9]/img, '');
+        el.value = trims(replace_val);
+    });
+
+    $('.number_field', null, function (el) {
+        var replace_val = el.value.replace(/[^0-9]/img, '');
         el.value = trims(replace_val);
     });
 
@@ -355,6 +351,6 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-    }, 400);
+    }, 300);
 
 }, false);

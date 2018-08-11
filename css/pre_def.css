@@ -25,8 +25,7 @@
 }
 
 .label_info,
-.label_info_all *,
-.label_info_all a{
+.label_info *{
     font-size: 11px;
     color: #999;
     font-weight: bold;

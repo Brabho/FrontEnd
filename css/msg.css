@@ -1,131 +1,127 @@
 /*
  * Display or Show Message
  */
-.msg{
-    padding: 2px 8px;
-    position: relative;
-    border-radius: 4px;
-    border: 1px solid #aaa;
-    border-left-width: 4px;
-    background: #f9f9f9;
-    display: block;
-    line-height: 25px;
-    font-weight: bold;
+.msg {
+    padding           : 2px 8px;
+    position          : relative;
+    border-radius     : 4px;
+    border            : 1px solid #aaa;
+    border-left-width : 4px;
+    background        : #f9f9f9;
+    display           : block;
+    line-height       : 25px;
+    font-weight       : bold;
 }
 
 .msg::before,
-.msg::after{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0.35em;
-    left: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
+.msg::after {
+    position    : absolute;
+    width       : 20px;
+    height      : 20px;
+    top         : 0.35em;
+    left        : 6px;
+    font-size   : 16px;
+    font-weight : bold;
+    text-align  : center;
+    font-family : Tahoma, Helvetica, Arial, sans-serif;
+    color       : #fff;
 }
 
 .msg_general,
 .msg_help,
 .msg_success,
 .msg_alert,
-.msg_warn{
-    padding-left: 40px;
+.msg_warn {
+    padding-left : 40px;
 }
 
 /*
  * General Message
  */
-.msg_general{
-    border: 1px solid #aaa;
+.msg_general {
+    border : 1px solid #aaa;
 }
 
-.msg_general::before{
-    content: 'i';
-    color: #fff;
-    text-align: center;
-    line-height: 1.2em;
-    border-radius: 100%;
-    background: #999;
+.msg_general::before {
+    content       : 'i';
+    line-height   : 1.2em;
+    border-radius : 100%;
+    background    : #999;
 }
 
 /*
  * Help Message
  */
-.msg_help{
-    color: #5179DF;
-    background: #F3F4F8;
-    border: 1px solid #5179DF;
+.msg_help {
+    color      : #5179DF;
+    background : #F3F4F8;
+    border     : 1px solid #5179DF;
 }
 
-.msg_help::before{
-    content: '?';
-    color: #fff;
-    text-align: center;
-    line-height: 1.3em;
-    border-radius: 100%;
-    background: #5179DF;
+.msg_help::before {
+    content       : '?';
+    text-align    : center;
+    line-height   : 1.3em;
+    border-radius : 100%;
+    background    : #5179DF;
 }
 
 /*
  * Success Message
  */
-.msg_success{
-    color: #219A0C;
-    background: #F3F6F2;
-    border: 1px solid #219A0C;
+.msg_success {
+    color      : #219A0C;
+    background : #F3F6F2;
+    border     : 1px solid #219A0C;
 }
 
-.msg_success::before{
-    content: '\2714';
-    line-height: 1.3em;
-    text-align: center; 
-    color: #fff;
-    top: 20%;
-    background: #219A0C;
-    border-radius: 1.1em;
+.msg_success::before {
+    content       : '\2714';
+    line-height   : 1.3em;
+    text-align    : center;
+    top           : 20%;
+    background    : #219A0C;
+    border-radius : 1.1em;
 }
 
 /*
  * Alert Message
  */
-.msg_alert{
-    color: #C0070B;
-    background: #F8EDED;
-    border: 1px solid #C0070B;
+.msg_alert {
+    color      : #C0070B;
+    background : #F8EDED;
+    border     : 1px solid #C0070B;
 }
 
-.msg_alert::before{
-    content: '\2716';
-    line-height: 1.3em;
-    color: #fff;
-    text-align: center;
-    border-radius: 1.1em;
-    background: #C0070B;
+.msg_alert::before {
+    content       : '\2716';
+    line-height   : 1.3em;
+    text-align    : center;
+    border-radius : 1.1em;
+    background    : #C0070B;
 }
 
 /*
  * Warning Message
  */
-.msg_warn{
-    color: #786B4F;
-    background: #FFFBF0;
-    border: 1px solid #786B4F;
+.msg_warn {
+    color      : #786B4F;
+    background : #FFFBF0;
+    border     : 1px solid #786B4F;
 }
 
-.msg_warn::before{
-    font-size: 12px;
-    content: '';
-    width: 0;
-    height: 0;
-    border-bottom: 18px solid #786B4F;
-    border-left: 13px solid transparent;
-    border-right: 13px solid transparent;
+.msg_warn::before {
+    font-size     : 12px;
+    content       : '';
+    width         : 0;
+    height        : 0;
+    border-bottom : 18px solid #786B4F;
+    border-left   : 13px solid transparent;
+    border-right  : 13px solid transparent;
 }
 
-.msg_warn::after{
-    content: '\0021';
-    color: #fff;
-    left: 1.0em;
-    line-height: 1.3em;
+.msg_warn::after {
+    content     : '\0021';
+    left        : 0.55em;
+    line-height : 1.3em;
 }

@@ -1,79 +1,72 @@
 /*
  * Some CSS Reset & Adject
  */
-*, html, head, body, header, footer, canvas, center, h1, h2, h3, h4, h5, h6, a, b, i, u, p, s, pre, code, blockquote, 
-ul, ol, li, hr, br, del, strike, strong, noscript, marquee, select, option, optgroup, button, input, textarea, img, div, 
-form, link, style, script, audio, video, embed, source, track, template, article, main, nav, progress, section, svg{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    vertical-align: baseline;
-    background: transparent;
+*, html, head, body, header, footer, canvas, center, h1, h2, h3, h4, h5, h6, a, b, i, u, p, s, pre, code, blockquote,
+ul, ol, li, hr, br, del, strike, strong, noscript, marquee, select, option, optgroup, button, input, textarea, img, div,
+form, link, style, script, audio, video, embed, source, track, template, article, main, nav, progress, section, svg {
+    margin         : 0;
+    padding        : 0;
+    outline        : 0;
+    box-sizing     : border-box;
+    vertical-align : baseline;
+    background     : transparent;
 }
 
-body{
-    background: #fff;
-    color: #000;
-    word-wrap: break-word;
-    cursor: default;
+body {
+    background : #fff;
+    color      : #000;
+    word-wrap  : break-word;
+    cursor     : default;
 }
 
 body, input, button,
-textarea, code, pre{
-    font-size: 14px;
+textarea, code, pre {
+    font-size : 14px;
 }
 
 *, body,
 input, button,
-textarea{
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
+textarea {
+    font-family : Tahoma, Helvetica, Arial, sans-serif;
 }
 
-code, pre{
-    font-family: monospace;
+code, pre {
+    font-family : monospace;
 }
 
-header, footer, article, main, nav, section, aside{
-    clear: both;
-    display: block;
+header, footer, article, main, nav, section, aside {
+    clear   : both;
+    display : block;
 }
 
-nav ul, nav ul li{
-    list-style: none;
+nav ul, nav ul li {
+    list-style : none;
 }
 
-li{
-    list-style-position: inside;
+li {
+    list-style-position : inside;
 }
 
-hr, br{
-    clear: both;
+hr, br {
+    clear : both;
 }
 
-input, select, button{
-    vertical-align: middle;
+input, select, button {
+    vertical-align : middle;
 }
 
-del{
-    text-decoration: line-through;
-    color: #666;
+del {
+    text-decoration : line-through;
+    color           : #666;
 }
 
-.disabled,
-[disabled="disabled"]{
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.5;
+[contenteditable="true"] {
+    cursor : text;
 }
 
-[contenteditable="true"]{
-    cursor: text;
-}
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width : 600px) {
     body, input, button,
-    textarea, code, pre, li{
-        font-size: 12px;
+    textarea, code, pre {
+        font-size : 12px;
     }
 }

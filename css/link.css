@@ -1,8 +1,7 @@
 /*
  * Link styling
  */
-.link,
-.link:visited{
+.link{
     background: none;
     border: 0;
     color: #2B78F9;
@@ -18,8 +17,7 @@
     text-decoration: underline;
 }
 
-.link_block,
-.link_block:visited{
+.link_block{
     display: block;
     clear: both;
     padding: 4px;
@@ -27,14 +25,13 @@
 }
 
 .link_block:hover,
-.link_block:active
+.link_block:active,
 .link_block_active{
     background: #f1f1f1;
     text-decoration: none;
 }
 
-.link_red,
-.link_red:visited{
+.link_red{
     color: #ef1a48;
 }
 
@@ -43,8 +40,7 @@
     color: #bf052d;
 }
 
-.link_gold,
-.link_gold:visited{
+.link_gold{
     color: #D27651;
 }
 
@@ -54,7 +50,6 @@
 }
 
 .link_flat:active,
-.link_flat:visited,
 .link_flat_active{
     border-radius: 4px;
     box-shadow: 0 0 0 3px lightblue;

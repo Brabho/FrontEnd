@@ -14,7 +14,7 @@ Powerful & LightWeight.
 
 
 > **_Build_**
-- Version: **5.0**
+- Version: **5.1**
 - Status: **Stable**
 
 
@@ -46,6 +46,12 @@ You can use or copy codes from files and use as your requirement.
 <!-- Ajax Request -->
 <script type="text/javascript">
 ajax({
+	/*
+	 * method: POST, GET, HEAD, PUT, DELETE (Default POST)
+	 * type: Content-Type,
+	 * Xreq: true/false 					(Default true)
+	 * formData: true						// If `data` is in FormData()
+	 */
 	url: 'http://example.com',
 	data: {
 		// Without FrontEnd (Only Ajax Function)
@@ -56,17 +62,15 @@ ajax({
 		username: $('#username').value,
 		password: $('#password').value
 	},
-
-/*
- * Others
- * method: POST, GET, HEAD, PUT, DELETE (Default POST)
- * type: Content-Type,
- * file: FormData(),
- * Xreq: true/false (Default true)
- */
-
-}, function(r) {
-	console.log(r);
+	success: function(response) {
+		console.log(response);
+	},
+	progress: function(progress) {
+		console.log(progress);
+	},
+	error: function(error) {
+		console.log(error):
+	}
 });
 </script>
 

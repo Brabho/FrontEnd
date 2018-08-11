@@ -11,12 +11,10 @@
     border-radius: 4px;
     border: 1px solid #bbb;
     background: #eee;
-    opacity: 1;
     display: inline-block;
 }
 
 .btn:hover,
-.btn:focus,
 .btn_hover{
     text-decoration: none;
     opacity: 0.8;
@@ -163,22 +161,4 @@
 .btn_green_flat{
     color: #2EB12A;
     background: none;
-}
-
-/*
- * Disable Button
- */
-.btn_disable,
-.btn_disable:hover,
-.btn_disable:focus,
-.btn_disable:active,
-.btn_disable:disabled{
-    cursor: not-allowed;
-    pointer-events: none;
-    opacity: 0.8;
-    text-shadow: 1px 1px #fff;
-    color: #868686;
-    border: 1px solid #bbb;
-    background: #eee;
-    box-shadow: none;
 }

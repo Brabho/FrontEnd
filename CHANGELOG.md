@@ -1,5 +1,23 @@
 # Change Log & History
 
+#### 11-08-2018
+	Stable Version 5.1
+	Many Bugs Fixed
+
+	Added:
+		Lightbox Close Button
+		Lightbox Color
+
+	Improved:
+		Stability
+		trims()
+		ajax()
+
+	Removed:
+		.btn_disable		"Use disabled Instead"
+		.field_disable 		"Use disabled Instead"
+		rws()
+
 #### 30-06-2018
     Stable Version 5.0
 	Many more things are added & removed & changed
