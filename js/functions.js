@@ -132,7 +132,7 @@ function trims(str, space, delmi) {
     str = str.replace(new RegExp(delmi, 'img'), '');
     str = str.replace(/\s+/g, ' ');
 
-    if (typeof space !== 'undefined') {
+    if (typeof space !== 'undefined' && space !== null) {
         str = str.replace(/\s+/g, space);
     }
     return str.trim();
@@ -161,6 +161,49 @@ function el_index(el) {
         return Array.prototype.indexOf.call(el.parentElement.children, el);
     }
     return 'document';
+}
+
+/*
+ * Time Ago Function
+ */
+function time_ago(time) {
+    time = Math.round(new Date(time).getTime());
+    var now = parseInt(new Date().getTime());
+    var second = parseInt(now - time) / 1000;
+    var ago = '';
+    var ago_str = '';
+
+    if (second < 60) {
+        ago = Math.round(parseInt(second));
+        ago_str = ago + ' second';
+
+    } else if (second < 3600) {
+        ago = Math.round(parseInt(second / 60));
+        ago_str = ago + ' minute';
+
+    } else if (second < 86400) {
+        ago = Math.round(parseInt(second / 3600));
+        ago_str = ago + ' hour';
+
+    } else if (second < 2592000) {
+        ago = Math.round(parseInt(second / 86400));
+        ago_str = ago + ' day';
+
+    } else if (second < 31536000) {
+        ago = Math.round(parseInt(second / 2592000));
+        ago_str = ago + ' month';
+
+    } else if (second > 31536000) {
+        ago = Math.round(parseInt(second / 31536000));
+        ago_str = ago + ' year';
+    }
+
+    if (ago > 1) {
+        ago_str = ago_str + 's';
+    } else if (ago < 1) {
+        ago_str = 'Just Now';
+    }
+    return ago_str;
 }
 
 /*
@@ -209,7 +252,7 @@ function scrollto_bookmark(el, arg) {
     }
 
     if (typeof arg['speed'] === 'undefined') {
-        arg['speed'] = 30;
+        arg['speed'] = 10;
     }
 
     if (el !== 'undefined' && el.length > 0 && el !== ' ' && has_scroll()) {

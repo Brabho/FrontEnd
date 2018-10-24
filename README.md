@@ -14,7 +14,7 @@ Powerful & LightWeight.
 
 
 > **_Build_**
-- Version: **5.1**
+- Version: **5.2**
 - Status: **Stable**
 
 
@@ -49,7 +49,6 @@ ajax({
 	/*
 	 * method: POST, GET, HEAD, PUT, DELETE (Default POST)
 	 * type: Content-Type,
-	 * Xreq: true/false 					(Default true)
 	 * formData: true						// If `data` is in FormData()
 	 */
 	url: 'http://example.com',
@@ -94,7 +93,6 @@ on('left_click', $('.btn')[0], function(elem) {
 }
 
 /*   ##  OR  ##   */
-
 on('click', null, function(elem) {
 
     // for class

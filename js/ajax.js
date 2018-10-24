@@ -9,9 +9,6 @@ function ajax(arr) {
     if (!arr.type) {
         arr.type = 'application/x-www-form-urlencoded; charset=utf-8';
     }
-    if (!arr.Xreq) {
-        arr.Xreq = true;
-    }
 
     var xmlHttpReq = false;
 
@@ -93,11 +90,6 @@ function ajax(arr) {
 
         if (arr.type && !arr.formData) {
             xmlHttpReq.setRequestHeader('Content-Type', arr.type);
-        }
-
-        if (arr.Xreq === true) {
-            xmlHttpReq.setRequestHeader('HTTP_X_REQUESTED_WITH', 'XMLHttpRequest');
-            xmlHttpReq.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
         }
 
     } else {

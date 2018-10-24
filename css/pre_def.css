@@ -1,111 +1,111 @@
-.hr{
-    display: block;
-    background: none;
-    height: 0;
-    padding: 0;
-    margin: 5px 0;
-    border: 0;
-    border-top: 1px solid #aaa;
+.hr {
+    display    : block;
+    background : none;
+    height     : 0;
+    padding    : 0;
+    margin     : 5px 0;
+    border     : 0;
+    border-top : 1px solid #aaa;
 }
 
-.hr_dash{
-    border-top: 2px dashed #aaa;
+.hr_dash {
+    border-top : 2px dashed #aaa;
 }
 
-.hr_dot{
-    border-top: 2px dotted #aaa;
+.hr_dot {
+    border-top : 2px dotted #aaa;
 }
 
-.no_padding{
-    padding: 0;
+.no_padding {
+    padding : 0;
 }
 
-.no_margin{
-    margin: 0;
+.no_margin {
+    margin : 0;
 }
 
 .label_info,
-.label_info *{
-    font-size: 11px;
-    color: #999;
-    font-weight: bold;
-    text-decoration: none;
+.label_info * {
+    font-size       : 11px;
+    color           : #999;
+    font-weight     : bold;
+    text-decoration : none;
 }
 
-.tab_contents{
-    display: none;
+.tab_contents {
+    display : none;
 }
 
-.resize_textarea{
-    resize: none;
-    overflow: hidden;
+.resize_textarea {
+    resize   : none;
+    overflow : hidden;
 }
 
-.circle{
-    border-radius: 100%;
+.circle {
+    border-radius : 100%;
 }
 
-.round{
-    border-radius: 1.2em;
+.round {
+    border-radius : 1.2em;
 }
 
-.curve{
-    border-radius: 4px;
+.curve {
+    border-radius : 4px;
 }
 
-.no_curve{
-    border-radius: 0;
+.no_curve {
+    border-radius : 0;
 }
 
-.point_it{
-    cursor: pointer;
+.point_it {
+    cursor : pointer;
 }
 
-.point_default{
-    cursor: default;
+.point_default {
+    cursor : default;
 }
 
-.point_none{
-    cursor: none;
+.point_none {
+    cursor : none;
 }
 
-.point_not{
-    cursor: not-allowed;
+.point_not {
+    cursor : not-allowed;
 }
 
-.point_noevt{
-    pointer-events: none;
+.point_noevt {
+    pointer-events : none;
 }
 
-.bold_text{
-    font-weight: bold;
+.bold_text {
+    font-weight : bold;
 }
 
-.italic_text{
-    font-style: italic;
+.italic_text {
+    font-style : italic;
 }
 
-.underline_text{
-    text-decoration: underline;
+.underline_text {
+    text-decoration : underline;
 }
 
-.left_text{
-    text-align: left;
+.left_text {
+    text-align : left;
 }
 
-.center_text{
-    text-align: center;
-    vertical-align: middle;
+.center_text {
+    text-align     : center;
+    vertical-align : middle;
 }
 
-.right_text{
-    text-align: right;
+.right_text {
+    text-align : right;
 }
 
-.justify_text{
-    text-align: justify;
+.justify_text {
+    text-align : justify;
 }
 
-.inline_block{
-    display: inline-block
+.inline_block {
+    display : inline-block;
 }

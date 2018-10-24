@@ -3,171 +3,175 @@
  * Badge
  * Notify
  */
-.badge{
-    background: #666;
-    color: #fff;
-    font-weight: bold;
-    display: inline-block;
-    width: auto;
-    text-align: center;
-
+.badge {
+    background  : #666;
+    color       : #fff;
+    font-weight : bold;
+    display     : inline-block;
+    width       : auto;
+    text-align  : center;
+    margin      : 4px;
 }
 
-.badge *{
-    display: inline-block;
-    text-align: center;
+.badge * {
+    display    : inline-block;
+    text-align : center;
 }
 
-.badge{
-    border-radius: 1.2em;
-    padding: 1px 4px;
+.badge {
+    border-radius : 1.2em;
+    padding       : 1px 4px;
 }
 
-.badge_tiny{
-    background: #f51645;
-    border-radius: 1.2em;
-    padding: 0.05em 0.35em;
-    font-size: 9px;
+.badge_tiny {
+    background    : #f51645;
+    border-radius : 1.2em;
+    padding       : 0.05em 0.35em;
+    font-size     : 9px;
 }
 
-.badge_block{
-    clear: both;
-    display: block;
-    width: 100%;
-    text-align: center;
+.badge_block {
+    clear      : both;
+    display    : block;
+    width      : 100%;
+    text-align : center;
 }
 
 /*
  * Red Color
  */
-.badge_red{
-    background: #f51645;
-    color: #f9f9f9;
+.badge_red {
+    background : #f51645;
+    color      : #f9f9f9;
 }
 
 /*
  * Blue Color
  */
-.badge_blue{
-    background: #3498db;
-    color: #fefefe;
+.badge_blue {
+    background : #3498db;
+    color      : #fefefe;
 }
 
 /*
  * Yellow Color
  */
-.badge_yellow{
-    background: #EADF33;
-    color: #555;
+.badge_yellow {
+    background : #EADF33;
+    color      : #555;
 }
 
 /*
  * Green Color
  */
-.badge_green{
-    background: #20ca1c;
-    color: #fff;
+.badge_green {
+    background : #20ca1c;
+    color      : #fff;
 }
 
 /*
  * White Color
  */
-.badge_white{
-    background: #eee;
-    color: #444;
+.badge_white {
+    background : #eee;
+    color      : #444;
 }
 
 /*
  * Tagging Style
  */
-.tag{
-    color: #444;
-    background: #e5e5e5;
-    border-radius: 0 3px 3px 0;
-    display: inline-block;
-    height: 20px;
-    line-height: 20px;
-    padding: 0 5px 0 20px;
-    margin: 4px;
-    position: relative;
-    text-decoration: none;
+.tag {
+    color           : #444;
+    background      : #e5e5e5;
+    border-radius   : 0 3px 3px 0;
+    display         : inline-block;
+    height          : 20px;
+    line-height     : 20px;
+    padding         : 0 5px 0 20px;
+    margin          : 4px;
+    position        : relative;
+    text-decoration : none;
 }
 
-.tag::before{
-    background: #fff;
-    content: '';
-    left: 0;
-    top: 0;	
-    position: absolute;
-    border-bottom: 10px solid transparent;
-    border-right: 11px solid #e5e5e5;
-    border-top: 11px solid transparent;
+.tag::before {
+    background    : #fff;
+    content       : '';
+    left          : 0;
+    top           : 0;
+    position      : absolute;
+    border-bottom : 10px solid transparent;
+    border-right  : 11px solid #e5e5e5;
+    border-top    : 11px solid transparent;
 }
 
-.tag:after{
-    background: #fff;
-    border-radius: 100%;
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.3);
-    content: '';
-    width: 6px;
-    height: 6px;
-    left: 10px;
-    top: 7px;
-    position: absolute;
+.tag:after {
+    background    : #fff;
+    border-radius : 100%;
+    box-shadow    : inset 0 1px rgba(0, 0, 0, 0.3);
+    content       : '';
+    width         : 6px;
+    height        : 6px;
+    left          : 10px;
+    top           : 7px;
+    position      : absolute;
 }
 
 /*
  * Tag Red
  */
-.tag_red{
-    background: #f51645;
-    color: #f9f9f9;
+.tag_red {
+    background : #f51645;
+    color      : #f9f9f9;
 }
-.tag_red::before{
-    border-right: 11px solid #f51645;
+
+.tag_red::before {
+    border-right : 11px solid #f51645;
 }
 
 /*
  * Tag Blue
  */
-.tag_blue{
-    background: #3498db;
-    color: #fefefe;
+.tag_blue {
+    background : #3498db;
+    color      : #fefefe;
 }
-.tag_blue::before{
-    border-right: 11px solid #3498db;
+
+.tag_blue::before {
+    border-right : 11px solid #3498db;
 }
 
 /*
  * Tag Yellow
  */
-.tag_yellow{
-    background: #EADF33;
-    color: #555;
+.tag_yellow {
+    background : #EADF33;
+    color      : #555;
 }
-.tag_yellow::before{
-    border-right: 11px solid #EADF33;
+
+.tag_yellow::before {
+    border-right : 11px solid #EADF33;
 }
 
 /*
  * Tag Green
  */
-.tag_green{
-    background: #20ca1c;
-    color: #fff;
+.tag_green {
+    background : #20ca1c;
+    color      : #fff;
 }
-.tag_green::before{
-    border-right: 11px solid #20ca1c;
+
+.tag_green::before {
+    border-right : 11px solid #20ca1c;
 }
 
 /*
  * Tag Black
  */
-.tag_black{
-    color: #000;
-    background: #a3a3a3;
+.tag_black {
+    color      : #000;
+    background : #a3a3a3;
 }
 
-.tag_black::before{
-    border-right: 11px solid #a3a3a3;
+.tag_black::before {
+    border-right : 11px solid #a3a3a3;
 }

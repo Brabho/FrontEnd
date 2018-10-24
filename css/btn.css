@@ -1,164 +1,164 @@
 /*
  * Buttons Style & Color
  */
-.btn{
-    font-weight: bold;
-    color: #222;
-    padding: 4px;
-    display: inline;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 4px;
-    border: 1px solid #bbb;
-    background: #eee;
-    display: inline-block;
+.btn {
+    font-weight     : bold;
+    color           : #222;
+    padding         : 4px;
+    display         : inline;
+    cursor          : pointer;
+    text-decoration : none;
+    border-radius   : 4px;
+    border          : 1px solid #bbb;
+    background      : #eee;
+    display         : inline-block;
 }
 
 .btn:hover,
-.btn_hover{
-    text-decoration: none;
-    opacity: 0.8;
+.btn_hover {
+    text-decoration : none;
+    opacity         : 0.8;
 }
 
 .btn:active,
-.btn_active{
-    text-decoration: none;
-    opacity: 1;
-    box-shadow: 0 0 0 3px #ddd;
+.btn_active {
+    text-decoration : none;
+    opacity         : 1;
+    box-shadow      : 0 0 0 3px #ddd;
 }
 
 /*
  * Flat Buttons
  */
 .btn_flat,
-.btn_flat_white{
-    color: #444;
-    background: none;
+.btn_flat_white {
+    color      : #444;
+    background : none;
 }
 
-.btn_flat_white{
-    color: #fff;
+.btn_flat_white {
+    color : #fff;
 }
 
-.btn *{
-    display: inline-block;
+.btn * {
+    display : inline-block;
 }
 
 /*
  * Block Button
  */
-.btn_block{
-    clear: both;
-    display: block;
-    width: 100%;
-    text-align: center;
+.btn_block {
+    clear      : both;
+    display    : block;
+    width      : 100%;
+    text-align : center;
 }
 
-.btn_wide{
-    padding: 1% 10%;
-    text-align: center;
+.btn_wide {
+    padding    : 1% 10%;
+    text-align : center;
 }
 
 /*
  * Curve Button
  */
-.btn_curve{
-    border-radius: 1.2em;
-    padding: 4px 6px;
+.btn_curve {
+    border-radius : 1.2em;
+    padding       : 4px 6px;
 }
 
 /*
  * Red Color
  */
 .btn_red_flat,
-.btn_red{
-    color: #f9f9f9;
-    border: 1px solid #bf052d;
-    background: #E74C3C;
+.btn_red {
+    color      : #f9f9f9;
+    border     : 1px solid #bf052d;
+    background : #E74C3C;
 }
 
 .btn_red_flat:active,
 .btn_red:active,
-.btn_red_active{
-    box-shadow: 0 0 0 3px lightcoral;
+.btn_red_active {
+    box-shadow : 0 0 0 3px lightcoral;
 }
 
 /*
  * Flat Buttons
  */
-.btn_red_flat{
-    color: #bf052d;
-    background: none;
+.btn_red_flat {
+    color      : #bf052d;
+    background : none;
 }
 
 /*
  * Blue Color
  */
 .btn_blue_flat,
-.btn_blue{
-    border: 1px solid #2980b9;
-    color: #fefefe;
-    background: #2A8DCF;
+.btn_blue {
+    border     : 1px solid #2980b9;
+    color      : #fefefe;
+    background : #2A8DCF;
 }
 
 .btn_blue_flat:active,
 .btn_blue:active,
-.btn_blue_active{
-    box-shadow: 0 0 0 3px lightblue;
+.btn_blue_active {
+    box-shadow : 0 0 0 3px lightblue;
 }
 
 /*
  * Flat Buttons
  */
-.btn_blue_flat{
-    color: #2980b9;
-    background: none;
+.btn_blue_flat {
+    color      : #2980b9;
+    background : none;
 }
 
 /*
  * Yellow Color
  */
 .btn_yellow_flat,
-.btn_yellow{
-    border: 1px solid #BFB62F;
-    background: #F8EE59;
-    color: #333;
+.btn_yellow {
+    border     : 1px solid #BFB62F;
+    background : #F8EE59;
+    color      : #333;
 }
 
 .btn_yellow_flat:active,
 .btn_yellow:active,
-.btn_yellow_active{
-    box-shadow: 0 0 0 3px #EDE562;
+.btn_yellow_active {
+    box-shadow : 0 0 0 3px #EDE562;
 }
 
 /*
  * Flat Button
  */
-.btn_yellow_flat{
-    background: none;
-    color: #BFB62F;
+.btn_yellow_flat {
+    background : none;
+    color      : #BFB62F;
 }
 
 /*
  * Green Color
  */
 .btn_green_flat,
-.btn_green{
-    border: 1px solid #2EB12A;
-    color: #333;
-    background: #29DF25;
+.btn_green {
+    border     : 1px solid #2EB12A;
+    color      : #333;
+    background : #29DF25;
 }
 
 .btn_green_flat:active,
 .btn_green:active,
-.btn_green_active{
-    box-shadow: 0 0 0 3px lightgreen;
+.btn_green_active {
+    box-shadow : 0 0 0 3px lightgreen;
 }
 
 /*
  * Flat Button
  */
-.btn_green_flat{
-    color: #2EB12A;
-    background: none;
+.btn_green_flat {
+    color      : #2EB12A;
+    background : none;
 }
