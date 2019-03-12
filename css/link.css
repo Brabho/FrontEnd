@@ -1,62 +1,62 @@
 /*
  * Link styling
  */
-.link{
-    background: none;
-    border: 0;
-    color: #2B78F9;
-    text-decoration: none;
-    display: inline;
-    cursor: pointer;
+.link {
+    background      : none;
+    border          : 0;
+    color           : #2b78f9;
+    text-decoration : none;
+    display         : inline;
+    cursor          : pointer;
 }
 
 .link:hover,
 .link:active,
-.link_active{
-    color: #0A50C3;
-    text-decoration: underline;
+.link_active {
+    color           : #0a50c3;
+    text-decoration : underline;
 }
 
-.link_block{
-    display: block;
-    clear: both;
-    padding: 4px;
-    text-align: center;
+.link_block {
+    display    : block;
+    clear      : both;
+    padding    : 4px;
+    text-align : center;
 }
 
 .link_block:hover,
 .link_block:active,
-.link_block_active{
-    background: #f1f1f1;
-    text-decoration: none;
+.link_block_active {
+    background      : #f1f1f1;
+    text-decoration : none;
 }
 
-.link_red{
-    color: #ef1a48;
+.link_red {
+    color : #ef1a48;
 }
 
 .link_red:hover,
-.link_red:active{
-    color: #bf052d;
+.link_red:active {
+    color : #bf052d;
 }
 
-.link_gold{
-    color: #D27651;
+.link_gold {
+    color : #d27651;
 }
 
 .link_gold:hover,
-.link_gold:active{
-    color: #f37a00;
+.link_gold:active {
+    color : #f37a00;
 }
 
 .link_flat:active,
-.link_flat_active{
-    border-radius: 4px;
-    box-shadow: 0 0 0 3px lightblue;
-    background: none;
+.link_flat_active {
+    border-radius : 4px;
+    box-shadow    : 0 0 0 3px lightblue;
+    background    : none;
 }
 
 .anchor_tag,
-.anchor_elem{
-    cursor: pointer;
+.anchor_elem {
+    cursor : pointer;
 }

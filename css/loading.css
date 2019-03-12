@@ -9,7 +9,7 @@
     border-style  : solid;
     border-radius : 100%;
     font-size     : 12px;
-    border-color  : #000;
+    border-color  : #000000;
 }
 
 /*
@@ -27,7 +27,7 @@
  * Style Color White
  */
 .loading_white {
-    border-color : #fff;
+    border-color : #ffffff;
 }
 
 /*

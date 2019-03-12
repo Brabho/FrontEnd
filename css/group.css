@@ -1,81 +1,83 @@
 /*
  * Vertical Group
  */
-.group{
-    display: inline-block;
-    list-style: none;
-    margin: 8px 2px;
-    vertical-align:top;
-    text-align: center;
-    font-size: 0;
-    margin: 0;
+.group {
+    display        : inline-block;
+    list-style     : none;
+    margin         : 8px 2px;
+    vertical-align : top;
+    text-align     : center;
+    font-size      : 0;
+    margin         : 0;
 }
 
-.group li{
-    display: block;
-    clear: both;
-    background: #fff;
-    font-size: 14px;
-    padding: 3px 6px;
-    border: 1px solid #ccc;
-    border-bottom: 0;
+.group li {
+    display       : block;
+    clear         : both;
+    background    : #ffffff;
+    font-size     : 14px;
+    padding       : 3px 6px;
+    border        : 1px solid #cccccc;
+    border-bottom : 0;
 }
 
-.group li:first-child{
-    border-radius: 3px 3px 0 0;
+.group li:first-child {
+    border-radius : 3px 3px 0 0;
 }
 
-.group li:last-child{
-    border-radius: 0 0 3px 3px;
-    border-bottom: 1px solid #ccc;
+.group li:last-child {
+    border-radius : 0 0 3px 3px;
+    border-bottom : 1px solid #cccccc;
 }
 
 /*
  * Vertical Group Curve Edge
  */
-.group_curve li:first-child{
-    border-radius: 1.2em 1.2em 0 0;
+.group_curve li:first-child {
+    border-radius : 1.2em 1.2em 0 0;
 }
-.group_curve li:last-child{
-    border-radius: 0 0 1.2em 1.2em;
+
+.group_curve li:last-child {
+    border-radius : 0 0 1.2em 1.2em;
 }
 
 /*
  * Horizontal Group
  */
-.group_h li{
-    display: inline-block;
-    border: 1px solid #ccc; 
-    border-right: 0;
+.group_h li {
+    display      : inline-block;
+    border       : 1px solid #cccccc;
+    border-right : 0;
 }
 
-.group_h li:first-child{
-    border-radius: 3px 0 0 3px;
+.group_h li:first-child {
+    border-radius : 3px 0 0 3px;
 }
 
-.group_h li:last-child{
-    border-radius: 0 3px 3px 0;
-    border-right: 1px solid #ccc;
+.group_h li:last-child {
+    border-radius : 0 3px 3px 0;
+    border-right  : 1px solid #cccccc;
 }
 
 /*
  * Horizontal Group Curve Edge
  */
-.group_h_curve li:first-child{
-    border-radius: 1.2em 0 0 1.2em;
+.group_h_curve li:first-child {
+    border-radius : 1.2em 0 0 1.2em;
 }
-.group_h_curve li:last-child{
-    border-radius: 0 1.2em 1.2em 0;
+
+.group_h_curve li:last-child {
+    border-radius : 0 1.2em 1.2em 0;
 }
 
 /*
  * Hover & Active Group
  */
 .group li.group_active,
-.group li:hover{
-    background: #f1f1f1;
+.group li:hover {
+    background : #f1f1f1;
 }
 
-.group li.group_active{
-    font-weight: bold;
+.group li.group_active {
+    font-weight : bold;
 }

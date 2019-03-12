@@ -1,64 +1,69 @@
 # Change Log & History
 
-#### 24-10-2018
-	Stable Version 5.2
+> ##### 12-03-2019 ~ _v5.3_ : _Stable_ 
+
+    Done Major Changes
+    Many Bugs Fixed
+    Stability Improved
+    Review All Files
+    Added new things in Library
+
+> ##### 24-10-2018 ~ _v5.2_ : _Stable_
+
 	Bugs Fixed
 	Stability Improved
 	Minor Changes
 
-#### 11-08-2018
-	Stable Version 5.1
-	Many Bugs Fixed
+> ##### 11-08-2018 ~ _v5.1_ : _Stable_
 
-	Added:
+	Many Bugs Fixed
+	:: Added ::
 		Lightbox Close Button
 		Lightbox Color
 
-	Improved:
+	:: Improved ::
 		Stability
 		trims()
 		ajax()
 
-	Removed:
+	:: Removed ::
 		.btn_disable		"Use disabled Instead"
 		.field_disable 		"Use disabled Instead"
 		rws()
 
-#### 30-06-2018
-    Stable Version 5.0
+> ##### 30-06-2018 ~ _v5.0_ : _Stable_ 
+
 	Many more things are added & removed & changed
 	Minor Bugs Fixed
-
-    Added:
+    :: Added ::
         Material Placeholder
 		Auto Resize Textarea Height
         Scroll To Bookmark/Anchor
         Delay CSS Load
 		Tab Nav & Contents
 
-    Improved:
-		Grid
-        Card UI				> Stable
+    :: Improved ::
+        Grid
+        Card UI          > Stable
         Lightbox
         Progressbar
 		Lazy Load Images
 		Minify
 
-    Removed:
+    :: Removed ::
         Open External Link in New Tab
 
-#### 08-08-2017
-    Stable Version 4.0
+> ##### 08-08-2017 ~ _v4.0_ : _Stable_
 
-    Added:
+    :: Added ::
         Flat Link
         Flat Buttons
         Flat Field
         last_fix.css
-        `usr_os`                > functions.js
+        `usr_os`         > functions.js
         Ajax Upload Progress
 
-    Improved:
+    :: Improved ::
         btn.css
         field.css
         grid.css
@@ -66,94 +71,88 @@
         Speed / Performance
         Text Responsive
 
-    Changed:
+    :: Changed ::
         Colors Name
         Functions Name
 
-    Card UI                 - Still in beta
+    Card UI             > Still in beta
     All Removed Files / Functions are in functions.js or Completely Removed
 
-#### 17-05-2017
-    Stable Version 3.5
+> ##### 17-05-2017 ~ _v3.5_ : _Stable_
+
     Bugs Fixed
     Stability Improved
-
-    Added:
+    :: Added ::
         Card UI
 
-    Changed:
+    :: Changed ::
         Elements Key `_` with `$`
-        `.bquote`           > `.quote`
+        `.bquote`     > `.quote`
 
-#### 03-05-2017
-    Stable Version 3.2
+> ##### 03-05-2017 ~ _v3.2_ : _Stable_
 
-    Added:
+    :: Added ::
         Curve Progressbar
         `animate_inside`        > animate.css
 
-    Changed:
+    :: Changed ::
         group_re                > group_curve
         Progressbar Speed
 
-#### 27-04-2017
-    Stable Version 3.1
+> ##### 27-04-2017 ~ _v3.1_ : _Stable_
 
-    Added:
+    :: Added ::
         Round Edge Group
         Center Element      > respo.css
         `is_var`            > functions.js
 
-    Improved:
+    :: Improved ::
         `hr`
         visitor.js
 
-#### 16-04-2017
-    Stable Version 3.0
+> ##### 16-04-2017 ~ _v3.0_ : _Stable_
 
-    Added:
+    :: Added ::
         4 sides arrow container box
 
-    Improved:
+    :: Improved ::
         Minified
         Grid
         ajax.js
         sets_basic.js
 
-    Changed:
+    :: Changed ::
         AJAX Response
         AJAX Error
         Lazy Load Image(s)
 
-        btnDisable      > btn_disable
-        fieldDisable    > field_disable
-        group_act       > group_active
-        pagination_act  > pagination_active
+        btnDisable          > btn_disable
+        fieldDisable        > field_disable
+        group_act           > group_active
+        pagination_act      > pagination_active
 
         drop_down_box.css   > arrow.css
         cf.js               > function.js
         str.js              > function.js
 
-    Removed:
+    :: Removed ::
         Content Separator
         Mention & Hashtag
 
-#### 29-03-2017
-    Stable Version 2.2
-    Stability Improved
+> ##### 29-03-2017 ~ _v2.2_ : _Stable_
 
-    Bug Fixed:
+    Stability Improved
+    :: Bug Fixed ::
         ajax.js
 
-#### 20-03-2017
-    Stable Version 2.1
+> ##### 20-03-2017 ~ _v2.1_ : _Stable _
+
     Stability Improved
     Bug Fixed
 
-#### 09-03-2017
-    Stable Version 2.0
+> ##### 09-03-2017 ~ _v2.0_ : _Stable_
 
-    Improved:
+    :: Improved ::
         Minify Version
         badge_tag.css
         btn.css
@@ -165,101 +164,95 @@
         reset.css
         tooltip.css
 
-    Added:
+    :: Added ::
         Tag Color
         `loading_4`             > loading.css
         iframe Responsive
 
-    Changed:
+    :: Changed ::
         `ani_all`               > `animate_all`
         lazy_load_imgs
         requireThis.js
 
-    Removed:
+    :: Removed ::
         Charset
         Icons
         Gradient                > btn.css
         `img_circle, img_round` > img.css
         btni.css
 
-#### 02-03-2017
-    Stable Version 1.16.2
+> ##### 02-03-2017 ~ _v1.16.2_ : _Stable_
+
     Bugs Fixed
 
-#### 27-02-2017
-    Stable Version 1.16
+> ##### 27-02-2017 ~ _v1.16_ : _Stable_
 
-    Improved:
+    :: Improved ::
         curve
         btni.css
         msg.css
         reset.css
         tooltip.css
 
-    Added:
+    :: Added ::
         `input`              > valid.js
         `field_curve`        > field.css
         breadcrumb.css
 
-#### 12-02-2017
-    Stable Version 1.15
+> ##### 12-02-2017 ~ _v1.15_ : _Stable_
 
-    Added:
-    `img_zoom`               > img.css
+    :: Added ::
+        `img_zoom`          > img.css
 
-    Changed:
+    :: Changed ::
         tag.css             > badge_tag.css
         ibtn.css            > btni.css
 
-    Removed:
+    :: Removed ::
         tag.css
 
-#### 04-02-2017
-    Stable Version 1.14
+> ##### 04-02-2017 ~ _v1.14_ : _Stable_
 
-    Added:
+    :: Added ::
         Cell Show/Visible   > grid.css
         fieldFocus          > field.css
 
-    Improved:
+    :: Improved ::
         grid.css
         highlight.css
         progressbar.css
         reset.css
         animate.js
 
-    Changed:
+    :: Changed ::
         responsive.css      > grid.css
         icons/loading.css   > css/loading.css
         icons/ibtn.css      > css/ibtn.css
 
-    Removed:
+    :: Removed ::
         load.js
         Extra Small         > grid.css
 
-#### 27-01-2017
-    Stable Version 1.13
+> ##### 27-01-2017 ~ _v1.13_ : _Stable_
 
-    Added:
+    :: Added ::
         responsive.css
         requirethis.js
 
-    Improved:
+    :: Improved ::
         icons/loading.css
 
-#### 21-01-2017
-    Stable Version 1.12
+> ##### 21-01-2017 ~ _v1.12_ : _Stable_
 
-    Added:
+    :: Added ::
         load.js
 
-    Removed:
+    :: Removed ::
         icons/arrow.css
 
-#### 30-12-2016
-    Stable Version 1.11
+> ##### 30-12-2016 ~ _v1.11_ : _Stable_
 
-    Improved:
+    :: Improved ::
         animate.css
         btn.css
         field.css
@@ -268,31 +261,30 @@
         reset.css
         sets_basic.js
 
-    Added:
+    :: Added ::
         ibtn.css            > icons
 
-    Removed:
+    :: Removed ::
         `lightbox_close`    > lightbox.css
         lightbox.js
 
-#### 18-12-2016
-    Stable Version 1.10
+> ##### 18-12-2016 ~ _v1.10_ : _Stable_
 
-    Improved:
+    :: Improved ::
         btn.css
         field.css
         link.css
         reset.css
 
-    Added:
+    :: Added ::
         `check_toggle`      > check.css
         img.css
         progressbar.css
 
-#### 13-12-2016
+> ##### 13-12-2016 ~ _v1.9_ : _Stable_
     Stable Version 1.9
 
-    Added:
+    :: Added ::
         Blink Elements      > animate.css
         Shake Elements      > animate.css
         Swing Elements      > animate.css
@@ -306,7 +298,7 @@
         `elmIndex`          > getparse.js
         onEvt.js
 
-    Improved:
+    :: Improved ::
         btn.css
         field.css
         group.css
@@ -318,17 +310,16 @@
         select_option.css
         select_option.js
 
-    Changed:
+    :: Changed ::
         tag.css             > badge_tag.css
         atag_mani.js        > sets_basic.js
         setDisable.js       > sets_basic.js
 
     CSS Minify Version is now UTF-8
 
-#### 30-11-2016
-    Stable Version 1.8
+> ##### 30-11-2016 ~ _v1.8_ : _Stable_
 
-    Improved:
+    :: Improved ::
         field.css
         highlight.css
         link.css
@@ -336,7 +327,7 @@
         reset.css
         table.css
 
-        ICONS:
+    :: ICONS ::
         alert.css
         general.css
         help.css
@@ -344,21 +335,19 @@
         success.css
         warn.css
 
-    Added:
-        setDisable.js    // Set `disabled` Attribute if class name is `btnDisable` or `fieldDisable`
+    :: Added ::
+        setDisable.js   // Set `disabled` Attribute if class name is `btnDisable` or `fieldDisable`
 
-#### 23-11-2016
-    Stable Version 1.7.4
+> ##### 23-11-2016 ~ _v1.7.4_ : _Stable_
+
     Fixed Lazy Load Image Bug
     Checked All Files
-
-    Added:
+    :: Added ::
         Check Button > `btn.css`
 
-#### 16-11-2016
-    Stable Version 1.7
+> ##### 16-11-2016 ~ _1.7_ : _Stable_
 
-    Added:
+    :: Added ::
         Lazy Load Image(s)              // Work on any Screen Size
         Get Scroll Position             > `getParse.js`
         Get Visible/Showing Elements    > `getParse.js`
@@ -366,66 +355,62 @@
         Close Button                    > `btn.css`
         Color                           > `label_badge.css`
 
-    Improved:
+    :: Improved ::
         reset.css
         con_sep.css
         animate.js
         cf.js
         btn_curve > btn.css
 
-    Changed:
+    :: Changed ::
         cssProp // (elem, prop) 2 params
 
-#### 10-11-2016
-    Stable Version 1.6.2
-    Checked All Files
+> ##### 10-11-2016 ~ _v1.6.2_ : _Stable_
 
-    Improved:
+    Checked All Files
+    :: Improved ::
         highlight.css
 
-    Added:
+    :: Added ::
         Styled `hr` tag
 
-#### 01-11-2016
-    Stable Version 1.6
+> ##### 01-11-2016 ~ _v1.6_ : _Stable_ 
+
     Few Major Bugs Fixed
     Minify Version Added
-
-    Changed:
+    :: Changed ::
         css/icon > icons
 
-#### 25-10-2016
-    Stable Version 1.5
+> ##### 25-10-2016 ~ _v1.5_ : _Stable_
+
     Review All Files
     Major Bugs Fixed
-
-    Bugs Fixed:
+    :: Bugs Fixed ::
         All Icons
         msg.css
 
-    Improved:
+    :: Improved ::
         msg.css
         check.css
         radio.css
 
-    Added:
+    :: Added ::
         New Colour Added in highlight.css > `code`
 
-    Removed:
+    :: Removed ::
         Colour Removed in loading.css
 
-#### 03-10-2016
-    Stable Version 1.4
+> ##### 03-10-2016 ~ _v1.4_ :_Stable_
+
     Review All Files
     Minor Bug Fixed
-
-    Improved:
+    :: Improved ::
         animate.js
         check.css
         radio.css
         msg.css
 
-        ICONS:
+    :: ICONS ::
         alert.css
         comment.css
         drop_nav.css
@@ -433,78 +418,71 @@
         home.css
         more.css
 
-    Added:
+    :: Added ::
         Remove Cookie (Single or All)
 
-#### 20-09-2016
-	Stable Version 1.3
-	Review All Files
+> ##### 20-09-2016 ~ _1.3_ : _Stable_ 
 
-	Improved:
+	Review All Files
+	:: Improved ::
 		Stability
 		btn.css
 		check.css
 		pagination.css
 		radio.css
 
-        ICONS:
+    :: ICONS ::
 		help.css
 		user.css
 		warn.css
 
-	Changed:
+	:: Changed ::
 		`.active` to `.group_act` in group.css
 		`.active` to `.pagi_act` in pagination.css
 
-	Bug Fixed:
+	:: Bug Fixed ::
 		highlight.css
 		msg.css
 
-        ICONS:
+    :: ICONS ::
         general.css
 		search.css
 
 		animate.js
 		visitor.js
 
-#### 14-09-2016
-	Stable Version 1.0.2
+> ##### 14-09-2016 ~ _v1.0.2_ : _Stable_
 
-	Improved:
+	:: Improved ::
 		drop_nav.css
 		check_radio.css 
 
-	Added:
+	:: Added ::
 		check.css
 		radio.css
 		`drop_nav_act` in icon/drop_nav.css (Cross Mark)
 
-	Removed:
+	:: Removed ::
 	check_radio.css
 
-#### 11-09-2016
-	Alpha Version 1.0.1
+> ##### 11-09-2016 ~ _v1.0.1_ : _Alpha_
 
-	Added:
+	:: Added ::
 		select_option.css
 		select_option.js,
 		`notify` in label_badge.css
 
-	Improved:
+	:: Improved ::
 		btn.css,
 		drop_down_box.css
 		valid.js,
 		visitor.js,
 
-	Bug Fixed:
+	:: Bug Fixed ::
 		ajax.js,
 		cf.js
 
-#### 03-09-2016
-	Alpha Version 1.0
-	Initial released
-	Complete Re Written
+> ##### 03-09-2016 ~ _v1.0_ : _Aplha_
 
-#### 2015
-	Founded
-	First made
+    First made
+	Initial released

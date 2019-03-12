@@ -13,8 +13,8 @@ form, link, style, script, audio, video, embed, source, track, template, article
 }
 
 body {
-    background : #fff;
-    color      : #000;
+    background : #ffffff;
+    color      : #000000;
     word-wrap  : break-word;
     cursor     : default;
 }
@@ -57,7 +57,7 @@ input, select, button {
 
 del {
     text-decoration : line-through;
-    color           : #666;
+    color           : #666666;
 }
 
 [contenteditable="true"] {

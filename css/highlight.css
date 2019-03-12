@@ -1,123 +1,123 @@
 /*
  * Code/Syntex Highlight
  */
-.code{
-    padding: 1px;
-    margin: 1px;
-    border: 1px solid #d5d5d5;
-    border-radius: 3px;
-    background: #f7f7f7;
-    display: inline-block;
-    font-size: 12px;
-    line-height: 16px;
-    text-shadow: 1px 1px #fff;
+.code {
+    padding       : 1px;
+    margin        : 1px;
+    border        : 1px solid #d5d5d5;
+    border-radius : 3px;
+    background    : #f7f7f7;
+    display       : inline-block;
+    font-size     : 12px;
+    line-height   : 16px;
+    text-shadow   : 1px 1px #ffffff;
 }
 
 .code,
-.code *{
-    font-family: monospace;
+.code * {
+    font-family : monospace;
 }
 
 /*
  * Code Red Color
  */
-.code_red{
-    border: 1px solid #F6D3D5;
-    color: #C24147;
+.code_red {
+    border : 1px solid #f6d3d5;
+    color  : #c24147;
 }
 
 /*
  * Code Blue Color
  */
-.code_blue{
-    border: 1px solid #9FD2F3;
-    color: #3278A6;
+.code_blue {
+    border : 1px solid #9fd2f3;
+    color  : #3278a6;
 }
 
 /*
  * Code Green Color
  */
-.code_green{
-    border: 1px solid #91F48F;
-    color: #319D2E;
+.code_green {
+    border : 1px solid #91f48f;
+    color  : #319d2e;
 }
 
 /*
  * Syntax Highlight
  */
-.syntax{
-    background: #2D313A;
-    color: #96CBFE;
-    padding: 16px;
-    margin: 36px 5px 5px 5px;
-    border: 2px solid #57AD68;
-    border-left: 5px solid #57AD68;
-    position: relative;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: left;
-    word-wrap: break-word;
+.syntax {
+    background  : #2d313a;
+    color       : #96cbfe;
+    padding     : 16px;
+    margin      : 36px 5px 5px 5px;
+    border      : 2px solid #57ad68;
+    border-left : 5px solid #57ad68;
+    position    : relative;
+    font-weight : bold;
+    font-size   : 14px;
+    line-height : 20px;
+    text-align  : left;
+    word-wrap   : break-word;
 }
 
 .syntax,
-.syntax *{
-    font-family: monospace;
+.syntax * {
+    font-family : monospace;
 }
 
-.syntax::before{
-    content: '{/}';
-    position: absolute;
-    background: #57AD68;
-    color: #fff;
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    line-height: 35px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 14px;
-    left: 0;
-    top: -34px;
+.syntax::before {
+    content        : '{/}';
+    position       : absolute;
+    background     : #57ad68;
+    color          : #ffffff;
+    border-radius  : 100%;
+    width          : 40px;
+    height         : 40px;
+    line-height    : 35px;
+    text-align     : center;
+    vertical-align : middle;
+    font-family    : Tahoma, Helvetica, Arial, sans-serif;
+    font-weight    : bold;
+    font-size      : 14px;
+    left           : 0;
+    top            : -34px;
 }
 
 /*
  * Quote Highlight
  */
-.quote{
-    clear: both;
-    text-indent: 25px;
-    border: 1px solid #ddd;
-    border-left: 3px solid #bbb;
-    font-style: italic;
-    font-size: 18px;
-    line-height: 26px;
-    background-color: #f9f9f9;
-    margin: 10px;
-    padding: 10px 20px;
-    quotes: "\201C""\201D""\2018""\2019";
-    position: relative;
+.quote {
+    clear            : both;
+    text-indent      : 25px;
+    border           : 1px solid #dddddd;
+    border-left      : 3px solid #bbbbbb;
+    font-style       : italic;
+    font-size        : 18px;
+    line-height      : 26px;
+    background-color : #f9f9f9;
+    margin           : 10px;
+    padding          : 10px 20px;
+    quotes           : "\201C" "\201D" "\2018" "\2019";
+    position         : relative;
 }
 
 .quote::before,
-.quote::after{
-    text-indent: 0;
-    color: #888;
-    font-size: 45px;
-    position: absolute;
-    font-family: Tahoma, Helvetica, Arial, sans-serif;
+.quote::after {
+    text-indent : 0;
+    color       : #888888;
+    font-size   : 45px;
+    position    : absolute;
+    font-family : Tahoma, Helvetica, Arial, sans-serif;
 }
 
-.quote::before{
-    content: open-quote;
-    line-height: 0.05em;
-    left: 0;
+.quote::before {
+    content     : open-quote;
+    line-height : 0.05em;
+    left        : 0;
 }
 
-.quote::after{
-    content: close-quote;
-    bottom: -0.5em;
-    right: 15px;
+.quote::after {
+    content : close-quote;
+    bottom  : -0.5em;
+    right   : 15px;
 }

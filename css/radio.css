@@ -1,46 +1,46 @@
 /*
  * Styled Radio Button
  */
-.radio{
-    display: inline-block;
+.radio {
+    display : inline-block;
 }
 
-.radio input[type='radio']{
-    display: none;
+.radio input[type='radio'] {
+    display : none;
 }
 
-.radio label{
-    cursor: pointer;
-    position: relative;
-    padding: 0 5px 0 20px;
+.radio label {
+    cursor   : pointer;
+    position : relative;
+    padding  : 0 5px 0 20px;
 }
 
 .radio label::before,
-.radio label::after{
-    position: absolute;
-    content: '';
-    border-radius: 100%;
-    transition: all 0.3s;
-    font-size: 12px;
+.radio label::after {
+    position      : absolute;
+    content       : '';
+    border-radius : 100%;
+    transition    : all 0.3s;
+    font-size     : 12px;
 }
 
-.radio label::before{
-    left: 0;
-    border: 1px solid #3399FF;
-    background: #fff;
-    width: 14px;
-    height: 14px;
+.radio label::before {
+    left       : 0;
+    border     : 1px solid #3399ff;
+    background : #ffffff;
+    width      : 14px;
+    height     : 14px;
 }
 
-.radio label::after{
-    width: 10px;
-    height: 10px;
-    left: 3px;
-    top: 3px;
-    background: #3399FF;
-    opacity: 0;
+.radio label::after {
+    width      : 10px;
+    height     : 10px;
+    left       : 3px;
+    top        : 3px;
+    background : #3399ff;
+    opacity    : 0;
 }
 
-.radio input[type='radio']:checked + label::after{
-    opacity: 1;
+.radio input[type='radio']:checked + label::after {
+    opacity : 1;
 }

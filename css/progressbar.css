@@ -1,137 +1,128 @@
 /*
- * Progressbar Custom Style
-
- * Progressbar Container
+ * Progressbar
  */
-.progressbar_cover{
-    background: #fff;
-    border: 1px solid #aaa;
-    box-shadow: inset 0 0 3px #ccc;
-    padding: 1px;
+.progressbar {
+    text-align  : center;
+    display     : inline-block;
+    color       : #666666;
+    font-weight : bold;
+    font-size   : 12px;
+    line-height : 14px;
+    background  : #3498db;
+    background  : -webkit-repeating-linear-gradient(-45deg, #dddddd, #dddddd 10px, #eeeeee 10px, #eeeeee 20px);
+    background  : -o-repeating-linear-gradient(-45deg, #dddddd, #dddddd 10px, #eeeeee 10px, #eeeeee 20px);
+    background  : -moz-repeating-linear-gradient(-45deg, #dddddd, #dddddd 10px, #eeeeee 10px, #eeeeee 20px);
+    background  : -ms-linear-gradient(-45deg, #dddddd, #dddddd 10px, #eeeeee 10px, #eeeeee 20px);
+    background  : repeating-linear-gradient(-45deg, #dddddd, #dddddd 10px, #eeeeee 10px, #eeeeee 20px);
 }
 
-/*
- * Progressbar Main
- */
-.progressbar{
-    text-align: center;
-    display: inline-block;
-    color: #666;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    background: #3498db;
-    background: -webkit-repeating-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
-    background: -o-repeating-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
-    background: -moz-repeating-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
-    background: -ms-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
-    background: repeating-linear-gradient(-45deg, #DDD, #DDD 10px, #EEE 10px, #EEE 20px);
+.progressbar {
+    border-radius : 3px;
+    clear         : both;
+    width         : 100%;
+    min-height    : 6px;
+    max-height    : 18px;
 }
 
-.progressbar_cover,
-.progressbar{
-    border-radius: 3px;
-    clear: both;
-    width: 100%;
-    min-height: 6px;
-}
-
-.progressbar_curve{
-    border-radius: 1.2em;
+.progressbar_curve {
+    border-radius : 1.2em;
 }
 
 /* Black Color */
-.progressbar_black{
-    color: #fff;
-    background: #3498db;
-    background: -webkit-repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
-    background: -o-repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
-    background: -moz-repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
-    background: -ms-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
-    background: repeating-linear-gradient(-45deg, #666, #666 10px, #999 10px, #999 20px);
+.progressbar_black {
+    color      : #ffffff;
+    background : #3498db;
+    background : -webkit-repeating-linear-gradient(-45deg, #666666, #666666 10px, #999999 10px, #999999 20px);
+    background : -o-repeating-linear-gradient(-45deg, #666666, #666666 10px, #999999 10px, #999999 20px);
+    background : -moz-repeating-linear-gradient(-45deg, #666666, #666666 10px, #999999 10px, #999999 20px);
+    background : -ms-linear-gradient(-45deg, #666666, #666666 10px, #999999 10px, #999999 20px);
+    background : repeating-linear-gradient(-45deg, #666666, #666666 10px, #999999 10px, #999999 20px);
 }
 
 /* Red Color */
-.progressbar_red{
-    color: #fff;
-    background: #c10707;
-    background: -webkit-repeating-linear-gradient(-45deg, #c10707, #c10707 , #f70d0d 10px, #f70d0d 20px);
-    background: -o-repeating-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
-    background: -moz-repeating-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
-    background: -ms-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
-    background: repeating-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
+.progressbar_red {
+    color      : #ffffff;
+    background : #c10707;
+    background : -webkit-repeating-linear-gradient(-45deg, #c10707, #c10707, #f70d0d 10px, #f70d0d 20px);
+    background : -o-repeating-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
+    background : -moz-repeating-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
+    background : -ms-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
+    background : repeating-linear-gradient(-45deg, #c10707, #c10707 10px, #f70d0d 10px, #f70d0d 20px);
 }
 
 /* Blue Color */
-.progressbar_blue{
-    color: #fff;
-    background: #3498db;
-    background: -webkit-repeating-linear-gradient(-45deg, #2980b9, #2980b9 , #3498db 10px, #3498db 20px);
-    background: -o-repeating-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
-    background: -moz-repeating-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
-    background: -ms-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
-    background: repeating-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
+.progressbar_blue {
+    color      : #ffffff;
+    background : #3498db;
+    background : -webkit-repeating-linear-gradient(-45deg, #2980b9, #2980b9, #3498db 10px, #3498db 20px);
+    background : -o-repeating-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
+    background : -moz-repeating-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
+    background : -ms-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
+    background : repeating-linear-gradient(-45deg, #2980b9, #2980b9 10px, #3498db 10px, #3498db 20px);
 }
 
 /* Yellow Color */
-.progressbar_yellow{
-    color: #555;
-    background: #3498db;
-    background: -webkit-repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 , #fef238 10px, #fef238 20px);
-    background: -o-repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
-    background: -moz-repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
-    background: -ms-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
-    background: repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
+.progressbar_yellow {
+    color      : #555555;
+    background : #3498db;
+    background : -webkit-repeating-linear-gradient(-45deg, #d8cb01, #d8cb01, #fef238 10px, #fef238 20px);
+    background : -o-repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
+    background : -moz-repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
+    background : -ms-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
+    background : repeating-linear-gradient(-45deg, #d8cb01, #d8cb01 10px, #fef238 10px, #fef238 20px);
 }
 
 /* Green Color */
-.progressbar_green{
-    color: #fff;
-    background: #0bb407;
-    background: -webkit-repeating-linear-gradient(-45deg, #46fb42, #46fb42 , #0bb407 10px, #0bb407 20px);
-    background: -o-repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
-    background: -moz-repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
-    background: -ms-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
-    background: repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
+.progressbar_green {
+    color      : #ffffff;
+    background : #0bb407;
+    background : -webkit-repeating-linear-gradient(-45deg, #46fb42, #46fb42, #0bb407 10px, #0bb407 20px);
+    background : -o-repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
+    background : -moz-repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
+    background : -ms-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
+    background : repeating-linear-gradient(-45deg, #46fb42, #46fb42 10px, #0bb407 10px, #0bb407 20px);
 }
 
 /* Animation */
-.progressbar_animate{
-    -webkit-animation: progressbar_animate 0.5s linear infinite;
-    -moz-animation: progressbar_animate 0.5s linear infinite;
-    -ms-animation: progressbar_animate 0.5s linear infinite;
-    animation: progressbar_animate 0.5s linear infinite;
+.progressbar_animate {
+    -webkit-animation : progressbar_animate 0.5s linear infinite;
+    -moz-animation    : progressbar_animate 0.5s linear infinite;
+    -ms-animation     : progressbar_animate 0.5s linear infinite;
+    animation         : progressbar_animate 0.5s linear infinite;
 }
 
-@-webkit-keyframes progressbar_animate{
+@-webkit-keyframes progressbar_animate {
     0% {
-        background-position: 0 0;
+        background-position : 0 0;
     }
     100% {
-        background-position: 30px 0;
+        background-position : 30px 0;
     }
 }
+
 @-moz-keyframes progressbar_animate {
     0% {
-        background-position: 0 0;
+        background-position : 0 0;
     }
     100% {
-        background-position: 30px 0;
+        background-position : 30px 0;
     }
 }
+
 @-ms-keyframes progressbar_animate {
     0% {
-        background-position: 0 0;
+        background-position : 0 0;
     }
     100% {
-        background-position: 30px 0;
+        background-position : 30px 0;
     }
 }
+
 @keyframes progressbar_animate {
     0% {
-        background-position: 0 0;
+        background-position : 0 0;
     }
     100% {
-        background-position: 30px 0;
+        background-position : 30px 0;
     }
 }

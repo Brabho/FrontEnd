@@ -5,7 +5,7 @@
     padding           : 2px 8px;
     position          : relative;
     border-radius     : 4px;
-    border            : 1px solid #aaa;
+    border            : 1px solid #aaaaaa;
     border-left-width : 4px;
     background        : #f9f9f9;
     display           : block;
@@ -24,7 +24,7 @@
     font-weight : bold;
     text-align  : center;
     font-family : Tahoma, Helvetica, Arial, sans-serif;
-    color       : #fff;
+    color       : #ffffff;
 }
 
 .msg_general,
@@ -39,23 +39,23 @@
  * General Message
  */
 .msg_general {
-    border : 1px solid #aaa;
+    border : 1px solid #aaaaaa;
 }
 
 .msg_general::before {
     content       : 'i';
     line-height   : 1.2em;
     border-radius : 100%;
-    background    : #999;
+    background    : #999999;
 }
 
 /*
  * Help Message
  */
 .msg_help {
-    color      : #5179DF;
-    background : #F3F4F8;
-    border     : 1px solid #5179DF;
+    color      : #5179df;
+    background : #f3f4f8;
+    border     : 1px solid #5179df;
 }
 
 .msg_help::before {
@@ -63,16 +63,16 @@
     text-align    : center;
     line-height   : 1.3em;
     border-radius : 100%;
-    background    : #5179DF;
+    background    : #5179df;
 }
 
 /*
  * Success Message
  */
 .msg_success {
-    color      : #219A0C;
-    background : #F3F6F2;
-    border     : 1px solid #219A0C;
+    color      : #219a0c;
+    background : #f3f6f2;
+    border     : 1px solid #219a0c;
 }
 
 .msg_success::before {
@@ -80,7 +80,7 @@
     line-height   : 1.3em;
     text-align    : center;
     top           : 20%;
-    background    : #219A0C;
+    background    : #219a0c;
     border-radius : 1.1em;
 }
 
@@ -88,9 +88,9 @@
  * Alert Message
  */
 .msg_alert {
-    color      : #C0070B;
-    background : #F8EDED;
-    border     : 1px solid #C0070B;
+    color      : #c0070b;
+    background : #f8eded;
+    border     : 1px solid #c0070b;
 }
 
 .msg_alert::before {
@@ -98,16 +98,16 @@
     line-height   : 1.3em;
     text-align    : center;
     border-radius : 1.1em;
-    background    : #C0070B;
+    background    : #c0070b;
 }
 
 /*
  * Warning Message
  */
 .msg_warn {
-    color      : #786B4F;
-    background : #FFFBF0;
-    border     : 1px solid #786B4F;
+    color      : #786b4f;
+    background : #fffbf0;
+    border     : 1px solid #786b4f;
 }
 
 .msg_warn::before {
@@ -115,7 +115,7 @@
     content       : '';
     width         : 0;
     height        : 0;
-    border-bottom : 18px solid #786B4F;
+    border-bottom : 18px solid #786b4f;
     border-left   : 13px solid transparent;
     border-right  : 13px solid transparent;
 }

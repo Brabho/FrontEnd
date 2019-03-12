@@ -1,35 +1,19 @@
 # FrontEnd
 
-
-
-> **_Description_**
+> #### _Description_
 This is for frontend development.
 
-Its a mini & basic library for developer.
+Its a mini & lightweight library for developer.
 
 Pure CSS and JavaScript.
 
-Powerful & LightWeight.
-
-
 
 > **_Build_**
-- Version: **5.2**
+- Version: **5.3**
 - Status: **Stable**
 
 
-
-> **_Note_**
-
-Do not use with Jquery or Bootstrap.
-
-Codes are minimum dependent to each other. 
-
-You can use or copy codes from files and use as your requirement.
-
-
-
-> **_Example_**
+> ##### _Few Examples_
 
 ```html
 <!-- button -->
@@ -49,7 +33,7 @@ ajax({
 	/*
 	 * method: POST, GET, HEAD, PUT, DELETE (Default POST)
 	 * type: Content-Type,
-	 * formData: true						// If `data` is in FormData()
+	 * formData: true    // If `data` is in FormData()
 	 */
 	url: 'http://example.com',
 	data: {
@@ -68,7 +52,7 @@ ajax({
 		console.log(progress);
 	},
 	error: function(error) {
-		console.log(error):
+		console.log(error);
 	}
 });
 </script>
@@ -125,7 +109,13 @@ window.addEventListener('load', function() {
 ```
 
 
+> ## _Note_
 
-> **_License (C) 2013 - 2018 under GNU GPL V2._**
+Do not use with Jquery or Bootstrap.
+
+Codes are minimum dependent to each other. 
+
+You can use or copy codes from files and use as your requirements.
 
 
+> ## _License (C) 2019 under GNU GPL V2._

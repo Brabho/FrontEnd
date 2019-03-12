@@ -3,14 +3,14 @@
  */
 .btn {
     font-weight     : bold;
-    color           : #222;
+    color           : #222222;
     padding         : 4px;
     display         : inline;
     cursor          : pointer;
     text-decoration : none;
     border-radius   : 4px;
-    border          : 1px solid #bbb;
-    background      : #eee;
+    border          : 1px solid #bbbbbb;
+    background      : #eeeeee;
     display         : inline-block;
 }
 
@@ -24,7 +24,7 @@
 .btn_active {
     text-decoration : none;
     opacity         : 1;
-    box-shadow      : 0 0 0 3px #ddd;
+    box-shadow      : 0 0 0 3px #dddddd;
 }
 
 /*
@@ -32,12 +32,12 @@
  */
 .btn_flat,
 .btn_flat_white {
-    color      : #444;
+    color      : #444444;
     background : none;
 }
 
 .btn_flat_white {
-    color : #fff;
+    color : #ffffff;
 }
 
 .btn * {
@@ -74,7 +74,7 @@
 .btn_red {
     color      : #f9f9f9;
     border     : 1px solid #bf052d;
-    background : #E74C3C;
+    background : #e74c3c;
 }
 
 .btn_red_flat:active,
@@ -98,7 +98,7 @@
 .btn_blue {
     border     : 1px solid #2980b9;
     color      : #fefefe;
-    background : #2A8DCF;
+    background : #2a8dcf;
 }
 
 .btn_blue_flat:active,
@@ -120,15 +120,15 @@
  */
 .btn_yellow_flat,
 .btn_yellow {
-    border     : 1px solid #BFB62F;
-    background : #F8EE59;
-    color      : #333;
+    border     : 1px solid #bfb62f;
+    background : #f8ee59;
+    color      : #333333;
 }
 
 .btn_yellow_flat:active,
 .btn_yellow:active,
 .btn_yellow_active {
-    box-shadow : 0 0 0 3px #EDE562;
+    box-shadow : 0 0 0 3px #ede562;
 }
 
 /*
@@ -136,7 +136,7 @@
  */
 .btn_yellow_flat {
     background : none;
-    color      : #BFB62F;
+    color      : #bfb62f;
 }
 
 /*
@@ -144,9 +144,9 @@
  */
 .btn_green_flat,
 .btn_green {
-    border     : 1px solid #2EB12A;
-    color      : #333;
-    background : #29DF25;
+    border     : 1px solid #2eb12a;
+    color      : #333333;
+    background : #29df25;
 }
 
 .btn_green_flat:active,
@@ -159,6 +159,6 @@
  * Flat Button
  */
 .btn_green_flat {
-    color      : #2EB12A;
+    color      : #2eb12a;
     background : none;
 }

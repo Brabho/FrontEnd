@@ -3,124 +3,124 @@
  * Toggle Check Button
  */
 .check_toggle,
-.check{
-    display: inline-block;
+.check {
+    display : inline-block;
 }
 
 .check_toggle input[type='checkbox'],
-.check input[type='checkbox']{
-    display: none;
+.check input[type='checkbox'] {
+    display : none;
 }
 
 .check_toggle label,
-.check label{
-    cursor: pointer;
-    position: relative;
+.check label {
+    cursor   : pointer;
+    position : relative;
 }
 
-.check label{
-    padding: 0 5px 0 19px;
+.check label {
+    padding : 0 5px 0 19px;
 }
 
-.check_toggle label{
-    padding-left: 30px;
-    margin: 5px 10px;
+.check_toggle label {
+    padding-left : 30px;
+    margin       : 5px 10px;
 }
 
 .check label::before,
 .check_toggle label::before,
-.check_toggle label::after{
-    position: absolute;
-    content: '';
-    left: 0;
-    transition: all 0.3s;
-    box-sizing: border-box;
+.check_toggle label::after {
+    position   : absolute;
+    content    : '';
+    left       : 0;
+    transition : all 0.3s;
+    box-sizing : border-box;
 }
 
-.check label::before{
-    border-radius: 4px;
-    border: 1px solid #3399FF;
-    background: #fff;
-    width: 15px;
-    height: 15px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 12px;
-    padding-left: 2px;
-    line-height: 1em;
+.check label::before {
+    border-radius : 4px;
+    border        : 1px solid #3399ff;
+    background    : #ffffff;
+    width         : 15px;
+    height        : 15px;
+    color         : #ffffff;
+    font-weight   : bold;
+    font-size     : 12px;
+    padding-left  : 2px;
+    line-height   : 1em;
 }
 
-.check_toggle label::before{
-    background: #ddd;
-    border: 1px solid #bbb;
-    border-radius: 7px;
-    height: 12px;
-    width: 17px;
+.check_toggle label::before {
+    background    : #dddddd;
+    border        : 1px solid #bbbbbb;
+    border-radius : 7px;
+    height        : 12px;
+    width         : 17px;
 }
 
-.check_toggle label::after{
-    margin: -2px 0 0 -10px;
-    background: #aaa;
-    width: 16px;
-    height: 16px;
-    border-radius: 100%;
-    border: 1px solid #999;
+.check_toggle label::after {
+    margin        : -2px 0 0 -10px;
+    background    : #aaaaaa;
+    width         : 16px;
+    height        : 16px;
+    border-radius : 100%;
+    border        : 1px solid #999999;
 }
 
-.check input[type='checkbox']:checked + label::before{
-    background: #3399FF;
-    content:  '\2713';
+.check input[type='checkbox']:checked + label::before {
+    background : #3399ff;
+    content    : '\2713';
 }
 
 .check_toggle input[type='checkbox']:checked + label,
 .check_toggle input[type='checkbox']:checked + label::before,
-.check_toggle input[type='checkbox']:checked + label::after{
-    content: '';
+.check_toggle input[type='checkbox']:checked + label::after {
+    content : '';
 }
 
-.check_toggle input[type='checkbox']:checked + label{
-    padding-left: 30px;
-    margin: 5px 10px;
+.check_toggle input[type='checkbox']:checked + label {
+    padding-left : 30px;
+    margin       : 5px 10px;
 }
 
-.check_toggle input[type='checkbox']:checked + label::before{
-    background: #93D1F7;
-    border: 1px solid #3399FF;
+.check_toggle input[type='checkbox']:checked + label::before {
+    background : #93d1f7;
+    border     : 1px solid #3399ff;
 }
 
-.check_toggle input[type='checkbox']:checked + label::after{
-    background: #3399FF;
-    border: 1px solid #339900;
-    left: 20px;
-    margin: -2px 0 0 -10px;
+.check_toggle input[type='checkbox']:checked + label::after {
+    background : #3399ff;
+    border     : 1px solid #339900;
+    left       : 20px;
+    margin     : -2px 0 0 -10px;
 }
 
-.check_toggle_red input[type='checkbox']:checked + label::before{
-    background: #f26b5e;
-    border: 1px solid #bf052d;
+.check_toggle_red input[type='checkbox']:checked + label::before {
+    background : #f26b5e;
+    border     : 1px solid #bf052d;
 }
 
-.check_toggle_red input[type='checkbox']:checked + label::after{
-    background: #E74C3C;
-    border: 1px solid #bf052d;
+.check_toggle_red input[type='checkbox']:checked + label::after {
+    background : #e74c3c;
+    border     : 1px solid #bf052d;
 }
 
-.check_toggle_yellow input[type='checkbox']:checked + label::before{
-    background: #F8EE59;
-    border: 1px solid #b7ae24;
+.check_toggle_yellow input[type='checkbox']:checked + label::before {
+    background : #f8ee59;
+    border     : 1px solid #b7ae24;
 }
 
-.check_toggle_yellow input[type='checkbox']:checked + label::after{
-    background: #F8EE59;
-    border: 1px solid #b7ae24;
+.check_toggle_yellow input[type='checkbox']:checked + label::after {
+    background : #f8ee59;
+    border     : 1px solid #b7ae24;
 }
 
-.check_toggle_green input[type='checkbox']:checked + label::before{
-    background: #29DF25;
-    border: 1px solid #2EB12A;
+.check_toggle_green input[type='checkbox']:checked + label::before {
+    background : #29df25;
+    border     : 1px solid #2eb12a;
 }
 
-.check_toggle_green input[type='checkbox']:checked + label::after{
-    background: #179913;
-    border: 1px solid #179913;
+.check_toggle_green input[type='checkbox']:checked + label::after {
+    background : #179913;
+    border     : 1px solid #179913;
 }

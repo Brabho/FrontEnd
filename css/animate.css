@@ -1,23 +1,23 @@
 /*
  * Animation Class
  */
-.animate_all{
-    transition: all 0.5s;
+.animate_all {
+    transition : all 0.5s;
 }
 
-.animate_inside *{
-    transition: all 0.5s;
+.animate_inside * {
+    transition : all 0.5s;
 }
 
 /*
  * Blink Elements
  */
-.blink{
-    animation: blink 1s infinite;
+.blink {
+    animation : blink 1s infinite;
 }
 
-@keyframes blink{
-    50%{opacity: 0.1;}
+@keyframes blink {
+    50% {opacity : 0.1;}
 }
 
 /*
@@ -25,51 +25,51 @@
  
  * Shake Horizontal
  */
-.shake_h{
-    display: inline-block;
-    animation: shake_h 1s infinite;
+.shake_h {
+    display   : inline-block;
+    animation : shake_h 1s infinite;
 }
 
 @keyframes shake_h {
-    10%, 30%, 50%, 70%, 90%{transform: translateX(-5px);}
-    20%, 40%, 60%, 80%{transform: translateX(5px);}
+    10%, 30%, 50%, 70%, 90% {transform : translateX(-5px);}
+    20%, 40%, 60%, 80% {transform : translateX(5px);}
 }
 
 /*
  * Shake Vertical
  */
-.shake_v{
-    display: inline-block;
-    animation: shake_v 1s infinite;
+.shake_v {
+    display   : inline-block;
+    animation : shake_v 1s infinite;
 }
 
-@keyframes shake_v{
-    10%, 30%, 50%, 70%, 90%{transform: translatey(-5px);}
-    20%, 40%, 60%, 80%{transform: translatey(5px);}
+@keyframes shake_v {
+    10%, 30%, 50%, 70%, 90% {transform : translatey(-5px);}
+    20%, 40%, 60%, 80% {transform : translatey(5px);}
 }
 
 /*
  * Swing Elements
  */
-.swing{
-    display: inline-block;
-    animation: swing 1s infinite;
+.swing {
+    display   : inline-block;
+    animation : swing 1s infinite;
 }
 
-@keyframes swing{
-    25%{transform: rotate(45deg);}
-    50%{transform: rotate(-45deg);}
+@keyframes swing {
+    25% {transform : rotate(45deg);}
+    50% {transform : rotate(-45deg);}
 }
 
 /*
  * Flip Elements
  */
-.flip{
-    display: inline-block;
-    animation: flip 1s infinite;
+.flip {
+    display   : inline-block;
+    animation : flip 1s infinite;
 }
 
-@keyframes flip{
-    25%{transform: rotateY(180deg);}
-    50%{transform: rotateY(-180deg);}
+@keyframes flip {
+    25% {transform : rotateY(180deg);}
+    50% {transform : rotateY(-180deg);}
 }

@@ -1,113 +1,110 @@
 /*
  * Style Fields
  */
-.field{
-    background: #fff;
-    padding: 4px;
-    border-radius: 4px;
-    border: 1px solid #aaa;
-    box-shadow: inset 0 0 3px #ccc;
+.field {
+    background    : #ffffff;
+    padding       : 4px;
+    border-radius : 4px;
+    border        : 1px solid #aaaaaa;
+    box-shadow    : inset 0 0 3px #cccccc;
 }
 
 .field_focus,
 .field_flat_focus,
 .field_flat:focus,
-.field:focus{
-    box-shadow: none;
-    border: 1px solid #2980b9;
-    box-shadow: 0 0 2px #2980b9;
+.field:focus {
+    box-shadow : none;
+    border     : 1px solid #2980b9;
+    box-shadow : 0 0 2px #2980b9;
 }
 
 .field_flat_focus,
-.field_flat:focus{
-    box-shadow: 0 0 15px #ccc;
-    border: 1px solid #555;
+.field_flat:focus {
+    box-shadow : 0 0 15px #cccccc;
+    border     : 1px solid #555555;
 }
 
 /*
  * Highlight 
  */
-.field_require{
-    border: 1px solid #CE1A1A;
-    box-shadow: 0 0 10px #FDAAAA;
+.field_require {
+    border     : 1px solid #ce1a1a;
+    box-shadow : 0 0 10px #fdaaaa;
 }
 
 /*
  * Curve Field
  */
-.field_curve{
-    border-radius: 1.2em;
-    padding: 4px 10px;
-    display: inline-block;
+.field_curve {
+    border-radius : 1.2em;
+    padding       : 4px 10px;
+    display       : inline-block;
 }
 
 /*
  * Styled Placeholder 
  */
-.placeholder_group{
-    position: relative;
-    margin-top: 20px;
-    vertical-align: middle;
+.placeholder_group {
+    vertical-align : middle;
+    position       : relative;
+    margin-top     : 14px;
 }
 
 .placeholder_group .placeholder_field,
-.placeholder_group .placeholder_field:focus{
-    box-shadow: none;
-    border: 0;
-    border-radius: 0;
-    background: none;
+.placeholder_group .placeholder_field:focus {
+    box-shadow    : none;
+    background    : none;
+    border-radius : 0;
+    border        : none;
+    border-bottom : 2px solid #777777;
+    padding       : 4px 1%;
 }
 
-.placeholder_group .placeholder{
-    position: absolute;
-    left: 0;
-    top: 0;
-    color: #777;
-    pointer-events: none;
-    font-style: italic;
+.placeholder_group .placeholder {
+    position       : absolute;
+    left           : 0;
+    top            : 0;
+    color          : #777777;
+    pointer-events : none;
+    font-style     : italic;
 }
 
-.placeholder_group .placeholder_field,
-.placeholder_group .placeholder_field:focus{
-    border-bottom: 2px solid #777;
-}
-
-.placeholder_group .placeholder_up{
-    top: -60%;
-    color: #2980b9;
+.placeholder_group .placeholder_up {
+    top   : -70%;
+    color : #2980b9;
 }
 
 .placeholder_group .placeholder_field_str,
-.placeholder_group .placeholder_field_str:focus{
-    border-bottom: 2px solid #2980b9;
+.placeholder_group .placeholder_field_str:focus {
+    border-bottom : 2px solid #2980b9;
 }
 
 /*
  * White Placeholder
  */
-.placeholder_group_white .placeholder_up{
-    color: #aaa;
+.placeholder_group_white .placeholder_up {
+    color : #aaaaaa;
 }
 
 .placeholder_group_white .placeholder_field,
-.placeholder_group_white .placeholder_field:focus{
-    color: #fff;
+.placeholder_group_white .placeholder_field:focus {
+    color : #ffffff;
 }
 
 .placeholder_group_white .placeholder_field_str,
-.placeholder_group_white .placeholder_field_str:focus{
-    border-bottom: 2px solid #aaa;
+.placeholder_group_white .placeholder_field_str:focus {
+    border-bottom : 2px solid #aaaaaa;
 }
 
 /*
  * Block Field
  */
-.field_block{
-    clear: both;
-    display: block;
-    width: 100%;
+.field_block {
+    clear   : both;
+    display : block;
+    width   : 100%;
 }
 
-textarea.field_block{
-    resize: vertical;
+textarea.field_block {
+    resize : vertical;
 }

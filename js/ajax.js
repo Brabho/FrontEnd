@@ -3,10 +3,10 @@
  */
 function ajax(arr) {
 
-    if (!arr.method) {
+    if(!arr.method) {
         arr.method = 'POST';
     }
-    if (!arr.type) {
+    if(!arr.type) {
         arr.type = 'application/x-www-form-urlencoded; charset=utf-8';
     }
 
@@ -15,18 +15,18 @@ function ajax(arr) {
     /*
      * Creating HTTP Request Object
      */
-    if (window.XMLHttpRequest) {
+    if(window.XMLHttpRequest) {
         xmlHttpReq = new XMLHttpRequest();
 
-    } else if (window.ActiveXObject) {
+    } else if(window.ActiveXObject) {
         try {
             xmlHttpReq = new ActiveXObject("Msxml2.XMLHTTP");
 
-        } catch (ex) {
+        } catch(ex) {
             try {
                 xmlHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
 
-            } catch (ex) {
+            } catch(ex) {
             }
         }
     }
@@ -34,11 +34,11 @@ function ajax(arr) {
     /*
      * Error If Browser does not support
      */
-    if (!xmlHttpReq) {
-        if (arr.error) {
+    if(!xmlHttpReq) {
+        if(arr.error) {
             arr.error({
-                'response': 'BROWSER'
-            });
+                          'response': 'BROWSER'
+                      });
         }
         return;
     }
@@ -47,9 +47,9 @@ function ajax(arr) {
      * Arrangement Data(s)
      */
     var data = '';
-    if (arr.data) {
+    if(arr.data) {
 
-        if (arr.formData) {
+        if(arr.formData) {
 
             /*
              * Direct access to Form Data
@@ -62,8 +62,8 @@ function ajax(arr) {
              * Arrange for GET, POST etc. Methods
              */
             var data_keys = Object.keys(arr.data);
-            for (var i = 0; i < data_keys.length; i++) {
-                if (i < 1) {
+            for(var i = 0; i < data_keys.length; i++) {
+                if(i < 1) {
                     data += data_keys[i] + '=' + arr.data[data_keys[i]];
                 } else {
                     data += '&' + data_keys[i] + '=' + arr.data[data_keys[i]];
@@ -75,28 +75,28 @@ function ajax(arr) {
     /*
      * Open Request
      */
-    if (arr.method === 'GET' || arr.method === 'HEAD' || arr.method === 'PUT' || arr.method === 'DELETE') {
+    if(arr.method === 'GET' || arr.method === 'HEAD' || arr.method === 'PUT' || arr.method === 'DELETE') {
 
-        if (data !== '') {
+        if(data !== '') {
             arr.url += '?' + data;
             data = null;
         }
 
         xmlHttpReq.open(arr.method, arr.url, true);
 
-    } else if (arr.method === 'POST') {
+    } else if(arr.method === 'POST') {
 
         xmlHttpReq.open(arr.method, arr.url, true);
 
-        if (arr.type && !arr.formData) {
+        if(arr.type && !arr.formData) {
             xmlHttpReq.setRequestHeader('Content-Type', arr.type);
         }
 
     } else {
-        if (arr.error) {
+        if(arr.error) {
             arr.error({
-                'response': 'METHOD'
-            });
+                          'response': 'METHOD'
+                      });
         }
         return;
     }
@@ -104,20 +104,20 @@ function ajax(arr) {
     /*
      * Send Progress Data
      */
-    if (typeof arr.progress === 'function') {
+    if(typeof arr.progress === 'function') {
         xmlHttpReq.upload.addEventListener('progress', arr.progress, false);
     }
 
     /*
      * On Load Event
      */
-    xmlHttpReq.addEventListener('load', function () {
-        if (this.status >= 200 && this.status < 400) {
+    xmlHttpReq.addEventListener('load', function() {
+        if(this.status >= 200 && this.status < 400) {
 
             /*
              * Success Respond
              */
-            if (typeof arr.success === 'function') {
+            if(typeof arr.success === 'function') {
                 arr.success(this.responseText.trim());
             }
 
@@ -126,11 +126,11 @@ function ajax(arr) {
             /*
              * Error in Header
              */
-            if (arr.error) {
+            if(arr.error) {
                 arr.error({
-                    'response': 'HEADER',
-                    'code': this.status
-                });
+                              'response': 'HEADER',
+                              'code'    : this.status
+                          });
             }
         }
     }, false);
@@ -138,13 +138,13 @@ function ajax(arr) {
     /*
      * Error in Server
      */
-    xmlHttpReq.addEventListener('error', function () {
+    xmlHttpReq.addEventListener('error', function() {
 
-        if (arr.error) {
+        if(arr.error) {
             arr.error({
-                'response': 'SERVER',
-                'code': this.status
-            });
+                          'response': 'SERVER',
+                          'code'    : this.status
+                      });
         }
 
     }, false);
@@ -152,12 +152,12 @@ function ajax(arr) {
     /*
      * Request Abort
      */
-    xmlHttpReq.addEventListener('abort', function () {
+    xmlHttpReq.addEventListener('abort', function() {
 
-        if (arr.error) {
+        if(arr.error) {
             arr.error({
-                'response': 'ABORT'
-            });
+                          'response': 'ABORT'
+                      });
         }
 
     }, false);

@@ -5,11 +5,11 @@ var cookie = {
     /*
      * Set Cookie
      */
-    set: function (param) {
-        if (typeof param['extime'] === 'undefined') {
+    set       : function(param) {
+        if(typeof param['extime'] === 'undefined') {
             param['extime'] = 86400;
         }
-        if (typeof param['path'] === 'undefined') {
+        if(typeof param['path'] === 'undefined') {
             param['path'] = '/';
         }
         var date = new Date();
@@ -20,16 +20,16 @@ var cookie = {
     /*
      * Get Cookie
      */
-    get: function (name) {
+    get       : function(name) {
         var result = false;
         var s_cookie = document.cookie.trim().split(';');
         var s_cookie_length = s_cookie.length;
-        for (var i = 0; i < s_cookie_length; i++) {
+        for(var i = 0; i < s_cookie_length; i++) {
             var ss_cookie = s_cookie[i].split('=');
-            if (ss_cookie[0].charAt(0) === ' ') {
+            if(ss_cookie[0].charAt(0) === ' ') {
                 ss_cookie[0] = ss_cookie[0].substr(1);
             }
-            if (name === ss_cookie[0]) {
+            if(name === ss_cookie[0]) {
                 result = ss_cookie[1];
                 break;
             }
@@ -39,8 +39,8 @@ var cookie = {
     /*
      * Remove Cookie
      */
-    remove: function (name, path) {
-        if (typeof path === 'undefined') {
+    remove    : function(name, path) {
+        if(typeof path === 'undefined') {
             path = '/';
         }
         var date = new Date();
@@ -51,13 +51,13 @@ var cookie = {
     /*
      * Remove All Cookies
      */
-    remove_all: function (path) {
-        if (typeof path === 'undefined') {
+    remove_all: function(path) {
+        if(typeof path === 'undefined') {
             path = '/';
         }
         var s_cookie = document.cookie.trim().split(';');
         var s_cookie_length = s_cookie.length;
-        for (var i = 0; i < s_cookie_length; i++) {
+        for(var i = 0; i < s_cookie_length; i++) {
             var ss_cookie = s_cookie[i].split('=');
             this.remove(ss_cookie[0], path);
         }

@@ -5,15 +5,15 @@
     padding    : 0;
     margin     : 5px 0;
     border     : 0;
-    border-top : 1px solid #aaa;
+    border-top : 1px solid #aaaaaa;
 }
 
 .hr_dash {
-    border-top : 2px dashed #aaa;
+    border-top : 2px dashed #aaaaaa;
 }
 
 .hr_dot {
-    border-top : 2px dotted #aaa;
+    border-top : 2px dotted #aaaaaa;
 }
 
 .no_padding {
@@ -27,7 +27,7 @@
 .label_info,
 .label_info * {
     font-size       : 11px;
-    color           : #999;
+    color           : #999999;
     font-weight     : bold;
     text-decoration : none;
 }
