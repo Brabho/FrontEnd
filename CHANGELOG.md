@@ -341,7 +341,7 @@
 > ##### 23-11-2016 ~ _v1.7.4_ : _Stable_
 
     Fixed Lazy Load Image Bug
-    Checked All Files
+    Review All Files
     :: Added ::
         Check Button > `btn.css`
 
@@ -367,7 +367,7 @@
 
 > ##### 10-11-2016 ~ _v1.6.2_ : _Stable_
 
-    Checked All Files
+    Review All Files
     :: Improved ::
         highlight.css
 
@@ -485,4 +485,4 @@
 > ##### 03-09-2016 ~ _v1.0_ : _Aplha_
 
     First made
-	Initial released
+	Initial Release
